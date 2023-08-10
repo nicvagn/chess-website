@@ -410,12 +410,12 @@
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.6) 100%
+      #FDD401 100%
     ),
     url('/images/pic3.jpg');
   background-size: cover;
   position: relative;
-  color: #fff;
+  color: #FDD401;
 }
 
 .services__card:before {
@@ -426,7 +426,7 @@
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.9) 100%
+      rgba(20, 172, 77, 0.8) 100%
     ),
     url('/images/pic4.jpg');
 }
@@ -445,14 +445,14 @@
 
 .services__card button {
   color: #FDD401;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: none;
   outline: none;
   border-radius: 4px;
   background: #DD1810;
   position: absolute;
   top: 440px;
-  left: 30px;
+  left: 30px;rgba(20, 172, 77, 0.8)
   font-size: 1rem;
 }
 
