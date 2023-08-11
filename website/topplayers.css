@@ -49,8 +49,10 @@ t {
   background: #076A21;
   color: #fff;
 }
+
+
 #footer {
-  display: flex;
+  display: block;
   position: absolute;
   align-items: center;
   justify-content: center;

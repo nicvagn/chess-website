@@ -64,6 +64,12 @@ body{
   background: #076A21;
   color: #fff;
 }
+
+.button:hover {
+  background: #DD1810;
+  transition: all 0.3s ease;
+}
+
 #footer {
   position: absolute;
   bottom: 0;
