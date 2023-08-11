@@ -20,6 +20,8 @@
 
 h1 {
   color: #FDD401;
+  text-align: center;
+
 }
 
 h2 {
@@ -36,6 +38,7 @@ h3 {
   width: 50%;
   color: white;
 }
+
 body {
   color: white;
 }

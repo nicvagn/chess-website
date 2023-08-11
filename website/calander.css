@@ -18,8 +18,10 @@ body {
   font-family: Verdana, sans-serif;
 }
   
-h2 {
+h1 {
   color: #FDD401;
+  text-align: center;
+
 }
 
 /* Month header */
