@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+
+  <!--
+    Site skeleton created by Brian Design on youtube @ www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber
+    Created for Saskatchewan Horizon Chess Club
+          
+    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
+  -->
+  
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,40 +32,43 @@
 
 
 <body>
-	<div class="input">
-		<h2>What is the next move? </h2>
+  <div class="input">
+  <h2>What is the next move? </h2>
 		
-		<!-- Display lichess study -->
-    <iframe name="lichess study" width=600 height=371 src="https://lichess.org/study/embed/zhVIrJYc/ezq0b4C6" frameborder=0></iframe>
+  <!-- Display lichess study -->
+  <iframe name="lichess study" width=600 height=371 src="https://lichess.org/study/embed/zhVIrJYc/ezq0b4C6" frameborder=0></iframe>
     
-    <p>Enter anwser in algabraic notation</p>
+  <p>Enter anwser in algabraic notation</p>
     	
-		<!-- input box -->
-		<input type="text" Placeholder="(ie:)e4" id="inputId" onchange="getInput()">
+    <!-- input box -->
+    <input type="text" Placeholder="(ie:)e4" id="inputId" onchange="getInput()">
 
-		<!-- JavaScript to check answer -->
-		<script>
-			const puzzleAwnser = "Nxd2";
+    <!-- JavaScript to check answer -->
+    <script>
+      const puzzleAwnser = "Nxd2";
 			
-			function getInput(){
-				//get input from input box
-				input = document.getElementById("inputId").value;
+      function getInput(){
+	//get input from input box
+	input = document.getElementById("inputId").value;
 
-				// Select the input element and get value
-				if(input === puzzleAwnser) {
-					window.confirm("correct, good job");
-				}
-				else
-				{
-					window.confirm("Try again.");
-				}
-			}
-		</script>
-		
-	<!-- on button click go home -->
-	<div>
-		<button onclick="window.location.href='index.html'">home</button>
-	</div>
+	// Select the input element and get value
+	if(input === puzzleAwnser) {
+          window.confirm("correct, good job");
+	}
+	else
+	{
+          window.confirm("Try again.");
+	}
+}
+</script>
+
+<br>
+<br>
+
+<!-- on button click go home -->
+<li class="navbar__btn"><a href="index.html" class="button">Home</a></li>
+
+
 </body>
 </html>
 
