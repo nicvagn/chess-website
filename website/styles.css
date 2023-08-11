@@ -452,7 +452,7 @@
   background: #DD1810;
   position: absolute;
   top: 440px;
-  left: 30px;rgba(20, 172, 77, 0.8)
+  left: 30px;
   font-size: 1rem;
 }
 
@@ -563,6 +563,8 @@
 .social__icon--link {
   color: #fff;
   font-size: 24px;
+  margin-right: 5px;
+  align-items: end;
 }
 
 .social__media {
@@ -581,7 +583,7 @@
 
 .social__icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   width: 240px;
 }
@@ -589,14 +591,13 @@
 .social__logo {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 2px;
   cursor: pointer;
   text-decoration: none;
   font-size: 4rem;
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
-  font: 
+  margin-bottom: 16px; 
 }
 
 .website__rights {
