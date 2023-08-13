@@ -16,7 +16,7 @@
 
 body {
 	background-color: #9A978E;
-	text-align: centered;
+  height:100%;
 
 }
 
@@ -37,6 +37,7 @@ h3 {
 
 body{
 	text-align: center;
+  align-items: start;
 	
 }
 
@@ -50,10 +51,10 @@ body{
 }
 
 .button {
-  text-align: center;
+  text-align: bottom;
   display: block;
-  justify-content: center;
-  align-items: center;
+  justify-content: bottom;
+  align-items: right;
   text-decoration: none;
   padding: 10px 20px;
   height: 100%;
@@ -63,6 +64,12 @@ body{
   border-radius: 4px;
   background: #076A21;
   color: #fff;
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  cursor: pointer
 }
 
 .button:hover {
@@ -71,7 +78,14 @@ body{
 }
 
 #footer {
-  position: absolute;
+  display: block;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   bottom: 0;
-  width: 99%;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
 }
+  
