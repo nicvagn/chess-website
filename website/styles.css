@@ -415,7 +415,7 @@
   border-radius: 4px;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0) 0%,
+      rgba(151, 34, 34, 0.781) 50%,
       #FDD401 100%
     ),
     url('/images/pic3.jpg');
@@ -541,7 +541,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 16px;
+  margin: 20px;
   text-align: left;
   width: 160px;
   box-sizing: border-box;
@@ -645,7 +645,7 @@
 
 /* link styling */
 a {
-  color: red;
+  color: #801cd9;
   text-size-adjust: .8;
 }
 
