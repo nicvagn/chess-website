@@ -646,9 +646,9 @@
 /* link styling */
 a {
   color: red;
+  text-size-adjust: .8;
 }
 
 img {
-
   height: 4rem;
 }
