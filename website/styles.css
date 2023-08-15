@@ -16,7 +16,7 @@
 }
 
 .navbar {
-  background: #9A978E;
+  background: #076A21;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -100,7 +100,7 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #076A21;
+  background: #FDD401;
   color: #fff;
 }
 
@@ -272,9 +272,9 @@
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: #FDD401;
   margin-top: 2rem;
-  cursor: pointer;
+  cursor: pointersplit-page__btn;
   position: relative;
   transition: all 0.35s;
   outline: none;
@@ -372,7 +372,7 @@
 
 /* Services Section */
 .services {
-  background: #9A978E;
+  background: #076A21;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -383,13 +383,12 @@
 .services h1 {
   background-color: #076A21;
   background-image: linear-gradient(
-    to right,
-    #ff8177 0%,
-    #ff867a 0%,
-    #ff8c7f 21%,
+    to left,
+    #ff867a 100%,
+    #ff8c7f 78%,
     #f99185 52%,
-    #cf556c 78%,
-    #b12a5b 100%
+    #cf556c 21%,
+    #b12a5b 0%
   );
   background-size: 100%;
   -webkit-background-clip: text;
@@ -411,64 +410,54 @@
   margin: 1rem;
   height: 525px;
   width: 400px;
-  color: green;
   border-radius: 4px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(151, 34, 34, 0.781) 50%,
-      #FDD401 100%
-    ),
-    url('/images/pic3.jpg');
   background-size: cover;
   position: relative;
-  color: #FDD401;
+  background-color: #FDD401;
 }
 
 .services__card:before {
   opacity: 0.2;
 }
 
-.services__card:nth-child(2) {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(20, 172, 77, 0.8) 100%
-    ),
-    url('/images/pic4.jpg');
-}
 
 .services__card h2 {
-  position: absolute;
-  top: 350px;
+  position: relative;
+  top: 30px;
   left: 30px;
 }
 
 .services__card p {
-  position: absolute;
-  top: 400px;
+  position: relative;
+  justify-content: center;
+  top: 40px;
   left: 30px;
 }
 
 .services__card button {
-  color: #FDD401;
-  padding: 15px 20px;
+  color: #ffffff;
+  justify-items: center;
+  padding: 20px 30px;
   border: none;
   outline: none;
   border-radius: 4px;
   background: #DD1810;
-  position: absolute;
-  top: 440px;
-  left: 30px;
+  position: relative;
+  top: center;
+  left: center;
   font-size: 1rem;
   cursor: pointer;
+  size: 80%;
+  width: 100%;
 }
 
 .services__card button:hover {
   cursor: pointer;
+  background-color: #076A21;
 }
 
 .services__card:hover {
-  transform: scale(1.075);
+  transform: scale(99%);
   transition: 0.2s ease-in;
 }
 
@@ -645,10 +634,24 @@
 
 /* link styling */
 a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
   color: #000000;
   text-size-adjust: .8;
+  margin: 3;
+  
 }
 
 img {
   height: 4rem;
+}
+
+.split-page__btn {
+  size: 10px, 30px;
+  justify-content: center;
+}
+
+.split-page__btn:hover {
+  color:#DD1810;
 }

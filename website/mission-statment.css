@@ -45,3 +45,9 @@ body{
   background: #DD1810;
   transition: all 0.3s ease;
 }
+
+.button {
+  width: 100%;
+  max-width: 30px;
+  text-align: center;
+}

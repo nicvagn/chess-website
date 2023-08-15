@@ -7,13 +7,37 @@
 */
 
 * {
- text-align: center;
+  text-align: center;
 }
 
 body {
 	background-color: #131313;
 	text-align: centered;
+}
 
+.exec__btn:hover {
+  cursor: pointer;
+  background-color: #076A21;
+}
+
+
+.exec__btn {
+	display: block;
+	color: #ffffff;
+  justify-items: center;
+  padding: 20px 30px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #DD1810;
+  position: relative;
+  top: center;
+  left: center;
+  font-size: 1rem;
+  cursor: pointer;
+  size: 80%;
+  width: 100%;
+	
 }
 
 h1 {
