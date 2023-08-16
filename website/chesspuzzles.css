@@ -10,7 +10,7 @@
   */
 
 * {
-  background-color: #131313;
+  background-color: lightgreen;
   box-sizing: border-box;
   margin: 1;
   padding: 1;
@@ -19,17 +19,17 @@
 }
 
 h1 {
-  color: #FDD401;
+  color: #DD1810;
   text-align: center;
 
 }
 
 h2 {
-  color: #FDD401;
+  color: #DD1810;
 }
 
 h3 {
-  color: grey;
+  color: #076A21;
 }
 
 .input {
@@ -45,6 +45,15 @@ body {
 
 input {
   color: white;
+}
+
+
+p{
+  color: #076A21;
+}
+
+.input {
+  color: black;;
 }
 
 .button {
@@ -66,3 +75,4 @@ input {
   background: #DD1810;
   transition: all 0.3s ease;
 }
+

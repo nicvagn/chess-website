@@ -5,3 +5,6 @@ menu.addEventListener('click', function() {
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
 });
+
+
+var board = Chessboard('myBoard', 'start')

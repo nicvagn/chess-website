@@ -211,7 +211,7 @@
 
 /* Main Content CSS */
 .main {
-  background-color: #141414;
+  background-color: #FDD401;
 }
 
 .main__container {
@@ -221,7 +221,7 @@
   justify-self: center;
   margin: 0 auto;
   height: 90vh;
-  background-color: #131313;
+  background-color: lightgreen;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -230,7 +230,7 @@
 }
 
 .main__content {
-  color: #fff;
+  color: black;
   width: 100%;
 }
 
@@ -260,6 +260,7 @@
 }
 
 .main__content p {
+  color:#FDD401;
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
@@ -414,10 +415,11 @@
   background-size: cover;
   position: relative;
   background-color: #FDD401;
+  vertical-align: bottom;
 }
 
 .services__card:before {
-  opacity: 0.2;
+  opacity: 3;
 }
 
 
@@ -449,11 +451,13 @@
   cursor: pointer;
   size: 80%;
   width: 100%;
+  vertical-align: bottom;
 }
 
 .services__card button:hover {
   cursor: pointer;
   background-color: #076A21;
+  color: #FDD401;
 }
 
 .services__card:hover {
@@ -488,7 +492,7 @@
 
 /* Footer CSS */
 .footer__container {
-  background-color: #141414;
+  background-color: lightgreen;
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -541,11 +545,11 @@
 }
 
 .footer__link--items > h2 {
-  color: #fff;
+  color: black;
 }
 
 .footer__link--items a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
@@ -557,7 +561,7 @@
 
 /* Social Icons */
 .social__icon--link {
-  color: #fff;
+  color: black;
   font-size: 24px;
   margin-right: 5px;
   align-items: end;
@@ -629,6 +633,7 @@
     margin: 0;
     padding: 1px;
     width: 100%;
+    color: black;
   }
 }
 
@@ -654,4 +659,11 @@ img {
 
 .split-page__btn:hover {
   color:#DD1810;
+}
+h2{
+  color: black;
+}
+
+p{
+  color: #076A21;
 }

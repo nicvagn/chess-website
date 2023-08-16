@@ -11,13 +11,13 @@
 }
 
 body {
-	background-color: #131313;
+	background-color: lightgreen;
 	text-align: centered;
 }
 
 .exec__btn:hover {
   cursor: pointer;
-  background-color: #076A21;
+  background-color: #DD1810
 }
 
 
@@ -29,7 +29,7 @@ body {
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #DD1810;
+  background: #076A21;
   position: relative;
   top: center;
   left: center;
@@ -41,16 +41,34 @@ body {
 }
 
 h1 {
-	color: #FDD401;
+	color: #DD1810;
 	text-align: center;
 }
 
 h2 {
-	color: #076A21;
+	color: #FDD401;
 	text-align: center;
 }
 
 h3 {
 	color: #DD1810;
 	text-align: center;
+}
+
+p{
+  color: #DD1810;
+}
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 90vh;
+  background-color: lightgreen;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
