@@ -9,14 +9,6 @@
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
   */
 
-* {
-  background-color: lightgreen;
-  box-sizing: border-box;
-  margin: 1;
-  padding: 1;
-  font-family: 'Kumbh Sans', sans-serif;
-  list-style: none
-}
 
 h1 {
   color: #DD1810;
@@ -41,6 +33,7 @@ h3 {
 
 body {
   color: white;
+  background-color: lightgreen;
 }
 
 input {
@@ -76,3 +69,24 @@ p{
   transition: all 0.3s ease;
 }
 
+.examples-body-9af4d {
+  flex: 75;
+  padding: 20px;
+}
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+body {
+  color: #333;
+  font-family: 'Open Sans', arial, sans-serif;
+}
+element {
+  --pulse-color: #fffc0230;
+}
+:root {
+  --pulse-color: #fffc002e;
+}
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
