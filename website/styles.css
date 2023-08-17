@@ -237,7 +237,7 @@
 .main__content h1 {
   font-size: 4rem;
   background-color: #DD1810;
-  background-image: linear-gradient(to top, #DD1810 0%, #FDD401 100%);
+  background-image: linear-gradient(to top, #FDD401 0%, #DD1810 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -260,7 +260,7 @@
 }
 
 .main__content p {
-  color:#FDD401;
+  color: orange;
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
@@ -269,13 +269,14 @@
 .main__btn {
   display: block;
   font-size: 1.3rem;
-  background-image: linear-gradient(to top, #076A21 0%, #DD1810 100%);
+  background-image: linear-gradient(to top, #FDD401 0%, #DD1810 100%);
+
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
-  color: #FDD401;
+  color: white;
   margin-top: 2rem;
-  cursor: pointersplit-page__btn;
+  cursor: pointer;
   position: relative;
   transition: all 0.35s;
   outline: none;
@@ -289,24 +290,10 @@
   text-decoration: none;
 }
 
-.main__btn:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #DD1810;
-  transition: all 0.35s;
-  border-radius: 4px;
-}
-
 .main__btn:hover {
-  color: #fff;
-}
-
-.main__btn:hover:after {
-  width: 100%;
+  background: #DD1810;
+  transition: all 1s;
+  border-radius: 4px;
 }
 
 .main__img--container {
@@ -415,7 +402,6 @@
   background-size: cover;
   position: relative;
   background-color: #FDD401;
-  vertical-align: bottom;
 }
 
 .services__card:before {
@@ -430,6 +416,7 @@
 }
 
 .services__card p {
+  color: #000000;
   position: relative;
   justify-content: center;
   top: 40px;
@@ -437,6 +424,7 @@
 }
 
 .services__card button {
+  cursor: pointer;
   color: #ffffff;
   justify-items: center;
   padding: 20px 30px;
@@ -445,19 +433,15 @@
   border-radius: 4px;
   background: #DD1810;
   position: relative;
-  top: center;
-  left: center;
   font-size: 1rem;
   cursor: pointer;
-  size: 80%;
-  width: 100%;
-  vertical-align: bottom;
 }
 
 .services__card button:hover {
   cursor: pointer;
   background-color: #076A21;
   color: #FDD401;
+  cursor: pointer;
 }
 
 .services__card:hover {
@@ -653,13 +637,21 @@ img {
 }
 
 .split-page__btn {
-  size: 10px, 30px;
+  width: 100%;
   justify-content: center;
+  align-self: flex-end; 
+}
+
+#split-page__btn{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .split-page__btn:hover {
   color:#DD1810;
 }
+
 h2{
   color: black;
 }
