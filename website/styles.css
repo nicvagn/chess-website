@@ -13,10 +13,11 @@
   margin: 0;
   padding: 0;
   font-family: 'Kumbh Sans', san9A978Es-serif;
+  border-radius:0 !important
 }
 
 .navbar {
-  background: #076A21;
+  background: #DD1810;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -42,7 +43,7 @@
 
 #navbar__logo {
   background-color: #076A21;
-  background-image: linear-gradient(to top, #FDD401 30%, #DD1810 100%);
+  background-image: linear-gradient(to top, #FDD401 50%, #DD1810 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -211,7 +212,7 @@
 
 /* Main Content CSS */
 .main {
-  background-color: #FDD401;
+  background-color: #DD1810;
 }
 
 .main__container {
@@ -221,7 +222,7 @@
   justify-self: center;
   margin: 0 auto;
   height: 90vh;
-  background-color: lightgreen;
+  background-color: black;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -360,7 +361,7 @@
 
 /* Services Section */
 .services {
-  background: #076A21;
+  background: #DD1810;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -429,7 +430,7 @@
   justify-items: center;
   padding: 20px 30px;
   border: none;
-  outline: none;
+  outline: black;
   border-radius: 4px;
   background: #DD1810;
   position: relative;
@@ -476,7 +477,7 @@
 
 /* Footer CSS */
 .footer__container {
-  background-color: lightgreen;
+  background-color: black;
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -529,11 +530,11 @@
 }
 
 .footer__link--items > h2 {
-  color: black;
+  color: gray;
 }
 
 .footer__link--items a {
-  color: black;
+  color: gray;
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
@@ -545,7 +546,7 @@
 
 /* Social Icons */
 .social__icon--link {
-  color: black;
+  color: grey;
   font-size: 24px;
   margin-right: 5px;
   align-items: end;
@@ -617,7 +618,7 @@
     margin: 0;
     padding: 1px;
     width: 100%;
-    color: black;
+    color: darkgray;
   }
 }
 
@@ -626,7 +627,7 @@ a {
   position: relative;
   color: #fff;
   text-decoration: none;
-  color: #000000;
+  color: darkgray;
   text-size-adjust: .8;
   margin: 3;
   
@@ -646,6 +647,7 @@ img {
   bottom: 0;
   position: absolute;
   width: 100%;
+  border: 3px solid black;
 }
 
 .split-page__btn:hover {
@@ -653,7 +655,7 @@ img {
 }
 
 h2{
-  color: black;
+  color: gray;
 }
 
 p{
