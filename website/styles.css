@@ -13,7 +13,6 @@
   margin: 0;
   padding: 0;
   font-family: 'Kumbh Sans', san9A978Es-serif;
-  border-radius:0 !important;
 }
 
 .navbar {
@@ -55,10 +54,20 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 3rem;
+  border-radius: 0%;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
 }
 
 .chess_icon {
   margin-right: 0.5rem;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 
 .navbar__menu {
@@ -217,6 +226,8 @@
 /* Main Content CSS */
 .main {
   background-color: #1e9c9c;
+  width: 100%;
+  min-height: max-content;
 }
 
 .main__container {
@@ -225,16 +236,17 @@
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 90vh;
+  height: 100vh;
   background-color: #1e9c9c;
   z-index: 1;
   width: 100%;
-  max-width: 1300px;
   padding-right: 50px;
   padding-left: 50px;
+  padding-top: 0;
   background-image: url('images/back.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: fit-content;
 }
 
 .main__content {
@@ -242,29 +254,18 @@
   width: 100%;
 }
 
-.main__content h1 {
-  font-size: 4rem;
-  background-color: #DD1810;
-  background-image: linear-gradient(to top, #FDD401 0%, #DD1810 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
 .main__content h2 {
-  font-size: 4rem;
-  margin-top: 10px;
-  background-color: #ff8177;
-  background-image: linear-gradient(-20deg, #076A21 0%, #FDD401 100%);
-  background-size: 100%;
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-left: 25%;
+  background-color: white;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  text-align: left;
+  width: 100%;
 }
 
 .main__content p {
@@ -274,43 +275,15 @@
   font-weight: 700;
 }
 
-.main__btn {
-  display: block;
-  font-size: 1.3rem;
-  background-image: linear-gradient(to top, #FDD401 0%, #1e9c9c 100%);
-
-  padding: 14px 32px;
-  border: none;
-  border-radius: 4px;
-  color: white;
-  margin-top: 2rem;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.35s;
-  outline: none;
-  text-align: center;
-}
-
-.main__btn a {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-decoration: none;
-}
-
-.main__btn:hover {
-  background: #FDD401;
-  transition: all 1s;
-  border-radius: 4px;
-}
-
-.main__img--container {
-  text-align: center;
-}
 
 #main__img {
   height: 80%;
   width: 80%;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 
 /* Mobile Responsive */
@@ -377,6 +350,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  min-height: fit-content;
 }
 
 .services h1 {
@@ -439,6 +413,11 @@
   position: relative;
   font-size: 1rem;
   cursor: pointer;
+  border-radius: 0%;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
 }
 
 .services__card button:hover {
@@ -641,13 +620,19 @@ a {
 
 img {
   height: 4rem;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
 }
+
 
 .split-page__btn {
   width: 100%;
   justify-content: center;
   align-self: flex-end;
-  background-color: #FDD401; 
+  background-color: #FDD401;
   color: #000000;
 }
 
@@ -671,14 +656,28 @@ p{
 }
 
 
-#what-we-play-for{
-  text-align: center;
-}
 .what-we-play-for{
   text-align: center;
   background-color: white;
   padding-top: 50px;
   padding-bottom: 50px;
+
+  display: flex;
+}
+.what-we-play-for-column{
+  flex: 50%;
+  text-align: left;
+}
+
+.what-we-play-for-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 50%;
+  width: 50%;
+  height: auto;
+  aspect-ratio: 1/1;
+  padding: 20px;
 }
 
 .what-we-play-for h1 {
