@@ -111,7 +111,7 @@
 }
 
 .navbar__links:hover {
-  color: #DD1810;
+  color: #FDD401;
   transition: all 0.3s ease;
 }
 
@@ -367,6 +367,7 @@
 /* Services Section */
 .services {
   background: white;
+  background-image: url(images/back.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -430,7 +431,7 @@
   border: none;
   outline: black;
   border-radius: 4px;
-  background: #DD1810;
+  background: #FDD401;
   position: relative;
   font-size: 1rem;
   cursor: pointer;
@@ -438,7 +439,7 @@
 
 .services__card button:hover {
   cursor: pointer;
-  background-color: #FDD401;
+  background-color: #DD1810;
   color: black;
   cursor: pointer;
 }
@@ -642,7 +643,8 @@ img {
 .split-page__btn {
   width: 100%;
   justify-content: center;
-  align-self: flex-end; 
+  align-self: flex-end;
+  background-color: #FDD401; 
 }
 
 #split-page__btn{
@@ -653,7 +655,7 @@ img {
 }
 
 .split-page__btn:hover {
-  color:#DD1810;
+  background-color:#FDD401;
 }
 
 h2{
@@ -661,5 +663,25 @@ h2{
 }
 
 p{
-  color: #076A21;
+  color: black;
+}
+
+
+#what-we-play-for{
+  text-align: center;
+}
+.what-we-play-for{
+  text-align: center;
+  /*background-image: url(images/back.png);*/
+  background-color: #1e9c9c;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.what-we-play-for h1 {
+  text-shadow: #FDD401 1px 1px 5px;
+}
+
+.what-we-play-for h2 {
+  color: darkgray;
 }
