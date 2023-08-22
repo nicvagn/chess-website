@@ -11,7 +11,7 @@
 }
 
 body {
-	background-color: lightgreen;
+	background-color: #1e9c9c;
 	text-align: centered;
 }
 
@@ -37,7 +37,6 @@ body {
   cursor: pointer;
   size: 80%;
   width: 100%;
-	
 }
 
 h1 {

@@ -11,7 +11,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   font-family: 'Kumbh Sans', san9A978Es-serif;
 }
 
@@ -274,6 +273,7 @@
   font-size: 2rem;
   font-weight: 700;
 }
+
 
 
 #main__img {
@@ -686,4 +686,32 @@ p{
 
 .what-we-play-for h2 {
   color: darkgray;
+}
+
+.services__bubble{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+.services__bubbles{
+  display: flex;
+  align-items: flex-start;
+  align-items: middle;
+  height: 300px;
+}
+
+.services__bubble img{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  height: 200px;
+}
+
+.stuff-we-offer h2{
+  margin-left: 10%;
+  color: #000000;
+  align-self: middle;
 }
