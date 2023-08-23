@@ -1,5 +1,5 @@
 /*
-  Made by nicolas Vaagen
+  Made by nicolas Vaagen for SK Horizon Chess Club
 
     This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
@@ -698,6 +698,7 @@ p{
   display: flex;
   align-items: flex-start;
   align-items: middle;
+  align-self: center;
   height: 300px;
 }
 
@@ -711,7 +712,9 @@ p{
 }
 
 .stuff-we-offer h2{
-  margin-left: 10%;
+  margin-left: 25%;
   color: #000000;
   align-self: middle;
+  text-shadow: #FDD401 1px 1px 5px;
+
 }
