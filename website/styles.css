@@ -615,7 +615,6 @@ a {
   text-decoration: none;
   color: darkgray;
   text-size-adjust: .8;
-  margin: 3;
 }
 
 img {
@@ -697,9 +696,8 @@ p{
 .services__bubbles{
   display: flex;
   align-items: flex-start;
-  align-items: middle;
   align-self: center;
-  height: 300px;
+  height: 500px;
 }
 
 .services__bubble img{
@@ -708,15 +706,25 @@ p{
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  height: 200px;
+  height: 400px;
+  align-self: center;
+  align-items: center;
+  color: #000000;
 }
 
-.stuff-we-offer h2{
-  margin-left: 25%;
+.services__bubble h2{
+  padding: 25px;
+  color: #000000;
+}
+
+
+#what-we-offer h2{
+  font-style: italic;
+  margin-left: 5%;
+  text-shadow: #FDD401 1px 1px 5px;
   color: #000000;
   align-self: middle;
-  text-shadow: #FDD401 1px 1px 5px;
-
+  font-size: 50px;
 }
 
 .page-break {
