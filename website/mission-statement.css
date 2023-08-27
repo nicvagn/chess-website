@@ -1,9 +1,11 @@
 /*
+    Created for the Horizon Chess Club by Nicolas Vaagen
+
     This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
     This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
+    You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
 * {
@@ -20,7 +22,7 @@ body {
 }
 
 h1 {
-	color: #076A21;
+	color: darkorange;
 	text-align: center;
 }
 
@@ -30,12 +32,12 @@ h2 {
 }
 
 h3 {
-	color: #DD1810;
+	color: wheat;
 	text-align: center;
 }
 
 body{
 	text-align: center;
   align-items: middle;
-
+  background-color: #1e9c9c;
 }
