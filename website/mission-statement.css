@@ -15,7 +15,6 @@
 
 
 body {
-	background-color: #9A978E;
   height:100%;
 
 }
@@ -38,16 +37,5 @@ h3 {
 body{
 	text-align: center;
   align-items: middle;
-	
-}
 
-.button:hover {
-  background: #DD1810;
-  transition: all 0.3s ease;
-}
-
-.button {
-  width: 100%;
-  max-width: 30px;
-  text-align: center;
 }
