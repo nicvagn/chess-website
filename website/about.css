@@ -5,15 +5,30 @@
 
     This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
+    You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
 
 h1 {
   color: #DD1810;
   text-align: center;
+  margin: 20px 20px 0px;
+}
+
+h2 {
+  margin: 20px 20px 0px;
 }
 
 #main_text{
   margin: 20px 20px 0px;
+}
+
+.facilitator {
+  margin: 20px 20px 0px;
+  display: flex;
+  align-items: stretch;
+}
+
+p {
+  margin: 0px 20px 0px;
 }
