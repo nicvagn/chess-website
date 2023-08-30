@@ -5,7 +5,7 @@
 
     This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
+    You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
 * {
@@ -24,6 +24,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  min-width: 1200px;
 }
 
 .navbar__container {
@@ -32,6 +33,7 @@
   height: 80px;
   z-index: 1;
   width: 100%;
+  min-width: 1200px;
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
@@ -128,6 +130,8 @@
   background-color: #1e9c9c;
   width: 100%;
   min-height: max-content;
+  object-fit: contain;
+  min-width: 1200px;
 }
 
 .main__container {
@@ -136,7 +140,6 @@
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 100vh;
   background-color: #1e9c9c;
   z-index: 1;
   width: 100%;
@@ -147,11 +150,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: fit-content;
+  object-fit: contain;
 }
 
 .main__content {
   color: white;
   width: 100%;
+  min-width: 800px;
 }
 
 .main__content h2 {
@@ -188,6 +193,7 @@
   -ms-border-radius: 0;
   -o-border-radius: 0;
   min-height: fit-content;
+  object-fit: contain;
 }
 
 
@@ -204,6 +210,8 @@
   align-items: center;
   height: 100vh;
   min-height: fit-content;
+  min-width: 1200px;
+  object-fit: contain;
 }
 
 .services h1 {
@@ -273,18 +281,6 @@
   -o-border-radius: 0%;
 }
 
-.services__card button:hover {
-  cursor: pointer;
-  background-color: #DD1810;
-  color: black;
-  cursor: pointer;
-}
-
-.services__card:hover {
-  transform: scale(99%);
-  transition: 0.2s ease-in;
-}
-
 /* Footer CSS */
 .footer__container {
   background-color: #1e9c9c;
@@ -293,6 +289,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 1200px;
 }
 
 #footer__logo {
@@ -533,6 +530,7 @@ p{
 
 .page-break {
   background-color: #1e9c9c;
+  min-width: 1200px;
 }
 
 /* tweak's for use on a smaller screen */
