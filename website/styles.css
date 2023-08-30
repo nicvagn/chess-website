@@ -156,8 +156,8 @@
 
 .main__content h2 {
   font-size: 2rem;
-  margin-top: 5px;
-  margin-left: 25%;
+  margin-top: 0;
+  margin-left: 15%;
   background-color: white;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -166,6 +166,8 @@
   -moz-text-fill-color: transparent;
   text-align: left;
   width: 100%;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .main__content p {
@@ -421,24 +423,6 @@ img {
 }
 
 
-.split-page__btn {
-  width: 100%;
-  justify-content: center;
-  align-self: flex-end;
-  background-color: #FDD401;
-  color: #000000;
-}
-
-#split-page__btn{
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-  border: 3px solid black;
-}
-
-.split-page__btn:hover {
-  background-color:#FDD401;
-}
 
 h2{
   color: gray;
@@ -454,8 +438,10 @@ p{
   background-color: white;
   padding-top: 50px;
   padding-bottom: 50px;
-
+  background-image: url(images/road.jpg);
   display: flex;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .what-we-play-for-column{
   flex: 50%;
@@ -522,6 +508,8 @@ p{
 }
 .stuff-we-offer{
   background-color: white;
+  background-image: url(images/field.jpg);
+  background-size: 100% 100%;
 }
 
 .page-break {
