@@ -10,13 +10,11 @@
   margin: 0;
   padding: 0;
   font-family: 'Kumbh Sans', sans-serif;
-  align-items: center;
 }
 
 ul {list-style-type: none;}
 body {
-  background: wheat;
-  font-family: Verdana, sans-serif;
+  background: white;
 }
 
 h1 {
@@ -96,22 +94,29 @@ h1 {
   color: white !important
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px 20px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #076A21;
-  color: #fff;
+/* make calendar responsive for mobile devices */
+.responsiveCal {
+  overflow: visible;
+  position: relative;
+  padding-bottom: 75%;
+  height: fit-content;
+  box-sizing: fit-content;
+
 }
 
-.button:hover {
-  background: #DD1810;
-  transition: all 0.3s ease;
+.responsiveCal iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 1200px;
+  min-height: 1000px;
+  width: 100%;
+  height: 70%;
+}
+
+#main-content{
+  position: relative;
+  min-height: 1000px;
+  height: 100%;
+  box-sizing: fit-content;
 }
