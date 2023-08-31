@@ -533,6 +533,13 @@ p{
   min-width: 1200px;
 }
 
+.document {
+  align-self: center;
+  display: block;
+  margin: 0 auto;
+}
+
+
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1300px) {
   .services__bubbles{
