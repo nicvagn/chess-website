@@ -186,6 +186,7 @@
   background-color: #1e9c9c;
   padding: 5rem 0;
   display: flex;
+  flex-basis: 1200;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -433,11 +434,13 @@ p{
 hr {
   border:none;
   border: 1px solid #d7d7d7;
+  width: 100%;
 }
 
 .hr {
   text-align: center;
-  size: fit-content;
+  width: 100%;
+  position: relative;
 }
 
 .hr img {
@@ -468,7 +471,7 @@ hr {
 
 
 /* tweak's for use on a smaller screen */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .services__bubbles{
     display: flex;
     align-items: baseline;
@@ -480,5 +483,11 @@ hr {
   .footer__link--wrapper {
     display: flex;
     flex-direction: column;
+  }
+  .hr{
+    text-align: center;
+    width: 100%;
+    position: relative;
+
   }
 }
