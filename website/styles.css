@@ -16,7 +16,7 @@
 
 .navbar {
   background: #1e9c9c;
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,7 +304,6 @@
 /* link styling */
 a {
   position: relative;
-  color: #fff;
   text-decoration: none;
   color: darkgray;
   text-size-adjust: .8;
@@ -320,10 +319,14 @@ img {
 }
 
 
-
-h2{
-  color: gray;
+.heading h2 {
+  font-style: italic;
+  margin-left: 5%;
+  color: #000000;
+  align-self: middle;
+  font-size: 50px;
 }
+
 
 p{
   color: black;
@@ -344,6 +347,14 @@ p{
   flex: 50%;
   min-width: 600px;
   text-align: left;
+}
+
+#what-we-play-for-heading{  font-style: italic;
+  margin-left: 5%;
+  color: #000000;
+  align-self: middle;
+  font-size: 50px;
+
 }
 
 .what-we-play-for-img{
@@ -410,15 +421,10 @@ p{
   color: #000000;
   text-align: center;
 }
-
-/*specific what we offer text*/
-#what-we-offer h2{
-  font-style: italic;
-  margin-left: 5%;
-  color: #000000;
-  align-self: middle;
-  font-size: 50px;
+.services__bubble a{
+  text-decoration: none;
 }
+
 .stuff-we-offer{
   background-color: white;
   min-width: 1200px;
@@ -431,6 +437,7 @@ hr {
 
 .hr {
   text-align: center;
+  size: fit-content;
 }
 
 .hr img {

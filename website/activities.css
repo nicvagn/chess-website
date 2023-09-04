@@ -11,7 +11,7 @@
 .activities-sub{
   flex: 50%;
   text-align: left;
-  border-left: 15px solid #1e9c9c;
+  margin: 3%;
 }
 
 .activities-main{
@@ -20,8 +20,8 @@
 }
 
 .activities-sub h1{
-  text-shadow: #FDD401 1px 1px 5px;
   margin: 5px 5px;
+  color: #FDD401;
 }
 
 .activities-sub h2 {
@@ -31,6 +31,7 @@
 .activities-sub h3{
   margin: 5px 5px;
 }
+
 #calendar-link{
   color: blue;
   text-decoration: underline;
