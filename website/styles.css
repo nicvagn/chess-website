@@ -440,7 +440,6 @@ hr {
 .hr {
   text-align: center;
   width: 100%;
-  position: relative;
 }
 
 .hr img {
@@ -448,7 +447,7 @@ hr {
   top: -33px;
   background:white;
   padding:0 5px;
-  size-adjust: 70%;
+  min-block-size: 0;
 }
 
 .document {
