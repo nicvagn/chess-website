@@ -20,11 +20,17 @@
 
   <title>SK Horizon Chess Club</title>
   <link rel="stylesheet" href="styles.css" />
-
+  <link rel="icon" href="images/horizon-logo-notext.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="images/horizon-logo-notext.png">
+
+  <!-- js-chessboard imports -->
+  <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/chessboard-1.0.0.min.js"></script>
+  <!-- end -->
+
 </head>
 
 <body>
@@ -137,22 +143,28 @@
       </div>
     </div>
 
-    <br>
-    <!-- page break -->
-    <div class='hr'>
-      <hr>
-      <img src="img/chesspieces/wikipedia/bP.png" alt=''>
-      <img src="img/chesspieces/wikipedia/bB.png" alt="">
-      <img src="img/chesspieces/wikipedia/bP.png" alt=''>
-    </div>
-
-    <!--Calender section-->
-    <div class="styled-calendar-container">
-      <iframe src="https://embed.styledcalendar.com/#Gy68UoKMB7JgoMyHMjK0" title="Styled Calendar"
-        class="styled-calendar-container" boa data-cy="calendar-embed-iframe"></iframe>
-      <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
-    </div>
+  <br>
+  <!-- page break -->
+  <div class='hr'>
+    <hr>
+    <img src="img/chesspieces/wikipedia/bP.png" alt=''>
+    <img src="img/chesspieces/wikipedia/bB.png" alt="">
+    <img src="img/chesspieces/wikipedia/bP.png" alt=''>
   </div>
+
+  <!--Calender section-->
+  <div class="styled-calendar-container">
+    <iframe src="https://embed.styledcalendar.com/#Gy68UoKMB7JgoMyHMjK0" title="Styled Calendar"
+      class="styled-calendar-container" boa data-cy="calendar-embed-iframe"></iframe>
+    <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+  </div>
+
+  <div id="pBoard"></div>
+
+  <button id="resetBoard">Reset</button>
+
+</div>
+
 
   <!-- Footer Section -->
   <div class="footer__container">

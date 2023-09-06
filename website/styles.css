@@ -350,7 +350,8 @@ p{
   text-align: left;
 }
 
-#what-we-play-for-heading{  font-style: italic;
+#what-we-play-for-heading{
+  font-style: italic;
   margin-left: 5%;
   color: #000000;
   align-self: middle;
@@ -487,6 +488,39 @@ hr {
     text-align: center;
     width: 100%;
     position: relative;
+    min-width: 1200px;
 
   }
 }
+
+/* end */
+
+/* chessboard.js */
+
+#pBoard{
+  display: block;
+  margin: 0 auto;
+  width: 800px;
+  justify-self: middle;
+}
+
+#resetBoard{
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+
+  background: #FDD401;
+  color: black;
+
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#resetBoard:hover{
+  background: #DD1810;
+  transition: all 0.3s ease;
+}
+/* end */
