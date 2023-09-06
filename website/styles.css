@@ -11,7 +11,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Kumbh Sans', san9A978Es-serif;
 }
 
 .navbar {
@@ -25,6 +24,7 @@
   top: 0;
   z-index: 999;
   min-width: 1200px;
+  font-family: 'Kumbh Sans', san9A978Es-serif;
 }
 
 .navbar__container {
@@ -41,7 +41,6 @@
 }
 
 #navbar__logo {
-  background-image: linear-gradient(to top, #FDD401 50%, #DD1810 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -90,12 +89,14 @@
   height: 100%;
 }
 
-.navbar__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
+.navbar__links:hover{
+  box-shadow: inset 5em 5em #FDD401;
+  color: #000;
+  transition-duration: 10ms;
+}
+
+.navbar__links:hover h2{
+  color: #000000;
 }
 
 .button {
@@ -118,10 +119,6 @@
   transition: all 0.3s ease;
 }
 
-.navbar__links:hover {
-  color: #FDD401;
-  transition: all 0.3s ease;
-}
 
 /* Main Content CSS */
 .main {
@@ -155,7 +152,7 @@
 .main__content h2 {
   font-size: 2rem;
   margin-top: 0;
-  margin-left: 15%;
+  margin-left: 18%;
   background-color: white;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -166,6 +163,9 @@
   width: 100%;
   display: inline-block;
   white-space: nowrap;
+  font-style: italic;
+  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -194,20 +194,10 @@
 }
 
 #footer__logo {
-  font-family: 'Kumbh Sans', sans-serif;
-  font: small-caps;
-  background-color: #076A21;
-  background-image: linear-gradient(to top, #FDD401 30%, #076A21 100%);
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
   display: flex;
   align-items: center;
   cursor: pointer;
-  text-decoration: none;
   font-size: 2rem;
 }
 
@@ -235,6 +225,7 @@
 
 .footer__link--items h2 {
   margin-bottom: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .footer__link--items > h2 {
@@ -255,6 +246,7 @@
   -ms-transition: 0.3s ease-out;
   -o-transition: 0.3s ease-out;
 }
+/* footer css end*/
 
 /* Social styling start */
 .social__icon--link {
@@ -298,11 +290,6 @@
 }
 /*end social styling */
 
-.website__rights {
-  color: #fff;
-  font-size: .5rem;
-}
-
 /* link styling */
 a {
   position: relative;
@@ -323,8 +310,10 @@ img {
 
 .heading h2 {
   font-style: italic;
-  margin-left: 5%;
-  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  color: #242424;
+
   align-self: middle;
   font-size: 50px;
 }
@@ -338,8 +327,7 @@ p{
 .what-we-play-for{
   text-align: center;
   background-color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
   min-width: 1200px;
@@ -406,6 +394,7 @@ p{
   background-color: white;
   min-width: 1200px;
   color: #242424;
+  font-family: 'Kumbh Sans', san9A978Es-serif;
 }
 
 /*start of hr */
