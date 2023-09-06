@@ -368,7 +368,7 @@ p{
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  height: 400px;
+  height: 300px;
   align-self: center;
   align-items: center;
   color: #000000;
@@ -395,6 +395,11 @@ p{
   min-width: 1200px;
   color: #242424;
   font-family: 'Kumbh Sans', san9A978Es-serif;
+}
+
+#calenderAndPuzzle{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /*start of hr */
@@ -464,7 +469,7 @@ p{
 #pBoard{
   display: block;
   margin: 0 auto;
-  width: 800px;
+  width: 600px;
   justify-self: middle;
 }
 
