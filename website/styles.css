@@ -124,7 +124,7 @@
 .main {
   background-color: #1e9c9c;
   width: 100%;
-  min-width: 1200;
+  min-width: 1200px;
   min-height: max-content;
   object-fit: contain;
 }
@@ -236,6 +236,7 @@
   color: white;
   text-decoration: none;
   margin-bottom: 0.5rem;
+  font-family: 'Kumbh Sans', san9A978Es-serif;
 }
 
 .footer__link--items a:hover {
@@ -368,11 +369,11 @@ p{
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+
   height: 300px;
   align-self: center;
   align-items: center;
   color: #000000;
-
 }
 
 .services__bubble img:hover {
@@ -384,12 +385,13 @@ p{
 .services__bubble h2{
   color: #242424;
   text-align: center;
+  margin-top: 9px;
 }
 .services__bubble a{
   text-decoration: none;
 }
-/*end service bubble styling */
 
+/*end service bubble styling */
 .stuff-we-offer{
   background-color: white;
   min-width: 1200px;
@@ -428,10 +430,8 @@ p{
 }
 
 .styled-calendar-container{
-  margin-left: 10%;
-  margin-right: 10%;
   border: none;
-  width: 80%;
+  width: 100%;
   align-items: center;
   align-self: center;
   block-size: fit-content;
@@ -463,7 +463,7 @@ p{
   }
 }
 
-/* end */
+/* end of tweaks */
 
 /* chessboard.js */
 #pBoard{
@@ -492,4 +492,4 @@ p{
   background: #DD1810;
   transition: all 0.3s ease;
 }
-/* end */
+/* end of chessboard.js*/
