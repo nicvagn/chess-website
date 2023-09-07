@@ -156,14 +156,19 @@
     <div id="calenderAndPuzzle">
       <!--Calender section-->
       <div class="styled-calendar-container">
+        <h2>COMMUNITY CALENDAR</h2>
         <iframe src="https://embed.styledcalendar.com/#Gy68UoKMB7JgoMyHMjK0" title="Styled Calendar"
           class="styled-calendar-container" boa data-cy="calendar-embed-iframe"></iframe>
         <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
       </div>
 
       <div>
+        <h2>WEEKLY PUZZLE</h2>
         <div id="pBoard"></div>
-        <button id="resetBoard">Reset</button>
+        <div class="puzzleButtons">
+          <button onclick="resetPuzzle();">Reset</button>
+          <button onclick="checkPuzzle();">Check</button>
+        </div>
       </div>
    </div>
 
