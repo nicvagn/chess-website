@@ -425,6 +425,7 @@ p{
   margin-right: 10%;
   background-color: transparent;
   border-top:3px dotted #000;
+  border-bottom: none;
 }
 /*end of hr*/
 

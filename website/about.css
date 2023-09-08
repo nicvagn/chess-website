@@ -8,19 +8,24 @@
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
+*{
+  font-family: 'Kumbh Sans', san9A978Es-serif;
+}
 
-h1 {
-  color: #FDD401;
+
+.title {
+  margin: 20px 20px 0px;
+  font-family: 'Kumbh Sans', san9A978Es-serif;
+  font-weight: bold;
+  font-style: italic;
   text-align: center;
-  margin: 20px 20px 0px;
+  font-size: 300%;
 }
 
-h2 {
+.sub-title{
   margin: 20px 20px 0px;
-}
-
-#main_text{
-  margin: 20px 20px 0px;
+  font-family: 'Kumbh Sans', san9A978Es-serif;
+  font-style: italic;
 }
 
 .facilitator {
@@ -31,11 +36,32 @@ h2 {
   min-width: 400px;
 }
 
+h2 {
+  margin: 20px 20px 0px;
+}
+
+h3 {
+  margin: 20px 20px 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  size-adjust: 120%;
+}
+
 p {
   margin: 0px 20px 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li{
+  margin: 5px 30px 0px 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .facilitator-img {
   width: 300px;
   height: auto;
+}
+
+.mission{
+  display: block
 }
