@@ -37,3 +37,5 @@ function checkPuzzle(){
     window.alert("Try again");
   }
 }
+
+//get random puzzle

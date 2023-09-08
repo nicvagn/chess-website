@@ -332,7 +332,6 @@ p{
   background-color: white;
   padding: 50px;
   display: flex;
-  flex-wrap: wrap;
   min-width: 1200px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
