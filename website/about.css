@@ -9,13 +9,13 @@
 */
 
 *{
-  font-family: 'Kumbh Sans', san9A978Es-serif;
+  font-family: 'Bebas Neue', san9A978Es-serif;
 }
 
 
 .title {
   margin: 20px 20px 0px;
-  font-family: 'Kumbh Sans', san9A978Es-serif;
+  font-family: 'Bebas Neue', san9A978Es-serif;
   font-weight: bold;
   font-style: italic;
   text-align: center;
@@ -25,7 +25,7 @@
 
 .sub-title{
   margin: 20px 20px 0px;
-  font-family: 'Kumbh Sans', san9A978Es-serif;
+  font-family: 'Bebas Neue', san9A978Es-serif;
   font-style: italic;
   color: #242424;
 }
@@ -74,17 +74,4 @@ li{
   height: 200px;
   align-self: center;
   margin: 0 5px 0 30px;
-}
-
-#footer {
-  height: 150px;
-  background-color: #1e9c9c;
-  color: #1e9c9c ;
-  min-width: 1200px;
-}
-
-#shcc-logo {
-  height: 100px;
-  margin-left: 150px;
-  margin-top: 30px;
 }

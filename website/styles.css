@@ -25,7 +25,7 @@
   top: 0;
   z-index: 999;
   min-width: 1200px;
-  font-family: 'Kumbh Sans', san9A978Es-serif;
+  font-family: 'Bebas Neue', san9A978Es-serif;
 }
 
 .navbar__container {
@@ -238,7 +238,7 @@
   color: white;
   text-decoration: none;
   margin-bottom: 0.5rem;
-  font-family: 'Kumbh Sans', san9A978Es-serif;
+  font-family: 'Bebas Neue', san9A978Es-serif;
 }
 
 .footer__link--items a:hover {
@@ -398,7 +398,7 @@ p{
   background-color: white;
   min-width: 1200px;
   color: #242424;
-  font-family: 'Kumbh Sans', san9A978Es-serif;
+  font-family: 'Bebas Neue', san9A978Es-serif;
 }
 
 
