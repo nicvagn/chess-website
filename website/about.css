@@ -20,12 +20,14 @@
   font-style: italic;
   text-align: center;
   font-size: 300%;
+  color: #242424;
 }
 
 .sub-title{
   margin: 20px 20px 0px;
   font-family: 'Kumbh Sans', san9A978Es-serif;
   font-style: italic;
+  color: #242424;
 }
 
 .facilitator {
@@ -43,8 +45,10 @@ h2 {
 h3 {
   margin: 20px 20px 0px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 400;
+  font-weight: bold;
   size-adjust: 120%;
+  color: #242424;
+
 }
 
 p {
@@ -62,6 +66,25 @@ li{
   height: auto;
 }
 
-.mission{
-  display: block
+.mission {
+  display: flex;
+}
+
+#sideImg {
+  height: 200px;
+  align-self: center;
+  margin: 0 5px 0 30px;
+}
+
+#footer {
+  height: 150px;
+  background-color: #1e9c9c;
+  color: #1e9c9c ;
+  min-width: 1200px;
+}
+
+#shcc-logo {
+  height: 100px;
+  margin-left: 150px;
+  margin-top: 30px;
 }
