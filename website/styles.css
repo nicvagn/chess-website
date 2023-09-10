@@ -297,6 +297,10 @@
 /* link styling */
 a {
   position: relative;
+}
+
+#self-promo a{
+  position: relative;
   text-decoration: none;
   color: darkgray;
   text-size-adjust: .8;
@@ -348,6 +352,10 @@ p{
 }
 
 /* service bubble styling start*/
+
+.service-bubble-container{
+  margin: 0 40px 0 40px;
+}
 .services__bubble{
   display: flex;
   align-items: center;
@@ -377,7 +385,7 @@ p{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 
-  height: 300px;
+  height: 250px;
   align-self: center;
   align-items: center;
   color: #000000;
@@ -504,6 +512,7 @@ p{
   display: flex;
   justify-content: center;
 }
+
 .puzzleButtons button {
   display: inline-flex;
 
