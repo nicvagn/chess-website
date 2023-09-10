@@ -16,7 +16,7 @@
 /* start navbar styling */
 .navbar {
   background: #1e9c9c;
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,12 +149,14 @@
   background-repeat: no-repeat;
   min-height: fit-content;
   object-fit: contain;
+  height: 800px;
 }
 
-.main__content h2 {
-  font-size: 2rem;
+.main__title h2 {
+  font-size: 3rem;
   margin-top: 0;
-  margin-left: 18%;
+  margin-left: 3%;
+  margin-bottom: 30px;
   background-color: white;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -163,17 +165,16 @@
   -moz-text-fill-color: transparent;
   text-align: left;
   width: 100%;
-  display: inline-block;
+  display: block;
   white-space: nowrap;
   font-style: italic;
-  font-weight: 500;
+  font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 #main__img {
-  height: 80%;
-  width: 80%;
+  height: 600px;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -334,6 +335,8 @@ p{
   display: flex;
   min-width: 1200px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .what-we-play-for h2 {
@@ -353,9 +356,11 @@ p{
 }
 .services__bubbles{
   display: flex;
-  align-items: flex-start;
+  align-items: flex;
   align-self: center;
   height: 500px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .services__bubble img{
@@ -418,11 +423,16 @@ p{
   background:white;
   padding:0 5px;
   min-block-size: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 
 .hr hr {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   background-color: transparent;
   border-top:3px dotted #000;
   border-bottom: none;
@@ -437,11 +447,10 @@ p{
 
 .styled-calendar-container{
   border: none;
-  width: 100%;
-  align-items: center;
-  align-self: center;
   block-size: fit-content;
+  width: 80%;
   min-height: 675px;
+  margin-left: 15%;
 }
 
 
