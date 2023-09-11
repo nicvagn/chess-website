@@ -14,7 +14,10 @@
 
 
 .title {
-  margin: 20px 20px 0px;
+  display: block;
+  margin: 0 auto 100px auto;
+  height: 50px;
+  width: 700px;
   font-family: 'Bebas Neue', san9A978Es-serif;
   font-weight: bold;
   font-style: italic;
@@ -24,10 +27,11 @@
 }
 
 .sub-title{
-  margin: 20px 20px 0px;
+  margin: 0 20px 20px 15%;
   font-family: 'Bebas Neue', san9A978Es-serif;
   font-style: italic;
   color: #242424;
+  display: block;
 }
 
 .facilitator {
@@ -38,8 +42,18 @@
   min-width: 400px;
 }
 
+.facilitator-img {
+  width: 300px;
+  height: auto;
+}
+
+.facilitator-row{
+  margin-left: 10%;
+}
+
 h2 {
-  margin: 20px 20px 0px;
+  /* top | right | bottom | left */
+  margin:30px 20px 20px 0px;
 }
 
 h3 {
@@ -56,22 +70,25 @@ p {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.description{
+  margin: 0 15% 40px 15%;
+}
+
+#txt-section{
+  margin: 0 40px 0 40px;
+}
 #txt-section li{
   margin: 5px 30px 0px 0px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.facilitator-img {
-  width: 300px;
-  height: auto;
-}
-
 .mission {
   display: flex;
+  margin: 0 15% 0 15%;
 }
 
 #sideImg {
   height: 200px;
   align-self: center;
-  margin: 0 5px 0 30px;
+  margin: 0 5px 0 60px;
 }

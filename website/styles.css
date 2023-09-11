@@ -339,8 +339,8 @@ p{
   display: flex;
   min-width: 1200px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .what-we-play-for h2 {
@@ -349,6 +349,7 @@ p{
   align-self: middle;
   font-size: 30px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 10px 0px 5px 0px;
 }
 
 /* service bubble styling start*/
@@ -413,6 +414,7 @@ p{
   min-width: 1200px;
   color: #242424;
   font-family: 'Bebas Neue', san9A978Es-serif;
+  margin-top: 90px;
 }
 
 /*start of hr */
