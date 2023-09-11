@@ -473,24 +473,22 @@ p{
 
 /* chessboard.js */
 .puzzle-container{
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 #pBoard{
-  display: block;
   width: 400px;
   height: 400px;
-  justify-self: center;
-  margin-left: 15%;
+  align-self: center;
 }
 
 .puzzleButtons{
-  align-self: middle;
+  align-self: center;
 }
 
 .puzzleButtons button {
   padding: 10px 20px;
-  margin: 2px;
 
   background: #FDD401;
   color: black;
