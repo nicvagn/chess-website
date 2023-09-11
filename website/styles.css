@@ -305,6 +305,7 @@ a {
   text-decoration: none;
   color: darkgray;
   text-size-adjust: .8;
+  font-family: monospace;
 }
 
 img {
