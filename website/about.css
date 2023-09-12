@@ -42,6 +42,10 @@
   min-width: 400px;
 }
 
+.facilitator p {
+  margin: 0;
+}
+
 .facilitator-img {
   width: 300px;
   height: auto;
@@ -91,4 +95,8 @@ p {
   height: 200px;
   align-self: center;
   margin: 0 5px 0 60px;
+}
+
+#footer_spacer{
+  margin-top: 60px;
 }
