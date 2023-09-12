@@ -8,36 +8,98 @@
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
-* {
-  box-sizing: border-box;
+*{
   margin: 0;
-  padding: 0;
-  font-family: 'Bebas Neue', sans-serif;
 }
 
 
-body {
-  height:100%;
-
+.title {
+  display: block;
+  margin: 100px auto 100px auto;
+  height: 50px;
+  width: 700px;
+  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 300%;
+  color: #242424;
 }
 
-h1 {
-	color: darkorange;
-	text-align: center;
+.sub-title{
+  margin: 0 20px 20px 15%;
+  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-style: italic;
+  color: #242424;
+  display: block;
+}
+
+.facilitator {
+  margin: 20px 20px 20px;
+  display: inline-block;
+  position: relative;
+  align-self: start;
+  width: 380px;
+  height: 800;
+}
+
+.facilitator p {
+  margin-left: 10;
+}
+.facilitator h2 {
+  margin-left: 7;
+}
+.facilitator-img {
+  width: 300px;
+  height: 400px;
+}
+
+.facilitator-row{
+  margin-left: 10%;
 }
 
 h2 {
-	color: #FDD401;
-	text-align: center;
+  /* top | right | bottom | left */
+  margin:30px 20px 20px 0px;
 }
 
 h3 {
-	color: black;
-	text-align: center;
+  margin: 20px 20px 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  size-adjust: 120%;
+  color: #242424;
+
 }
 
-body{
-	text-align: center;
-  align-items: middle;
-  background-color: white;
+p {
+  margin: 0px 20px 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.description{
+  margin: 0 15% 40px 15%;
+}
+
+#txt-section{
+  margin: 0 40px 0 40px;
+}
+#txt-section li{
+  margin: 5px 30px 0px 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mission {
+  display: flex;
+  margin: 0 15% 0 15%;
+}
+
+#sideImg {
+  height: 200px;
+  align-self: center;
+  margin: 0 5px 0 60px;
+}
+
+#footer_spacer{
+  margin-top: 100px;
 }

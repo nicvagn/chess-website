@@ -39,7 +39,8 @@
   display: inline-block;
   position: relative;
   align-self: start;
-  min-width: 400px;
+  width: 380px;
+  height: 800;
 }
 
 .facilitator p {
@@ -50,7 +51,7 @@
 }
 .facilitator-img {
   width: 300px;
-  height: auto;
+  height: 400px;
 }
 
 .facilitator-row{
