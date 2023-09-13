@@ -7,34 +7,53 @@
 
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
-*{
-  font-family: 'Bebas Neue', san9A978Es-serif;
-}
+
+
 .split-page {
   margin-top: 50px;
   display: flex;
   text-align: left;
+  font-family: 'Bebas Neue', san9A978Es-serif;
 }
 
 .split-page-column {
   flex: 50%;
-  display: block;
 }
 
-.icon-txt{
+.icon-txt {
   display: inline;
 }
 
-#contact-form{
+#contact-form {
   color: #242424;
 }
 
 
-form{
+form {
   margin-left: 25%;
   margin-bottom: 50px;
+  font-family: 'Bebas Neue', san9A978Es-serif;
+
 }
 
-img{
+form button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 4px;
+  background: #FDD401;
+  color: black;
+  margin: 0 0 0 10px;
+}
+form button:hover{
+  background: #DD1810;
+  transition: all 0.3s ease;
+}
+
+img {
+  margin: 0;
   display: inline;
 }
