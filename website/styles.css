@@ -516,6 +516,29 @@ p{
   -o-transition: all 0.3s ease;
 }
 
+.title {
+  display: block;
+  margin: 100px auto 100px auto;
+  height: 50px;
+  width: 700px;
+  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 300%;
+  color: #242424;
+}
+
+.sub-title{
+  margin: 0 20px 20px 15%;
+  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-style: italic;
+  color: #242424;
+  display: block;
+  font-size: xx-large;
+}
+
+
 /* end of chessboard.js*/
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1200px) {
