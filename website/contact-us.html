@@ -20,11 +20,12 @@
 
   <title>SHCC: Contact Us</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contact-us.css" />
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
-    <link rel="icon" href="images/horizon-logo-notext.png">
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+  <link rel="icon" href="images/horizon-logo-notext.png">
 </head>
 
 <body>
@@ -55,76 +56,100 @@
     </div>
   </nav>
 
-  <br>
+  <div class="split-page">
+    <div class="split-page-column">
+      <form action="contact-form-handler.php" id="contact-form" method="POST" name="EmailForm">
+        <h2>CONTACT US</h2>
+        <br>
+        <h3>NAME:</h3>
+        <input type="text" size="19" name="Contact-Name"><br><br>
+        <h3>EMAIL:</h3>
+        <input type="email" name="Contact-Email"><br><br>
+        <h3>MESSAGE:</h3>
+        <textarea name="Contact-Message" rows="6″ cols=" 20″></textarea><br><br>
+        <button type="submit" value="Submit">SUBMIT</button>
+      </form>
+    </div>
 
-  <!--First text section-->
-  <div>
-    <h1>e-mail: <a href="mailto:skhorizonchessclub@gmail.com">Send E-mail</a></h1>
+    <div class="split-page-column">
+      <div class="icon-txt">
+        <a href="facebook.com">
+          <img src="images/email-img.png">
+          <h3 class="heading">FACEBOOK.COM/SASKHORIZONCHESSCLUB</h3>
+        <br>
+        </a>
+      </div>
+      <br>
+      <div class="icon-txt">
+        <a href="discord link">
+        <img src="images/discord-img.png">
+        <h3 class="heading">https://discord.com/link</h3>
+        <br>
+        </a>
+      </div>
+      <br>
+      <div class="icon-txt">
+        <a href="mailto:skhorizonchessclub@gmail.com">
+        <img src="images/email-img.png">
+        <h3 class="heading">skhorizonchessclub@gmail.com</h3>
+        <br></a>
+      </div>
+    </div>
   </div>
 
-
-  <!-- page break -->
-  <div class='hr'>
-    <hr>
-    <img src="images/threechesspawn.png" alt=''>
-  </div>
-
-  <div>
-    <h1>Discord:</h1> <!-- need to create -->
-  </div>
-
-    <!-- Footer Section -->
-    <div class="footer__container">
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>About Us</h2>
-            <a href="about.html">About the Club</a>
-            <a href="mission-statement.html">Our Mission</a>
-            <a href="calendar.html">Calendar</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Contact Us</h2>
-            <a href="mailto:skhorizonchessclub@gmail.com">Via e-mail</a>
-            <a href="">Our Discord Server</a>
-          </div>
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>About Us</h2>
+          <a href="about.html">About the Club</a>
+          <a href="mission-statement.html">Our Mission</a>
+          <a href="calendar.html">Calendar</a>
         </div>
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>Videos</h2>
-            <a href="https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw">Youtube channel</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Social Media</h2>
-            <a href="/">Facebook</a>
-          </div>
+        <div class="footer__link--items">
+          <h2>Contact Us</h2>
+          <a href="mailto:skhorizonchessclub@gmail.com">Via e-mail</a>
+          <a href="">Our Discord Server</a>
         </div>
       </div>
-      <section class="social__media">
-        <div class="social__media--wrap">
-          <div class="footer__logo">
-            <a href="about.html" id="navbar__logo"><img src="images/horizon-logo-notext.png"></i></a>
-            <div id="self-promo">
-              <a href="mailto:nicolasvaagen@gmail.com"><small>Website made by: Nicolas Vaagen</small></a>
-            </div>
-          </div>
-          <div class="social__icons">
-            <a class="social__icon--link" href="https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw"
-              target="_blank" aria-label="Youtube">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a class="social__icon--link" aria-label="Discord" target="_blank" href="https://www.discord.com">
-              <i class="fab fa-discord"></i>
-            </a>
-
-            <a class="social__icon--link" aria-label="Facebook" target="_blank" href="https://www.facebook.com">
-              <i class="fab fa-facebook"></i>
-            </a>
-
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Videos</h2>
+          <a href="https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw">Youtube channel</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>Social Media</h2>
+          <a href="/">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="index.html" id="navbar__logo"><img src="images/horizon-logo-notext.png"></i></a>
+          <div id="self-promo">
+            <a href="mailto:nicolasvaagen@gmail.com"><small>Website made by: Nicolas Vaagen</small></a>
           </div>
         </div>
-      </section>
-    </div>
-    <script src="app.js"></script>
+        <div class="social__icons">
+          <a class="social__icon--link" href="https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw" target="_blank"
+            aria-label="Youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a class="social__icon--link" aria-label="Discord" target="_blank" href="https://www.discord.com">
+            <i class="fab fa-discord"></i>
+          </a>
+
+          <a class="social__icon--link" aria-label="Facebook" target="_blank" href="https://www.facebook.com">
+            <i class="fab fa-facebook"></i>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="app.js"></script>
 </body>
+
 </html>
