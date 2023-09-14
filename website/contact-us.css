@@ -11,6 +11,7 @@
 
 .split-page {
   margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   text-align: left;
   font-family: 'Bebas Neue', san9A978Es-serif;
@@ -27,13 +28,14 @@
 #contact-form {
   color: #242424;
 }
+.discord-link{
+  font: 1em sans-serif;
+}
 
 
 form {
   margin-left: 25%;
-  margin-bottom: 50px;
   font-family: 'Bebas Neue', san9A978Es-serif;
-
 }
 
 form button {
@@ -46,7 +48,7 @@ form button {
   border-radius: 4px;
   background: #FDD401;
   color: black;
-  margin: 0 0 0 10px;
+  margin: 5px 0 0 2px;
 }
 form button:hover{
   background: #DD1810;
@@ -56,4 +58,7 @@ form button:hover{
 img {
   margin: 0;
   display: inline;
+}
+h1{
+  margin-left: 25%;
 }
