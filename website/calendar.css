@@ -34,15 +34,6 @@
   margin: 0 20px 0 20px;
 }
 
-h1 {
-  font-family: 'Bebas Neue', san9A978Es-serif;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 300%;
-  color: #242424;
-  text-align: center;
-  position: relative;
-}
 
 #main_calendar{
   border: none;

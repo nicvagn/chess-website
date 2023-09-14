@@ -331,6 +331,16 @@ img {
 p{
   color: black;
 }
+h1 {
+  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 300%;
+  color: #242424;
+  text-align: center;
+  position: relative;
+}
+
 
 /* What we play for section */
 .what-we-play-for{
