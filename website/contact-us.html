@@ -58,16 +58,28 @@
 
   <div class="split-page">
     <div class="split-page-column">
-      <form action="contact-form-handler.php" id="contact-form" method="POST" name="EmailForm">
-        <h2>CONTACT US</h2>
-        <br>
-        <h3>NAME:</h3>
-        <input type="text" size="19" name="Contact-Name"><br><br>
-        <h3>EMAIL:</h3>
-        <input type="email" name="Contact-Email"><br><br>
-        <h3>MESSAGE:</h3>
-        <textarea name="Contact-Message" rows="6″ cols=" 20″></textarea><br><br>
-        <input type='submit' name='Submit' value='Submit' />      </form>
+      <h1>Contact Us</h1>
+      <form id="contact_form" name="contact_form" method="post">
+          <div class="mb-3">
+              <label for="name_input">Name</label>
+              <input type="text" required maxlength="50" class="form-control" id="name_input" name="name" placeholder="Name">
+          </div>
+          <div class="mb-3 row">
+              <div class="col">
+                  <label for="email_addr">Email:</label>
+                  <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                      placeholder="name@example.com">
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+          </div>
+          <div class="my-4">
+              <div class="g-recaptcha" data-sitekey="6LchOyEUAAAAAPo9l0WmIgFkGu5D6Gyq-MjsIHS1"></div>
+          </div>
+          <button type="submit" class="btn btn-primary px-4">Send</button>
+      </form>
     </div>
 
     <div class="split-page-column">
@@ -79,10 +91,8 @@
       </div>
       <br>
       <div class="icon-txt">
-        <a href="discord link">
         <img src="images/discord-img.png">
-        <h3 class="heading">https://discord.com/link</h3>
-        </a>
+        <h3 class="heading">add skhorizonchess</h3>
       </div>
       <br>
       <div class="icon-txt">
@@ -147,6 +157,7 @@
     </section>
   </div>
   <script src="app.js"></script>
+  <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=icybcb1e&n=n1.ratufa.io"></script>
 </body>
 
 </html>
