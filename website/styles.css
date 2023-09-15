@@ -157,6 +157,7 @@
   font-size: 3rem;
   margin-top: 0;
   margin-left: 3%;
+  margin-right: 0;
   margin-bottom: 30px;
   background-color: white;
   -webkit-background-clip: text;
@@ -598,6 +599,12 @@ h1 {
     transition-duration: 1s;
     filter: none;
     -webkit-filter: grayscale(0%);
+  }
+  .main__title h2 {
+    font-size: 2.5rem;
+  }
+  .what-we-play-for{
+    margin: 3px;
   }
 }
 /* end of tweaks */
