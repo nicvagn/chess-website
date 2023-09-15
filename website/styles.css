@@ -352,8 +352,8 @@ h1 {
   display: flex;
   min-width: 1200px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .what-we-play-for h2 {
@@ -475,6 +475,7 @@ h1 {
   width: 80%;
   min-height: 475px;
   margin-left: 12%;
+  margin-right: 12%;
 }
 
 /* start calender and puzzle styling */
@@ -604,7 +605,11 @@ h1 {
     font-size: 2.5rem;
   }
   .what-we-play-for{
-    margin: 3px;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 /* end of tweaks */
