@@ -8,28 +8,17 @@
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
-*{
-  margin: 0;
-}
-
-
 
 .facilitator {
-  margin: 0;
-  display: inline-block;
+  display: block;
   position: relative;
   align-self: middle;
   width: 380px;
-  height: 800;
+  height: 400px;
   text-align: center;
+  margin-left: 5%;
 }
 
-.facilitator p {
-  margin-left: 10;
-}
-.facilitator h2 {
-  margin-left: 7;
-}
 .facilitator-img {
   width: 300px;
   height: 400px;
@@ -37,6 +26,10 @@
 
 .facilitator-row{
   margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: inline-flex;
 }
 
 h3 {
@@ -45,11 +38,10 @@ h3 {
   font-weight: bold;
   size-adjust: 120%;
   color: #242424;
-
 }
 
 p {
-  margin: 0px 20px 0px;
+  margin: 0px 20px 40px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -61,6 +53,7 @@ p {
 #txt-section{
   margin: 0 40px 0 40px;
 }
+
 #txt-section li{
   margin: 5px 30px 0px 0px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -81,27 +74,32 @@ p {
   margin-top: 100px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .facilitator-img {
     width: 150px;
     height: 200px;
     align-self: center;
+    margin: 0;
+  }
+  h2{
+    margin: 0;
   }
   .facilitator-row{
     align-items: center;
     flex-basis: 1200px;
     align-self: center;
     text-align: center;
+    margin-bottom: 30px;
   }
   .description{
     margin: 0 200px 40px 200px;
   }
   .facilitator {
-    display: inline-block;
+    display: block;
     position: relative;
     align-self: center;
     width: 300px;
-    height: 400px;
+    height: 200px;
     align-items: center;
     text-align: center;
   }
