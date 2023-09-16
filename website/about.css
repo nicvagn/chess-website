@@ -15,12 +15,13 @@
 
 
 .facilitator {
-  margin: 20px 20px 20px;
+  margin: 0;
   display: inline-block;
   position: relative;
-  align-self: start;
+  align-self: middle;
   width: 380px;
   height: 800;
+  text-align: center;
 }
 
 .facilitator p {
@@ -56,6 +57,7 @@ p {
   margin: 0 15% 40px 15%;
 }
 
+
 #txt-section{
   margin: 0 40px 0 40px;
 }
@@ -72,9 +74,35 @@ p {
 #sideImg {
   height: 200px;
   align-self: center;
-  margin: 0 5px 0 60px;
+  margin: 0;
 }
 
 #footer_spacer{
   margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+  .facilitator-img {
+    width: 150px;
+    height: 200px;
+    align-self: center;
+  }
+  .facilitator-row{
+    align-items: center;
+    flex-basis: 1200px;
+    align-self: center;
+    text-align: center;
+  }
+  .description{
+    margin: 0 200px 40px 200px;
+  }
+  .facilitator {
+    display: inline-block;
+    position: relative;
+    align-self: center;
+    width: 300px;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+  }
 }
