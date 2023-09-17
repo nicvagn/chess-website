@@ -349,20 +349,21 @@ h1 {
   text-align: center;
   background-color: white;
   padding: 50px;
-  display: flex;
+  display: block;
   min-width: 1200px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .what-we-play-for h2 {
   font-style: italic;
   color: #242424;
   align-self: middle;
-  font-size: 30px;
+  font-size: 50px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin: 10px 0px 5px 0px;
+}
+
+.what-we-play-for img {
+  display: flex;
 }
 
 /* service bubble styling start*/
