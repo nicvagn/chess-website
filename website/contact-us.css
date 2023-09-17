@@ -19,19 +19,66 @@
 
 .split-page-column {
   flex: 50%;
+  display: block;
 }
 
 .icon-txt {
   display: inline;
 }
 
-#contact-form {
-  color: #242424;
-}
 .discord-link{
   font: 1em sans-serif;
 }
+img {
+  margin: 0;
+  display: inline;
+}
+h1{
+  margin-left: 0px;
+}
 
+#icons{
+  align-items: block;
+}
+
+/* start of forum styling */
+#contact-form {
+  color: #242424;
+}
+
+#contact_form{
+  padding: 10px;
+  border: none;
+  margin-right: 120px;
+}
+#name_input{
+  padding: 5px;
+  margin: 2px;
+}
+#email_addr{
+  padding: 5px;
+  margin: 2px; 
+}
+
+#message{
+  align-self: center;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+#message-title{
+  display: block;
+  text-align: center;
+}
+
+#send{
+  width: 100%;
+}
 
 form {
   margin-left: 25%;
@@ -48,17 +95,10 @@ form button {
   border-radius: 4px;
   background: #FDD401;
   color: black;
-  margin: 5px 0 0 2px;
+  margin-top: 3px;
 }
 form button:hover{
   background: #DD1810;
   transition: all 0.3s ease;
 }
-
-img {
-  margin: 0;
-  display: inline;
-}
-h1{
-  margin-left: 25%;
-}
+/* end form */
