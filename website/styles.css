@@ -472,8 +472,7 @@ h1 {
   block-size: fit-content;
   width: 400px;
   min-height: 475px;
-  margin-left: 12%;
-  margin-right: 12%;
+  justify-self: center;
 }
 
 /* start calender and puzzle styling */
