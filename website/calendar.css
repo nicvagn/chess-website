@@ -6,41 +6,40 @@
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
 */
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .body {
-  color: #FFFF;
+	color: #FFFF;
 }
 
-.main-cal{
-  position: relative;
-  height: 900px;
-  width: 1200px;
-  flex-basis: 1200px;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+.main-cal {
+	position: relative;
+	height: 900px;
+	width: 1200px;
+	flex-basis: 1200px;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
 }
 
-.main-cal iframe{
-  flex-shrink: 0;
-  border: none;
-  width: 1200px;
-  height: 100%;
-  min-width: 1200;
-  margin: 0 20px 0 20px;
+.main-cal iframe {
+	flex-shrink: 0;
+	border: none;
+	width: 1200px;
+	height: 100%;
+	min-width: 1200;
+	margin: 0 20px 0 20px;
 }
 
-
-#main_calendar{
-  border: none;
-  align-self: center;
+#main_calendar {
+	border: none;
+	align-self: center;
 }
 
-#title{
-  position: relative;
-  min-width: 1200px;
+#title {
+	position: relative;
+	min-width: 1200px;
 }

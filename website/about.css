@@ -10,97 +10,100 @@
 
 
 .facilitator {
-  display: block;
-  position: relative;
-  align-self: middle;
-  width: 380px;
-  height: 400px;
-  text-align: center;
-  margin-left: 5%;
+	display: block;
+	position: relative;
+	align-self: middle;
+	width: 380px;
+	height: 400px;
+	text-align: center;
+	margin-left: 5%;
 }
 
 .facilitator-img {
-  width: 300px;
-  height: 400px;
+	width: 300px;
+	height: 400px;
 }
 
-.facilitator-row{
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  display: inline-flex;
+.facilitator-row {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	display: inline-flex;
 }
 
 h3 {
-  margin: 20px 20px 0px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  size-adjust: 120%;
-  color: #242424;
+	margin: 20px 20px 0px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bold;
+	size-adjust: 120%;
+	color: #242424;
 }
 
 p {
-  margin: 0px 20px 40px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+	margin: 0px 20px 40px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.description{
-  margin: 0 15% 40px 15%;
+.description {
+	margin: 0 15% 40px 15%;
 }
 
-
-#txt-section{
-  margin: 0 40px 0 40px;
+#txt-section {
+	margin: 0 40px 0 40px;
 }
 
-#txt-section li{
-  margin: 5px 30px 0px 0px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+#txt-section li {
+	margin: 5px 30px 0px 0px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .mission {
-  display: flex;
-  margin: 0 15% 0 15%;
+	display: flex;
+	margin: 0 15% 0 15%;
 }
 
 #sideImg {
-  height: 200px;
-  align-self: center;
-  margin: 0;
+	height: 200px;
+	align-self: center;
+	margin: 0;
 }
 
-#footer_spacer{
-  margin-top: 100px;
+#footer_spacer {
+	margin-top: 100px;
 }
 
 @media (max-width: 1300px) {
-  .facilitator-img {
-    width: 150px;
-    height: 200px;
-    align-self: center;
-    margin: 0;
-  }
-  h2{
-    margin: 0;
-  }
-  .facilitator-row{
-    align-items: center;
-    flex-basis: 1200px;
-    align-self: center;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .description{
-    margin: 0 200px 40px 200px;
-  }
-  .facilitator {
-    display: block;
-    position: relative;
-    align-self: center;
-    width: 300px;
-    height: 200px;
-    align-items: center;
-    text-align: center;
-  }
+	.facilitator-img {
+		width: 150px;
+		height: 200px;
+		align-self: center;
+		margin: 0;
+	}
+
+	h2 {
+		margin: 0;
+	}
+
+	.facilitator-row {
+		align-items: center;
+		flex-basis: 1200px;
+		align-self: center;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.description {
+		margin: 0 200px 40px 200px;
+	}
+
+	.facilitator {
+		display: block;
+		position: relative;
+		align-self: center;
+		width: 300px;
+		height: 200px;
+		align-items: center;
+		text-align: center;
+	}
 }

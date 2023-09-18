@@ -10,97 +10,101 @@
 
 
 .split-page {
-  flex-basis: 1200;
-  flex-shrink: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  text-align: left;
-  font-family: 'Bebas Neue', san9A978Es-serif;
+	flex-basis: 1200;
+	flex-shrink: 0;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	text-align: left;
+	font-family: 'Bebas Neue', san9A978Es-serif;
 }
 
 .split-page-column {
-  flex: 50%;
-  display: block;
-  margin: 10px;
+	flex: 50%;
+	display: block;
+	margin: 10px;
 }
 
 .icon-txt {
-  display: inline;
+	display: inline;
 }
 
 img {
-  margin: 0;
-  display: inline;
-}
-h1{
-  margin-left: 0px;
+	margin: 0;
+	display: inline;
 }
 
-#icons{
-  align-items: block;
-  margin-left: 25%;
+h1 {
+	margin-left: 0px;
+}
+
+#icons {
+	align-items: block;
+	margin-left: 25%;
 }
 
 /* start of forum styling */
 
-#contact_form{
-  padding: 0 10px 10px 10px;
-  margin-top: 0;
-  border: none;
-  margin-right: 25%;
-  color: #242424;
-}
-#name_input{
-  padding: 5px;
-  margin: 2px;
-  width: 250px;
-  display: block;
-  text-align: center;
-}
-#email_addr{
-  padding: 5px;
-  margin: 2px;
-  width: 250px;
-  display: block;
+#contact_form {
+	padding: 0 10px 10px 10px;
+	margin-top: 0;
+	border: none;
+	margin-right: 25%;
+	color: #242424;
 }
 
-#message{
-  align-self: center;
-  width: 250px;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  resize: none;
-  display: block;
+#name_input {
+	padding: 5px;
+	margin: 2px;
+	width: 250px;
+	display: block;
+	text-align: center;
 }
 
-#send{
-  width: 250px;
+#email_addr {
+	padding: 5px;
+	margin: 2px;
+	width: 250px;
+	display: block;
+}
+
+#message {
+	align-self: center;
+	width: 250px;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+	display: block;
+}
+
+#send {
+	width: 250px;
 }
 
 form {
-  margin-left: 25%;
-  font-family: 'Bebas Neue', san9A978Es-serif;
+	margin-left: 25%;
+	font-family: 'Bebas Neue', san9A978Es-serif;
 }
 
 form button {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px 20px;
-  outline: none;
-  border-radius: 4px;
-  background: #FDD401;
-  color: black;
-  margin-top: 3px;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	padding: 10px 20px;
+	outline: none;
+	border-radius: 4px;
+	background: #FDD401;
+	color: black;
+	margin-top: 3px;
 }
-form button:hover{
-  background: #DD1810;
-  transition: all 0.3s ease;
+
+form button:hover {
+	background: #DD1810;
+	transition: all 0.3s ease;
 }
 /* end form */
