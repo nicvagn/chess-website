@@ -352,19 +352,16 @@ h1 {
   align-self: center;
   background-color: white;
   display: flex;
-  flex-basis: 1200px;
-  flex-shrink: 0;
+  flex-basis: 1009px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 100px ;
 }
-.what-we-play-for h2 {
+.what-we-play-for h3 {
   font-style: italic;
   color: #242424;
-  font-size: 50px;
+  font-size: x-large;
   font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.what-we-play-for img {
-  margin: 0;
+  width: 1000px;
 }
 
 #mission-title{
@@ -613,4 +610,5 @@ h1 {
   .main__title h2 {
     font-size: 2.5rem;
   }
+}
 /* end of tweaks */
