@@ -346,15 +346,16 @@ h1 {
 
 /* What we play for section */
 .what-we-play-for{
-  margin-top: 50px;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
   align-self: center;
   background-color: white;
-  padding: 50px;
   display: flex;
+  flex-basis: 1200px;
+  flex-shrink: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 100px ;
 }
 .what-we-play-for h2 {
   font-style: italic;
@@ -362,7 +363,14 @@ h1 {
   font-size: 50px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.what-we-play-for img {
+  margin: 0;
+}
 
+#mission-title{
+  margin-top: 100px;
+  min-width: 1200px;
+}
 /* service bubble styling start*/
 .service-bubble-container{
   display: block;
