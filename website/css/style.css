@@ -111,11 +111,12 @@ button.dark, .square.dark,  .square-fake.dark {
 
 .promotion-popup button {
     margin: 10px 0;
+    position: relative;
 }
 
 #turn-display {
     width: auto;
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +136,7 @@ button.dark, .square.dark,  .square-fake.dark {
 
 #info-display {
     width: auto;
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +156,7 @@ button.dark, .square.dark,  .square-fake.dark {
 
 #generate-puzzle {
     width:35vh;
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,7 +183,7 @@ button.dark, .square.dark,  .square-fake.dark {
 
 #generate-hint {
     width:35vh;
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +205,7 @@ button.dark, .square.dark,  .square-fake.dark {
 
 #reset-score {
     width:35vh;
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
