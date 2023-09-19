@@ -1,13 +1,4 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #FF8484;
-    flex-direction: row; 
-    flex-wrap: wrap; 
-}
+
 
 body, div, img {
     margin: 0;
@@ -16,7 +7,7 @@ body, div, img {
 }
 
 #chessboard {
-    position: fixed;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 0;
@@ -29,7 +20,8 @@ body, div, img {
 }
 
 #chessboard-empty {
-    position: fixed;
+    position: relative;
+    visibility: hidden;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 0;
@@ -76,7 +68,7 @@ button.dark, .square.dark,  .square-fake.dark {
 }
 
 .piece {
-    position: relative; 
+    position: relative;
     width: 7vh;
     height: 7vh;
     max-width: 100%;
@@ -92,6 +84,7 @@ button.dark, .square.dark,  .square-fake.dark {
 
 .piece.black {
     filter: invert(10%) sepia(21%) saturate(6820%) hue-rotate(241deg) brightness(89%) contrast(101%) drop-shadow(0 1px 5px rgba(0, 0, 0, 0.3));
+    -webkit-filter: invert(10%) sepia(21%) saturate(6820%) hue-rotate(241deg) brightness(89%) contrast(101%) drop-shadow(0 1px 5px rgba(0, 0, 0, 0.3));
 }
 
 .placeholder {
@@ -255,7 +248,7 @@ button.dark, .square.dark,  .square-fake.dark {
     opacity: 0;
     transition: opacity 1s; 
     display: none;
-    position: fixed;
+    position: relative;
     z-index: 1;
     left: 0;
     top: 0;
@@ -283,26 +276,4 @@ button.dark, .square.dark,  .square-fake.dark {
     border-radius: 10px; 
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3); 
     user-select: none;
-}
-
-.sparkles {
-    background: url('./sparkle.gif') no-repeat center center;
-    background-size: 100%;
-    width: 10vh;
-    height: 10vh;  
-    position: relative;
-    display: none;
-    filter: brightness(0) saturate(100%) invert(88%) sepia(48%) saturate(152%) hue-rotate(87deg) brightness(104%) contrast(105%);
-    user-select: none;
-}
-
-#sparkles-left {
-  margin-left: 50vh;
-  margin-bottom: 83vh;
-}
-
-#sparkles-right {
-    margin-right: 50vh;
-    margin-bottom: 83vh;
-    transform: scaleX(-1);
 }
