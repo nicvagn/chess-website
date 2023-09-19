@@ -278,3 +278,27 @@ button.dark, .square.dark,  .square-fake.dark {
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3); 
     user-select: none;
 }
+
+/* changes */
+
+.puzzle-button {
+    width:35vh;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+    color: #D6FFF6;
+    font-weight: lighter;
+    top: 14vh;
+    left: 6vh;
+    z-index: 10;
+    user-select: none;
+    padding: 1vh;
+    border: #2374AB;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient( #4DCCBD, #2374AB);
+}
