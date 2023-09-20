@@ -21,46 +21,19 @@
 
 
   <title>SK Horizon Chess Club</title>
-  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="css/style.css" />
 
   <link rel="icon" href="images/shcc-logo-notxt.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
   <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
-
-  <!-- js-chessboard imports -->
-  <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="js/chessboard-1.0.0.min.js"></script>
-  <!-- end -->
 </head>
 
 <body>
-  <!-- Navbar Section -->
-  <nav class="navbar">
-    <div class="navbar__container">
-      <a href="about.html" id="navbar__logo"><img src="images/shcc-logo-notxt.png"></i></a>
-      <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a href="index.html" class="navbar__links">HOME</a>
-        </li>
-        <li class="navbar__item">
-          <a href="about.html" class="navbar__links">ABOUT</a>
-        </li>
-        <li class="navbar__item">
-          <a href="activities.html" class="navbar__links">ACTIVITIES</a>
-        </li>
-        <li class="navbar__item">
-          <a href="support-us.html" class="navbar__links">SUPPORT US</a>
-        </li>
-        <li class="navbar__item">
-          <a href="contact-us.html" class="navbar__links">CONTACT US</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <audio id="click_sound" src="chess-puzzle/click.wav" preload="auto"></audio>
+  <audio id="puzzle_complete_sound" src="chess-puzzle/puzzle_complete_sound.mp3" preload="auto"></audio>
 
+  <div>
   <div id="chessboard-empty"></div>
   <div id="chessboard"></div>
 
@@ -69,9 +42,11 @@
     <button class="puzzle-btn" id="generate-hint">Show Hint</button>
     <button class="puzzle-btn" id="reset-score">Reset Score</button>
     <h1 id="turn-display">turn</h1>
+    <h1 id="info-display"></h1>
+    <div id="score">Score: </div>
   </div>
 
-  <div id="score">Score: </div>
+
   <div id="modal" class="modal">
     <div class="modal-content">
         <p>There's a better move available.</p>
@@ -79,6 +54,8 @@
   </div>
   <div id="sparkles-left" class="sparkles"></div>
   <div id="sparkles-right" class="sparkles"></div>
+
+  </div>
 
 
     <!--app.js is for geneal javascript, main.js is for the chess puzzle-->

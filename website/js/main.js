@@ -23,14 +23,9 @@ import { ChessPuzzle } from './chess_puzzle.js';
 
     function displayPuzzleInfo(info) {
         let infoElement = document.getElementById('info-display');
-        if (!infoElement) {
-            infoElement = document.createElement('h1');
-            infoElement.id = 'info-display';
-            document.body.appendChild(infoElement);
-        }
         infoElement.innerHTML = info;
     }
-    
+
     function fenToBoard(fen) {
         const pieces = {
             'p': 'pawn',

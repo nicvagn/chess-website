@@ -87,7 +87,7 @@ export class PawnMoveStrategy extends MoveStrategy {
         }
         return false;
     }
-    
+
 }
 
 

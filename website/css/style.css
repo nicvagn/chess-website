@@ -113,38 +113,11 @@ button.dark, .square.dark,  .square-fake.dark {
 }
 
 
-
-#info-display {
-    width: fit-content;
-    position: relative;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 4vh;
-    font-size: 3vh;
-    font-family: 'Raleway', sans-serif;
-    bottom: 3vh;
-    color: #D6FFF6;
-    font-weight: lighter;
-    user-select: none;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-    background: linear-gradient( #4DCCBD, #2374AB);
-    margin: 10;
-}
-
-
-.puzzle-btn:hover {
-    background: linear-gradient( #86fff1, #5fbfff);
-    color: #231651;
-}
-
-
 .modal {
     opacity: 0;
-    transition: opacity 1s; 
+    transition: opacity 1s;
     display: none;
-    position: relative;
+    position: absolute;
     z-index: 1;
     left: 0;
     top: 0;
@@ -212,7 +185,7 @@ button.dark, .square.dark,  .square-fake.dark {
 }
 
 #turn-display {
-    width: 500px;
+    width: 35vh;
     position: relative;
     display: block;
     justify-content: center;
@@ -220,17 +193,12 @@ button.dark, .square.dark,  .square-fake.dark {
     height: 4vh;
     font-size: 3vh;
     font-family: 'Raleway', sans-serif;
-    top: 3vh;
     color: #D6FFF6;
     font-weight: lighter;
     user-select: none;
-    border-radius: 10px;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-    background: linear-gradient( #4DCCBD, #2374AB);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    background: #444;
+    margin: 0;
 }
 
 #score {
@@ -244,4 +212,25 @@ button.dark, .square.dark,  .square-fake.dark {
     color: #ffffff;
     z-index: 10;
     background: none;
+}
+.puzzle-btn:hover {
+    background: linear-gradient( #86fff1, #5fbfff);
+    color: #231651;
+}
+
+
+#info-display {
+    width: fit-content;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+    color: #D6FFF6;
+    font-weight: lighter;
+    user-select: none;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background: #444;
 }
