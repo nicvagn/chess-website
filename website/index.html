@@ -20,6 +20,8 @@
 
   <title>SK Horizon Chess Club</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/puzzles-style.css" />
+
   <link rel="icon" href="images/shcc-logo-notxt.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
@@ -153,13 +155,31 @@
           class="styled-calendar-container" boa data-cy="calendar-embed-iframe"></iframe>
         <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
       </div>
+
       <div class="puzzle-container">
-        <h2 style="align-self: center;">WEEKLY PUZZLE (alpa)</h2>
-        <div id="pBoard"></div>
-        <div class="puzzleButtons">
-          <button onclick="resetPuzzle();">Reset</button>
-          <button onclick="checkPuzzle();">Check</button>
-          <button onclick="randomPuzzle();">Random Puzzle</button>
+        <h2 style="align-self: center;">WEEKLY PUZZLE (alpha)</h2>
+        <div id="puzzle-container">
+          <div id="chessboard-empty"></div>
+          <div id="chessboard"></div>
+
+          <div id="puzzle-btn-container">
+            <button class="puzzle-btn" id="generate-puzzle">Generate New Puzzle</button>
+            <button class="puzzle-btn" id="generate-hint">Show Hint</button>
+            <button class="puzzle-btn" id="reset-score">Reset Score</button>
+            <h1 id="turn-display">turn</h1>
+            <h1 id="info-display"></h1>
+            <div id="score">Score: </div>
+          </div>
+
+
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <p>There's a better move available.</p>
+            </div>
+          </div>
+          <div id="sparkles-left" class="sparkles"></div>
+          <div id="sparkles-right" class="sparkles"></div>
+
         </div>
       </div>
     </div>
@@ -209,11 +229,10 @@
             <a class="social__icon--link" aria-label="Facebook" target="_blank" href="https://www.facebook.com/skhorizonchess/">
               <i class="fab fa-facebook"></i>
             </a>
-
           </div>
         </div>
       </section>
     </div>
-    <script src="app.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

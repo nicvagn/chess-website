@@ -488,48 +488,15 @@ h1 {
 #calenderAndPuzzle h2 {
 	text-align: center;
 }
+
+.puzzle-container{
+	display: relative;
+}
+#puzzle-container{
+	display: absolute;
+}
+
 /* end calender n puzzle */
-
-/* chessboard.js */
-.puzzle-container {
-	display: flex;
-	flex-direction: column;
-}
-
-#pBoard {
-	display: block;
-	width: 400px;
-	height: 400px;
-	align-self: center;
-}
-
-#pBoard img {
-	margin: 0;
-}
-
-.puzzleButtons {
-	align-self: center;
-}
-
-.puzzleButtons button {
-	padding: 10px 20px;
-	background: #242424;
-	color: white;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-ms-border-radius: 4px;
-	-o-border-radius: 4px;
-}
-
-.puzzleButtons button:hover {
-	background: #DD1810;
-	transition: all 0.3s ease;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-}
 
 .title {
 	display: block;
@@ -553,8 +520,6 @@ h1 {
 	font-size: xx-large;
 }
 
-
-/* end of chessboard.js*/
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1200px) {
   .services__bubbles {

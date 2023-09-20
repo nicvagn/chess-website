@@ -1,0 +1,236 @@
+
+
+body, div, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#chessboard {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0;
+    width: 72vh;
+    height: 72vh;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4);
+    overflow: hidden; /* To ensure the inner squares don't spill over the rounded corners */
+}
+
+#chessboard-empty {
+    position: absolute;
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0;
+    width: 72vh;
+    height: 72vh;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4);
+    overflow: hidden; /* To ensure the inner squares don't spill over the rounded corners */
+    z-index: -20;
+}
+
+button.promotion-button, .square, .square-fake {
+    width: 100%;
+    height: 100%;
+    min-width: 9vh;
+    min-height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    user-select: none;
+}
+
+button.promotion-button {
+    border: 0;
+    background: none;
+}
+
+button.light, .square.light, .square-fake.light {
+    background-color: #4DCCBD;
+}
+
+button.dark, .square.dark,  .square-fake.dark {
+    background-color: #2374AB;
+}
+
+.square.light.highlight {
+    background-color: #FFC914; /
+}
+
+.square.dark.highlight {
+    background-color: #EF8354; 
+}
+
+.piece {
+    position: relative;
+    width: 7vh;
+    height: 7vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    user-select: none;
+    cursor: pointer;
+}
+
+.piece.white {
+    filter: invert(100%) sepia(7%) saturate(5765%) hue-rotate(69deg) brightness(99%) contrast(122%) drop-shadow(0 1px 5px rgba(0, 0, 0, 0.3));
+}
+
+.piece.black {
+    filter: invert(10%) sepia(21%) saturate(6820%) hue-rotate(241deg) brightness(89%) contrast(101%) drop-shadow(0 1px 5px rgba(0, 0, 0, 0.3));
+    -webkit-filter: invert(10%) sepia(21%) saturate(6820%) hue-rotate(241deg) brightness(89%) contrast(101%) drop-shadow(0 1px 5px rgba(0, 0, 0, 0.3));
+}
+
+.placeholder {
+    visibility: hidden;
+    width: 7vh;
+    height: 7vh;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.promotion-popup {
+    position: relative;
+    left: 45vh;
+    background: linear-gradient(to bottom, #4DCCBD, #2374AB);
+    padding: 1vh;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.promotion-popup button {
+    margin: 10px 0;
+    position: relative;
+}
+
+
+.modal {
+    opacity: 0;
+    transition: opacity 1s;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 20;
+    user-select: none;
+}
+
+.modal-content {
+    position: relative;
+    top: 42vh;
+    color: #D6FFF6;
+    background: linear-gradient( #4DCCBD, #2374AB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    user-select: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* changes */
+
+#puzzle-btn-container{
+    display: block;
+    height: fit-content;
+    width: 100%;
+
+    background-color: #231651;
+}
+
+.puzzle-btn{
+    width:35vh;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+    color: #D6FFF6;
+    font-weight: lighter;
+    z-index: 10;
+    user-select: none;
+    border: #2374AB;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient( #4DCCBD, #2374AB);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#turn-display {
+    width: 35vh;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+    color: #D6FFF6;
+    font-weight: lighter;
+    user-select: none;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background: #444;
+    margin: 0;
+}
+
+#score {
+    width:fit-content;
+    display: block;
+    justify-content: left;
+    align-items: center;
+    font-size: 4vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
+    z-index: 10;
+    background: none;
+}
+.puzzle-btn:hover {
+    background: linear-gradient( #86fff1, #5fbfff);
+    color: #231651;
+}
+
+
+#info-display {
+    width: fit-content;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+    color: #D6FFF6;
+    font-weight: lighter;
+    user-select: none;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background: #444;
+}
