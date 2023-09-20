@@ -27,11 +27,6 @@
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
   <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
 
-  <!-- js-chessboard imports -->
-  <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="js/chessboard-1.0.0.min.js"></script>
-  <!-- end -->
 </head>
 
 <body>
@@ -147,22 +142,14 @@
 
     <div id="calenderAndPuzzle">
       <!--Calender section-->
-      <div class="styled-calendar-container">
-        <a href="calendar.html">
-          <h2>COMMUNITY CALENDAR</h2>
-        </a>
-        <iframe src="https://embed.styledcalendar.com/#9wgtZyqbTE9J3y08XkkX" title="list Calendar"
-          class="styled-calendar-container" boa data-cy="calendar-embed-iframe"></iframe>
-        <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
-      </div>
+
 
       <div class="puzzle-container">
         <h2 style="align-self: center;">WEEKLY PUZZLE (alpha)</h2>
         <div id="puzzle-container">
-          <div id="chessboard-empty"></div>
-          <div id="chessboard"></div>
-
           <div id="puzzle-btn-container">
+            <div id="chessboard-empty"></div>
+            <div id="chessboard"></div>
             <button class="puzzle-btn" id="generate-puzzle">Generate New Puzzle</button>
             <button class="puzzle-btn" id="generate-hint">Show Hint</button>
             <button class="puzzle-btn" id="reset-score">Reset Score</button>

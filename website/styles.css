@@ -492,6 +492,7 @@ h1 {
 .puzzle-container{
 	display: relative;
 }
+
 #puzzle-container{
 	display: absolute;
 }

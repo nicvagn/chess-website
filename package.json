@@ -1,0 +1,20 @@
+{
+  "name": "chess-website",
+  "version": "1.0.0",
+  "description": "shcc website",
+  "main": "js/main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicvagn/chess-website.git"
+  },
+  "author": "Nicolas Vaagen",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/nicvagn/chess-website/issues"
+  },
+  "homepage": "https://github.com/nicvagn/chess-website#readme"
+}

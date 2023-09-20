@@ -58,11 +58,11 @@ button.dark, .square.dark,  .square-fake.dark {
 }
 
 .square.light.highlight {
-    background-color: #FFC914; /
+    background-color: #FFC914;
 }
 
 .square.dark.highlight {
-    background-color: #EF8354; 
+    background-color: #EF8354;
 }
 
 .piece {
