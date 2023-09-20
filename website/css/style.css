@@ -11,27 +11,25 @@ body, div, img {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 0;
-    width: 72vh; 
-    height: 72vh; 
+    width: 72vh;
+    height: 72vh;
     border-radius: 15px;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4); 
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4);
     overflow: hidden; /* To ensure the inner squares don't spill over the rounded corners */
-    
 }
 
 #chessboard-empty {
-    position: relative;
+    position: absolute;
     visibility: hidden;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 0;
-    width: 72vh; 
-    height: 72vh; 
-    border-radius: 15px; 
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4); 
+    width: 72vh;
+    height: 72vh;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4);
     overflow: hidden; /* To ensure the inner squares don't spill over the rounded corners */
     z-index: -20;
-    
 }
 
 button.promotion-button, .square, .square-fake {
@@ -98,12 +96,12 @@ button.dark, .square.dark,  .square-fake.dark {
 }
 
 .promotion-popup {
-    position: relative;  
+    position: relative;
     left: 45vh;
     background: linear-gradient(to bottom, #4DCCBD, #2374AB);
     padding: 1vh;
-    border-radius: 15px; 
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4); 
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4);
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -114,71 +112,33 @@ button.dark, .square.dark,  .square-fake.dark {
     position: relative;
 }
 
-#turn-display {
-    width: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4vh;  
-    font-size: 3vh;  
-    font-family: 'Raleway', sans-serif;
-    top: 3vh;
-    color: #D6FFF6;  
-    font-weight: lighter;
-    z-index: 10;
-    user-select: none;
-    padding: 1vh;
-    border-radius: 10px; 
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3); 
-    background: linear-gradient( #4DCCBD, #2374AB);
-}
+
 
 #info-display {
-    width: auto;
+    width: 350px;
     position: relative;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    height: 4vh;  
-    font-size: 3vh; 
+    height: 4vh;
+    font-size: 3vh;
     font-family: 'Raleway', sans-serif;
     bottom: 3vh;
-    color: #D6FFF6;  
+    color: #D6FFF6;
     font-weight: lighter;
     z-index: 10;
     user-select: none;
-    padding: 1vh;
-    border-radius: 10px; 
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
     background: linear-gradient( #4DCCBD, #2374AB);
 }
 
 
-#generate-puzzle:hover, #generate-hint:hover, #reset-score:hover {
+.puzzle-btn:hover {
     background: linear-gradient( #86fff1, #5fbfff);
     color: #231651;
 }
 
-#score {
-    width:35vh;
-    position: fixed;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 5vh;  
-    font-size: 4vh;  
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
-    color: #231651;  
-    top:5vh;
-    left: 6vh;
-    z-index: 10;
-    user-select: none;
-    padding: 1vh;
-    border-radius: 10px; 
-    background: none;
-}
 
 .modal {
     opacity: 0;
@@ -216,7 +176,7 @@ button.dark, .square.dark,  .square-fake.dark {
 
 /* changes */
 
-#button-container{
+#puzzle-container{
     display: block;
     height: fit-content;
     width: 100%;
@@ -245,4 +205,44 @@ button.dark, .square.dark,  .square-fake.dark {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+#turn-display {
+    width: 500px;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+    top: 3vh;
+    color: #D6FFF6;
+    font-weight: lighter;
+    z-index: 20;
+    user-select: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient( #4DCCBD, #2374AB);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#score {
+    width:35vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 5vh;
+    font-size: 4vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: #231651;
+    top:5vh;
+    left: 6vh;
+    z-index: 10;
+    padding: 1vh;
+    background: none;
 }
