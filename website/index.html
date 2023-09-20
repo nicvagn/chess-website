@@ -64,22 +64,25 @@
   <div id="chessboard-empty"></div>
 
   <div id="chessboard"></div>
-  <button id="generate-puzzle">Generate New Puzzle</button>
-  <button id="generate-hint">Show Hint</button>
-  <button id="reset-score">Reset Score</button>
+
+  <div id="button-container">
+    <button id="generate-puzzle">Generate New Puzzle</button>
+    <button id="generate-hint">Show Hint</button>
+    <button id="reset-score">Reset Score</button>
+  </div>
+
   <div id="score">Score: </div>
-  
+
   <div id="modal" class="modal">
     <div class="modal-content">
         <p>There's a better move available.</p>
     </div>
   </div>
-  
+
   <div id="sparkles-left" class="sparkles"></div>
   <div id="sparkles-right" class="sparkles"></div>
 
-  
-  
+
     <!--app.js is for geneal javascript, main.js is for the chess puzzle-->
     <script src="app.js"></script>
     <script type="module" src="js/main.js"></script>

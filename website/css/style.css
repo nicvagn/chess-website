@@ -154,75 +154,10 @@ button.dark, .square.dark,  .square-fake.dark {
     background: linear-gradient( #4DCCBD, #2374AB);
 }
 
-#generate-puzzle {
-    width:35vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh;  
-    font-size: 3vh;  
-    font-family: 'Raleway', sans-serif;
-    color: #D6FFF6;  
-    font-weight: lighter;
-    top: 14vh;
-    left: 6vh;
-    z-index: 10;
-    user-select: none;
-    padding: 1vh;
-    border: #2374AB;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-    background: linear-gradient( #4DCCBD, #2374AB);
-}
 
 #generate-puzzle:hover, #generate-hint:hover, #reset-score:hover {
     background: linear-gradient( #86fff1, #5fbfff);
     color: #231651;
-}
-
-#generate-hint {
-    width:35vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh;  
-    font-size: 3vh;  
-    font-family: 'Raleway', sans-serif;
-    color: #D6FFF6;  
-    font-weight: lighter;
-    top: 21vh;
-    left: 6vh;
-    z-index: 10;
-    user-select: none;
-    padding: 1vh;
-    border: #2374AB;
-    border-radius: 10px; 
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3); 
-    background: linear-gradient( #4DCCBD, #2374AB);
-}
-
-#reset-score {
-    width:35vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh;  
-    font-size: 3vh;  
-    font-family: 'Raleway', sans-serif;
-    color: #D6FFF6;  
-    font-weight: lighter;
-    top: 28vh;
-    left: 6vh;
-    z-index: 10;
-    user-select: none;
-    padding: 1vh;
-    border: #2374AB;
-    border-radius: 10px; 
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3); 
-    background: linear-gradient( #4DCCBD, #2374AB);
 }
 
 #score {
@@ -281,7 +216,16 @@ button.dark, .square.dark,  .square-fake.dark {
 
 /* changes */
 
-.puzzle-button {
+#button-container{
+    display: block;
+    height: fit-content;
+    width: 100%;
+
+    background-color: #231651;
+}
+
+
+#generate-puzzle {
     width:35vh;
     position: relative;
     display: block;
@@ -292,11 +236,53 @@ button.dark, .square.dark,  .square-fake.dark {
     font-family: 'Raleway', sans-serif;
     color: #D6FFF6;
     font-weight: lighter;
-    top: 14vh;
-    left: 6vh;
     z-index: 10;
     user-select: none;
-    padding: 1vh;
+    border: #2374AB;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient( #4DCCBD, #2374AB);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#generate-hint {
+    width:35vh;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+    color: #D6FFF6;
+    font-weight: lighter;
+    z-index: 10;
+    user-select: none;
+    border: #2374AB;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient( #4DCCBD, #2374AB);
+
+}
+
+
+
+#reset-score {
+    width:35vh;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+    color: #D6FFF6;
+    font-weight: lighter;
+    z-index: 10;
+    user-select: none;
     border: #2374AB;
     border-radius: 10px;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
