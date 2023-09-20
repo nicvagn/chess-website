@@ -1490,7 +1490,7 @@
         return currentOrientation
       }
 
-      // set to white or black
+      // set to  or black
       if (arg === 'white' || arg === 'black') {
         currentOrientation = arg
         drawBoard()

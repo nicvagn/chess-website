@@ -33,7 +33,7 @@
   <audio id="click_sound" src="chess-puzzle/click.wav" preload="auto"></audio>
   <audio id="puzzle_complete_sound" src="chess-puzzle/puzzle_complete_sound.mp3" preload="auto"></audio>
 
-  <div>
+
   <div id="chessboard-empty"></div>
   <div id="chessboard"></div>
 
@@ -41,21 +41,12 @@
     <button class="puzzle-btn" id="generate-puzzle">Generate New Puzzle</button>
     <button class="puzzle-btn" id="generate-hint">Show Hint</button>
     <button class="puzzle-btn" id="reset-score">Reset Score</button>
-    <h1 id="turn-display">turn</h1>
-    <h1 id="info-display"></h1>
+    <div id="turn-display"></div>
+    <div id="info-display"></div>
     <div id="score">Score: </div>
+    <h1 id="mistake-display">Good Luck</h1>
   </div>
 
-
-  <div id="modal" class="modal">
-    <div class="modal-content">
-        <p>There's a better move available.</p>
-    </div>
-  </div>
-  <div id="sparkles-left" class="sparkles"></div>
-  <div id="sparkles-right" class="sparkles"></div>
-
-  </div>
 
 
     <!--app.js is for geneal javascript, main.js is for the chess puzzle-->

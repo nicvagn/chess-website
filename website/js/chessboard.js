@@ -105,7 +105,7 @@ export class Chessboard {
         } else {
             turnElement.setAttribute("style", "color: #D6FFF6"); // color for black
         }
-        
+
         turnElement.innerHTML = `Puzzle complete!`;
         let sound = document.getElementById('puzzle_complete_sound');
         sound.play();
@@ -253,29 +253,18 @@ export class Chessboard {
                     '', 
                     '', 
                     '', 
-                    ''
-
-                );
+                    '');
             
                 // Check if the made move matches the next move in the solution
                 if (!this.checkIfCorrectMove(madeMove)) {
                     console.log("Incorrect move");
                     //console.log(madeMove);
                 
-                    var modal = document.getElementById('modal');
-                
-                    modal.style.display = "block";
-                    setTimeout(function() {
-                        modal.style.opacity = "1";
-                    }, 1); 
-                
-                    setTimeout(function() {
-                        modal.style.opacity = "0";
-                        setTimeout(function() {
-                            modal.style.display = "none";
-                        }, 700);
-                    }, 1200);
-                    return;
+                    var mistakeDisplay = document.getElementById('mistake-display');
+
+                    mistakeDisplay.innerHTML = "Try again";
+
+                    setTimeout(mistakeDisplay.innerHTML = "Good Luck", 7000);
                 }
                 
 
@@ -342,7 +331,7 @@ export class Chessboard {
         const toCol = parseInt(toSquare.col) - 1;
         
         if(clonedState.getPieceAt(fromRow, fromCol) !== 'empty') {
-            const capturedPieceIndex = clonedPieces.findIndex(p => p.type === clonedState.getPieceAt(toRow,toCol) 
+            const capturedPieceIndex = clonedPieces.findIndex(p => p.type === clonedState.getPieceAt(toRow,toCol)
                 && p.color !== piece.color && p.element.parentElement.dataset.row == toSquare.row && p.element.parentElement.dataset.col == toSquare.col);
             if (capturedPieceIndex > -1) {
                 const capturedPiece = clonedPieces[capturedPieceIndex];
