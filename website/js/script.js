@@ -19,10 +19,10 @@ for (let row = 0; row < 8; row++) {
     for (let col = 0; col < 8; col++) {
         // create a new div element
         const square = document.createElement('div');
-        
+
         // add 'square' class to the div
         square.classList.add('square');
-        
+
         // set data attributes for row and column
         square.dataset.row = row + 1;
         square.dataset.col = col + 1;
@@ -39,7 +39,7 @@ for (let row = 0; row < 8; row++) {
         if (piece !== 'empty') {
             const img = document.createElement('img');
             img.src = `img/${piece}.png`;
-            img.id = `${piece}-${row}-${col}`;  
+            img.id = `${piece}-${row}-${col}`;
             img.classList.add('piece');
             img.classList.add(row < 2 ? 'black' : 'white'); // first 2 rows are black, last 2 rows are white
             square.appendChild(img);
