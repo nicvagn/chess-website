@@ -73,7 +73,7 @@ export class Chessboard {
         if (!turnElement) {
             turnElement = document.createElement('h1');
             turnElement.id = 'turn-display';
-            document.body.appendChild(turnElement);
+            turnElement.style.display = "block"
         }
         if(this.turn == 'white') {
             turnElement.setAttribute("style", "color: #D6FFF6"); // color for white
