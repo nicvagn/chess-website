@@ -318,15 +318,15 @@ img {
   -o-border-radius: 15%;
 }
 
-.heading h2 {
+.heading {
   font-style: italic;
   font-weight: bold;
   text-align: center;
   color: #242424;
-
   align-self: middle;
   font-size: 50px;
   margin-bottom: 35px;
+  margin-top: 45px;
 }
 
 p{
