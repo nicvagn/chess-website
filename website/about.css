@@ -16,7 +16,6 @@
   width: 380px;
   height: 400px;
   text-align: center;
-  margin-left: 5%;
 }
 
 .facilitator-img {
@@ -47,7 +46,7 @@ p {
 
 .description{
   margin: 0 15% 40px 15%;
-  min-width: 300px;
+  min-width: 500px;
   text-align: center;
 }
 
@@ -104,8 +103,9 @@ p {
     position: relative;
     align-self: center;
     width: 300px;
-    height: 260px;
+    height: 200px;
     align-items: center;
     text-align: center;
+    margin-bottom: 60px;
   }
 }
