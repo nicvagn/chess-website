@@ -343,6 +343,27 @@ h1 {
   position: relative;
 }
 
+.sub-title{
+  margin: 0 20px 20px 15%;
+  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-style: italic;
+  color: #242424;
+  display: block;
+  font-size: xx-large;
+}
+
+.title {
+  display: block;
+  margin: 100px auto 100px auto;
+  height: 50px;
+  width: 700px;
+  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 300%;
+  color: #242424;
+}
 
 /* What we play for section */
 .what-we-play-for{
@@ -492,20 +513,9 @@ h1 {
 }
 /* end calender n puzzle */
 
-/* chessboard.js */
+/* chessboard puzzle*/
 .puzzle-container{
-  display: flex;
-  flex-direction: column;
-}
-
-#pBoard{
-  display: block;
-  width: 400px;
-  height: 400px;
-  align-self: center;
-}
-#pBoard img{
-  margin: 0;
+  margin: auto;
 }
 
 .puzzleButtons{
@@ -534,27 +544,6 @@ h1 {
   -o-transition: all 0.3s ease;
 }
 
-.title {
-  display: block;
-  margin: 100px auto 100px auto;
-  height: 50px;
-  width: 700px;
-  font-family: 'Bebas Neue', san9A978Es-serif;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  font-size: 300%;
-  color: #242424;
-}
-
-.sub-title{
-  margin: 0 20px 20px 15%;
-  font-family: 'Bebas Neue', san9A978Es-serif;
-  font-style: italic;
-  color: #242424;
-  display: block;
-  font-size: xx-large;
-}
 
 
 /* end of chessboard.js*/
