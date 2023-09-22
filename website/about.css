@@ -46,10 +46,14 @@ p {
 
 .description{
   margin: 0 15% 40px 15%;
-  min-width: 500px;
+  min-width: 600px;
   text-align: center;
 }
-
+#about-us-title{
+  margin: 0 15% 40px 15%;
+  min-width: 600px;
+  text-align: center;
+}
 
 #txt-section{
   margin: 0 40px 0 40px;
@@ -94,9 +98,6 @@ p {
     align-self: center;
     text-align: center;
     margin-bottom: 30px;
-  }
-  .description{
-    margin: 0 200px 40px 200px;
   }
   .facilitator {
     display: block;
