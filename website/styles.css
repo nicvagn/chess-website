@@ -24,8 +24,8 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  min-width: 1200px;
   font-family: 'Bebas Neue', san9A978Es-serif;
+  min-width: fit-content;
 }
 
 .navbar__container {
@@ -34,7 +34,6 @@
   height: 80px;
   z-index: 1;
   width: 100%;
-  min-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -127,24 +126,18 @@
 .main {
   background-color: #1e9c9c;
   width: 100%;
-  min-width: 1200px;
-  min-height: max-content;
   object-fit: contain;
 }
 
 .main__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-self: center;
   margin: 0 auto;
   background-color: #1e9c9c;
-  z-index: 1;
   width: 100%;
-  min-width: 1200px;
   padding-right: 50px;
   padding-left: 50px;
-  padding-top: 0;
+  padding-top: 50px;
   background-image: url('images/back.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -167,8 +160,7 @@
   -moz-text-fill-color: transparent;
   text-align: left;
   width: 100%;
-  display: block;
-  white-space: nowrap;
+  display: flex;
   font-style: italic;
   font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -195,7 +187,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 1200px;
 }
 
 #footer__logo {
@@ -309,6 +300,12 @@ a {
   font-family: monospace;
 }
 
+#mission-text{
+  display: flex;
+  margin: 0 auto;
+  align-self: center;
+}
+
 img {
   margin: 5px;
   height: 4rem;
@@ -333,6 +330,7 @@ img {
 p{
   color: black;
 }
+
 h1 {
   font-family: 'Bebas Neue', san9A978Es-serif;
   font-weight: bold;
@@ -353,7 +351,7 @@ h1 {
 }
 
 .title {
-  display: block;
+  display: flex;
   margin: 100px auto 100px auto;
   height: 50px;
   width: 700px;
@@ -382,12 +380,10 @@ h1 {
   color: #242424;
   font-size: x-large;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  width: 1000px;
 }
 
 #mission-title{
   margin-top: 100px;
-  min-width: 1200px;
 }
 /* service bubble styling start*/
 .service-bubble-container{
@@ -448,7 +444,6 @@ h1 {
 /*end service bubble styling */
 .stuff-we-offer{
   background-color: white;
-  min-width: 1200px;
   color: #242424;
   font-family: 'Bebas Neue', san9A978Es-serif;
   margin-top: 90px;
@@ -543,15 +538,65 @@ h1 {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-
-
-
-/* end of chessboard.js*/
 /* end calender n puzzle */
 
 
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1200px) {
+  #calenderAndPuzzle{
+    display: block;
+    align-items: center;
+  }
+  .main__container {
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    background-color: #1e9c9c;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    background-image: url('images/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: fit-content;
+    object-fit: contain;
+    height: 400px;
+  }
+  .main {
+    background-color: #1e9c9c;
+    width: 100%;
+    object-fit: contain;
+  }
+  #main__img {
+    display: flex;
+    height: 100px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    min-height: fit-content;
+    object-fit: contain;
+  }
+  .stuff-we-offer{
+    background-color: white;
+    color: #242424;
+    font-family: 'Bebas Neue', san9A978Es-serif;
+    margin-top: 90px;
+  }
+  .title {
+    display: block;
+    margin: auto;
+    height: 50px;
+    font-family: 'Bebas Neue', san9A978Es-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 300%;
+    color: #242424;
+  }
+
   .services__bubbles {
     display: flex;
     align-items: baseline;
@@ -570,7 +615,6 @@ h1 {
     text-align: center;
     width: 100%;
     position: relative;
-    min-width: 1200px;
   }
 
   .services__bubble img {
