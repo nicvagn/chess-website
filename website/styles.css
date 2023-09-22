@@ -125,7 +125,6 @@
 /* Main Content CSS */
 .main {
   background-color: #1e9c9c;
-  width: 100%;
   object-fit: contain;
 }
 
@@ -134,7 +133,6 @@
   justify-self: center;
   margin: 0 auto;
   background-color: #1e9c9c;
-  width: 100%;
   padding-right: 50px;
   padding-left: 50px;
   padding-top: 50px;
@@ -144,6 +142,8 @@
   min-height: fit-content;
   object-fit: contain;
   height: 800px;
+
+  min-width: 700px;
 }
 
 .main__title h2 {
@@ -188,6 +188,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-width: 700px;
 }
 
 #footer__logo {
@@ -304,7 +305,7 @@ a {
 #mission-text{
   display: flex;
   margin: 0 auto;
-  align-self: center;
+  text-align: center;
 }
 
 img {
@@ -353,9 +354,11 @@ h1 {
 
 .title {
   display: flex;
+  text-align: center;
   margin: 100px auto 100px auto;
   height: 50px;
-  width: 700px;
+  flex-basis: 700px;
+  flex-shrink: 0;
   font-family: 'Bebas Neue', san9A978Es-serif;
   font-weight: bold;
   font-style: italic;
@@ -389,7 +392,8 @@ h1 {
 /* service bubble styling start*/
 .service-bubble-container{
   display: block;
-  margin: 0 40px 0 40px;
+  margin: auto;
+  min-width: 700px;
 }
 .services__bubble{
   display: flex;
@@ -458,6 +462,7 @@ h1 {
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
+  min-width: 700px;
 }
 
 .hr img {
@@ -590,7 +595,7 @@ h1 {
   }
   #main__img {
     display: flex;
-    height: 30vw;
+    height: 350px;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;

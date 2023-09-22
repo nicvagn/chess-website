@@ -47,6 +47,8 @@ p {
 
 .description{
   margin: 0 15% 40px 15%;
+  min-width: 300px;
+  text-align: center;
 }
 
 
@@ -57,6 +59,8 @@ p {
 #txt-section li{
   margin: 5px 30px 0px 0px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  display: block;
+  min-width: 200px;
 }
 
 .mission {
@@ -86,7 +90,8 @@ p {
   }
   .facilitator-row{
     align-items: center;
-    flex-basis: 1200px;
+    flex-basis: 700px;
+    display: flex;
     align-self: center;
     text-align: center;
     margin-bottom: 30px;
@@ -99,7 +104,7 @@ p {
     position: relative;
     align-self: center;
     width: 300px;
-    height: 200px;
+    height: 260px;
     align-items: center;
     text-align: center;
   }
