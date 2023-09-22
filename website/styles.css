@@ -493,14 +493,6 @@ h1 {
   margin: 0 auto;
 }
 
-.styled-calendar-container{
-  border: none;
-  block-size: fit-content;
-  width: 400px;
-  min-height: 475px;
-  justify-self: center;
-}
-
 /* start calender and puzzle styling */
 #calenderAndPuzzle{
   display: grid;
@@ -511,7 +503,15 @@ h1 {
 #calenderAndPuzzle h2{
   text-align: center;
 }
-/* end calender n puzzle */
+
+
+.styled-calendar-container{
+  border: none;
+  block-size: fit-content;
+  width: 400px;
+  min-height: 475px;
+  justify-self: center;
+}
 
 /* chessboard puzzle*/
 .puzzle-container{
@@ -547,6 +547,9 @@ h1 {
 
 
 /* end of chessboard.js*/
+/* end calender n puzzle */
+
+
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1200px) {
   .services__bubbles {
