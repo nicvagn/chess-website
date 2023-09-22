@@ -187,6 +187,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #footer__logo {
@@ -499,6 +500,11 @@ h1 {
   text-align: center;
 }
 
+#puzzle-iframe{
+  width: 400px;
+  height: 444px;
+  align-self: center;
+}
 
 .styled-calendar-container{
   border: none;
@@ -506,6 +512,7 @@ h1 {
   width: 400px;
   min-height: 475px;
   justify-self: center;
+  margin: auto;
 }
 
 /* chessboard puzzle*/
@@ -544,10 +551,23 @@ h1 {
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1200px) {
   #calenderAndPuzzle{
-    display: block;
+    display: flex;
     align-items: center;
   }
+  .styled-calendar-container{
+    border: none;
+    block-size: fit-content;
+    width: 350px;
+    min-height: 475px;
+    margin: auto;
+
+  }
+  #puzzle-iframe{
+    width: 300px;
+    height: 444px;
+  }
   .main__container {
+    display: block;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
@@ -570,13 +590,12 @@ h1 {
   }
   #main__img {
     display: flex;
-    height: 100px;
+    height: 300px;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
-    min-height: fit-content;
     object-fit: contain;
   }
   .stuff-we-offer{
@@ -644,7 +663,7 @@ h1 {
     -webkit-filter: grayscale(0%);
   }
   .main__title h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 /* end of tweaks */
