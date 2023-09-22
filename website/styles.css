@@ -553,6 +553,7 @@ h1 {
   #calenderAndPuzzle{
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
   .styled-calendar-container{
     border: none;
@@ -560,7 +561,6 @@ h1 {
     width: 350px;
     min-height: 475px;
     margin: auto;
-
   }
   #puzzle-iframe{
     width: 300px;
@@ -580,8 +580,8 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: fit-content;
-    object-fit: contain;
-    height: 400px;
+    object-fit: cover;
+    height: 500px;
   }
   .main {
     background-color: #1e9c9c;
@@ -590,7 +590,7 @@ h1 {
   }
   #main__img {
     display: flex;
-    height: 300px;
+    height: 30vw;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
