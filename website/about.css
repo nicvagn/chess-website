@@ -29,11 +29,9 @@
   margin-bottom: 50px;
   margin-top: 50px;
   display: inline-flex;
+  align-self: center;
 }
 
-h2{
-  font-size: medium;
-}
 h3 {
   margin: 20px 20px 0px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -53,7 +51,7 @@ p {
   text-align: center;
 }
 #about-us-title{
-  margin: 40px 15% 40px 15%;
+  margin: 0 15% 40px 15%;
   min-width: 600px;
   text-align: center;
 }
