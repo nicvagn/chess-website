@@ -147,7 +147,7 @@
 }
 
 .main__title h2 {
-  font-size: 3rem;
+  font-size: 1.5cm;
   margin-top: 0;
   margin-left: 3%;
   margin-right: 10px;
@@ -160,7 +160,7 @@
   -moz-text-fill-color: transparent;
   text-align: left;
   width: 100%;
-  display: flex;
+  display: block;
   font-style: italic;
   font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;

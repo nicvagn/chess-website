@@ -24,12 +24,12 @@
 }
 
 .facilitator-row{
-  margin-left: 10%;
-  margin-right: 10%;
   margin-bottom: 50px;
   margin-top: 50px;
   display: inline-flex;
   align-self: center;
+  align-items: center;
+  margin-left: 11%;
 }
 
 h3 {
