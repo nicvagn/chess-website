@@ -123,68 +123,6 @@
 }
 
 
-/* Main Content CSS */
-.main {
-	background-color: #1e9c9c;
-	width: 100%;
-	min-width: 1200px;
-	min-height: max-content;
-	object-fit: contain;
-}
-
-.main__container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	justify-self: center;
-	margin: 0 auto;
-	background-color: #1e9c9c;
-	z-index: 1;
-	width: 100%;
-	min-width: 1200px;
-	padding-right: 50px;
-	padding-left: 50px;
-	padding-top: 0;
-	background-image: url('images/back.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	min-height: fit-content;
-	object-fit: contain;
-	height: 800px;
-}
-
-.main__title h2 {
-	font-size: 3rem;
-	margin-top: 0;
-	margin-left: 3%;
-	margin-right: 0;
-	margin-bottom: 30px;
-	background-color: white;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	text-align: left;
-	width: 100%;
-	display: block;
-	white-space: nowrap;
-	font-style: italic;
-	font-weight: bold;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#main__img {
-	height: 600px;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	-ms-border-radius: 0;
-	-o-border-radius: 0;
-	min-height: fit-content;
-	object-fit: contain;
-}
-
 /* Footer CSS */
 .footer__container {
 	background-color: #1e9c9c;
