@@ -1,0 +1,113 @@
+/*
+  Made by nicolas Vaagen for SK Horizon Chess Club
+
+    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
+*/
+
+
+.facilitator {
+  display: block;
+  position: relative;
+  align-self: middle;
+  width: 380px;
+  height: 400px;
+  text-align: center;
+}
+
+.facilitator-img {
+  width: 300px;
+  height: 400px;
+}
+
+.facilitator-row{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  margin-left: 11%;
+}
+
+h3 {
+  margin: 20px 20px 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  size-adjust: 120%;
+  color: #242424;
+}
+
+p {
+  margin: 0px 20px 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.description{
+  margin: 0 15% 40px 15%;
+  min-width: 600px;
+  text-align: center;
+}
+#about-us-title{
+  margin: 0 15% 40px 15%;
+  min-width: 600px;
+  text-align: center;
+}
+
+#txt-section{
+  margin: 0 40px 0 40px;
+}
+
+#txt-section li{
+  margin: 5px 30px 0px 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: block;
+  min-width: 200px;
+}
+
+.mission {
+  display: flex;
+  margin: 0 15% 0 15%;
+}
+
+#sideImg {
+  height: 200px;
+  align-self: center;
+  margin: 0;
+}
+
+#footer_spacer{
+  margin-top: 100px;
+}
+
+@media (max-width: 1300px) {
+  .facilitator-img {
+    width: 150px;
+    height: 200px;
+    align-self: center;
+    margin: 0;
+  }
+  h2{
+    margin: 0;
+  }
+  .facilitator-row{
+    align-items: center;
+    flex-basis: 700px;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .facilitator {
+    display: block;
+    position: relative;
+    align-self: center;
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
