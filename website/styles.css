@@ -146,7 +146,7 @@
   min-width: 700px;
 }
 
-.main__title h2 {
+.main__title  {
   font-size: 1.5cm;
   margin-top: 0;
   margin-left: 3%;
@@ -384,10 +384,6 @@ h1 {
   color: #242424;
   font-size: x-large;
   font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#mission-title{
-  margin-top: 100px;
 }
 
 /* service bubble styling start*/
