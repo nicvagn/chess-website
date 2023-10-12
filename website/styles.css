@@ -141,8 +141,7 @@
   background-repeat: no-repeat;
   min-height: fit-content;
   object-fit: contain;
-  height: 800px;
-
+  height: 850px;
   min-width: 700px;
 }
 
@@ -636,7 +635,7 @@ h1 {
   }
 
   .main__title h2 {
-    font-size: 3vw;
+    font-size: 1cm;
   }
 }
 /* end of tweaks */
