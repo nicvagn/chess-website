@@ -94,6 +94,12 @@ p {
 }
 
 @media (max-width: 1300px) {
+  #facilitator_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
   .facilitator-img {
     width: 150px;
     height: 200px;
@@ -105,20 +111,17 @@ p {
   }
   .facilitator-row{
     align-items: center;
-    flex-basis: 700px;
     display: flex;
     align-self: center;
     text-align: center;
+    margin-bottom: 0;
+  }
+  .description{
+    margin: auto;
     margin-bottom: 30px;
-  }
-  .facilitator {
-    display: block;
-    position: relative;
-    align-self: center;
-    width: 300px;
-    height: 200px;
-    align-items: center;
+    min-width: 100px;
     text-align: center;
-    margin-bottom: 60px;
+    font-size: medium;
   }
+
 }

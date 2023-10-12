@@ -9,14 +9,21 @@
 */
 
 #activities_document {
-
 	height: 1765px;
 }
 .document{
-	align-self: center;
+	justify-self: start;
 	display: block;
 	margin: 0 auto;
 	border: none;
-	width: 900px;
-	height: 100%;
+	width: 879px;
+	height: 900px;
+}
+
+.navbar{
+	min-width: 900px;
+}
+
+.footer__container{
+	min-width: 900px;
 }

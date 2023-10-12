@@ -103,4 +103,9 @@ form button:hover{
   background: #DD1810;
   transition: all 0.3s ease;
 }
+
+.navbar{
+  min-width: 750px;
+}
+.
 /* end form */
