@@ -270,12 +270,17 @@ h1 {
 	margin-top: 30px;
 }
 
-
-.document {
+#activities_document {
+	width: 900px;
+	height: 1765px;
+}
+.document{
 	align-self: center;
 	display: block;
 	margin: 0 auto;
 	border: none;
+	width: 900px;
+	height: 100px;
 }
 
 /* tweak's for use on a smaller screen */
