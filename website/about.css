@@ -58,6 +58,7 @@ p {
   margin: 0 25% 40px 25%;
   min-width: 600px;
   text-align: center;
+  font-size: larger;
 }
 #about-us-title{
   margin: 0 15% 40px 15%;
@@ -67,6 +68,7 @@ p {
 
 #txt-section{
   margin: 0 40px 0 40px;
+  font-size: large;
 }
 
 #txt-section li{
