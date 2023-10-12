@@ -17,6 +17,7 @@
   display: flex;
   text-align: left;
   font-family: 'Bebas Neue', san9A978Es-serif;
+  justify-content: space-evenly;
 }
 
 .split-page-column {
@@ -107,5 +108,5 @@ form button:hover{
 .navbar{
   min-width: 750px;
 }
-.
+
 /* end form */
