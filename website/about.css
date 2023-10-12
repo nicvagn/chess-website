@@ -9,7 +9,7 @@
 */
 
 #shcc_about{
-  margin-top: 30px;
+  margin: 60px 0 30px 0;
   font-size: 65px;
 }
 
@@ -45,6 +45,7 @@ h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   size-adjust: 120%;
+  font-size: x-large;
   color: #242424;
 }
 
@@ -54,7 +55,7 @@ p {
 }
 
 .description{
-  margin: 0 15% 40px 15%;
+  margin: 0 25% 40px 25%;
   min-width: 600px;
   text-align: center;
 }
