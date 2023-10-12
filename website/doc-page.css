@@ -9,8 +9,9 @@
 */
 
 #activities_document {
-	height: 1765px;
+	height: 1770px;
 }
+
 .document{
 	justify-self: start;
 	display: block;
@@ -21,10 +22,10 @@
 }
 
 .navbar{
-	min-width: 1000px;
+	min-width: 1200px;
 }
 
 .footer__container{
-	min-width: 1000px;
+	min-width: 1200px;
 }
 
