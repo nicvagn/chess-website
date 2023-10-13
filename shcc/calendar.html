@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-
 <!--
-    Site skeleton created by Brian Design on youtube @ www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber
-
-    Created for Saskatchewan Horizon Chess Club by Nicolas Vaagen
+    Made by Nicolas Vaagen for Horizon Chess Club
 
     This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
@@ -15,24 +12,25 @@
 <html lang="en">
 
 <head>
+  <!-- set title and viewport -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>SHCC: Contact Us</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="contact-us.css" />
-
+  <meta name="viewport" content="width=1200px, initial-scale=1.0" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
   <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+  <link rel="stylesheet" href="calendar.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="images/shcc-logo-notxt.png">
+
+  <title>SHCC: Calendar</title>
 </head>
+
 
 <body>
   <!-- Navbar Section -->
-  <nav class="navbar">
+  <nav class="navbar" style="min-width: 1200px;">
     <div class="navbar__container">
-      <a href="about.html" id="navbar__logo"><img src="images/shcc-logo-notxt.png"></i></a>
+      <a href="index.html" id="navbar__logo"><img src="images/shcc-logo-notxt.png"></i></a>
       <ul class="navbar__menu">
         <li class="navbar__item">
           <a href="index.html" class="navbar__links">HOME</a>
@@ -44,62 +42,24 @@
           <a href="activities.html" class="navbar__links">ACTIVITIES</a>
         </li>
         <li class="navbar__item">
-          <a href="calendar.html" class="navbar__links">CALENDAR</a>
+          <a href="contact-us.html" class="navbar__links">CONTACT US</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <h1 class="heading">CONTACT US</h1>
+  <!--title-->
+  <br>
+  <h1>Calendar</h1>
+  <br>
 
-  <div class="split-page">
-    <div class="split-page-column">
-      <form id="contact_form" name="contact_form" method="post">
-        <div class="mb-3">
-          <label for="name_input">Name :</label>
-          <input type="text" required maxlength="35" class="form-control" id="name_input" name="name"
-            placeholder="Name">
-        </div>
-        <div class="mb-3 row">
-          <div class="col">
-            <label for="email_addr">Email:</label>
-            <input type="email" required maxlength="35" class="form-control" id="email_addr" name="email"
-              placeholder="name@example.com">
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="message">Message:</label>
-          <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-        </div>
-        <div class="my-4">
-          <div class="g-recaptcha" data-sitekey="6LchOyEUAAAAAPo9l0WmIgFkGu5D6Gyq-MjsIHS1"></div>
-        </div>
-        <button type="submit" class="btn btn-primary px-4" id="send">Send</button>
-      </form>
-    </div>
-    <div class="split-page-column">
-      <div id="icons">
-        <div class="icon-txt">
-          <a href="https://www.facebook.com/skhorizonchess/">
-            <img src="images/facebook-icon.png">
-            <h3>FACEBOOK.COM/SKHORIZONCHESS</h3>
-          </a>
-        </div>
-        <br>
-        <div class="icon-txt">
-          <img src="images/discord-icon.png">
-          <h3 class="discord-link">add: skhorizonchess (as a friend)</h3>
-        </div>
-        <br>
-        <div class="icon-txt">
-          <a href="mailto:skhorizonchessclub@gmail.com">
-            <img src="images/email-icon.png">
-            <h3>skhorizonchessclub@gmail.com</h3>
-          </a>
-        </div>
-      </div>
-    </div>
+  <!-- Calendar section -->
+  <div class="main-cal">
+    <iframe src="https://embed.styledcalendar.com/#9wgtZyqbTE9J3y08XkkX" title="Styled Calendar"
+      class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+    <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
   </div>
+
 
   <!-- Footer Section -->
   <div class="footer__container">
@@ -113,7 +73,6 @@
         <div class="footer__link--items">
           <h2>Contact Us</h2>
           <a href="mailto:skhorizonchessclub@gmail.com">Via e-mail</a>
-
         </div>
       </div>
       <div class="footer__link--wrapper">
@@ -124,7 +83,7 @@
         <div class="footer__link--items">
           <h2>Social Media</h2>
           <a href="https://www.facebook.com/skhorizonchess/"">Facebook</a>
-        </div>
+            </div>
       </div>
     </div>
     <section class=" social__media">
@@ -133,20 +92,21 @@
           <a href="index.html" id="navbar__logo"><img src="images/shcc-logo-notxt.png"></i></a>
           <div id="self-promo">
             <a href="mailto:nicolasvaagen@gmail.com"><small>Website made by: Nicolas Vaagen</small></a>
-          </div>
         </div>
-        <div class="social__icons">
-          <a class="social__icon--link" href="https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw"
+      </div>
+      <div class="social__icons">
+        <a class="social__icon--link" href="https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw"
           target="_blank" aria-label="Youtube">
           <i class="fab fa-youtube"></i>
-          </a>
-          <a class="social__icon--link" aria-label="Facebook" target="_blank" href="https://www.facebook.com/skhorizonchess/">
+        </a>
+        <a class="social__icon--link" aria-label="Facebook" target="_blank"
+          href="https://www.facebook.com/skhorizonchess/">
           <i class=" fab fa-facebook"></i>
-          </a>
-        </div>
+        </a>
+       </div>
       </div>
     </section>
   </div>
-  <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=qa3h3ah3&n=n1.ratufa.io"></script>
 </body>
+
 </html>
