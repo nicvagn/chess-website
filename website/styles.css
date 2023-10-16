@@ -96,6 +96,11 @@
   transition-duration: 10ms;
 }
 
+#navbar__links_current{
+  box-shadow: inset 5em 5em #FDD401;
+  color: #000;
+}
+
 .navbar__links:hover h2{
   color: #000000;
 }
@@ -131,25 +136,21 @@
 .main__container {
   align-items: center;
   justify-self: center;
-  margin: 0 auto;
+  margin: 0;
   background-color: #1e9c9c;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-top: 50px;
   background-image: url('images/back.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: fit-content;
   object-fit: contain;
-  min-width: 750px;
+  height: 950px;
 }
 
 .main__title  {
   font-size: 1.5cm;
-  margin-top: 0;
+  margin-top: 30px;
   margin-left: 3%;
   margin-right: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   background-color: white;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -157,7 +158,7 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   text-align: left;
-  width: 100%;
+  width: 95%;
   display: block;
   font-style: italic;
   font-weight: bold;
@@ -174,7 +175,8 @@
   -o-border-radius: 0;
   min-height: fit-content;
   object-fit: contain;
-  margin-top: 60px;
+  margin-top: 120px;
+  margin-left: 40px;
 }
 
 /* Footer CSS */
@@ -579,6 +581,7 @@ h1 {
     -ms-border-radius: 0;
     -o-border-radius: 0;
     object-fit: contain;
+    margin-top: 10px;
   }
   .stuff-we-offer{
     background-color: white;
@@ -635,7 +638,7 @@ h1 {
   }
 
   .main__title h2 {
-    font-size: 1cm;
+    font-size: 0.7cm;
   }
 }
 /* end of tweaks */

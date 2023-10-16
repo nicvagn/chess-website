@@ -117,9 +117,8 @@ p {
     margin-bottom: 0;
   }
   .description{
-    margin: auto;
-    margin-bottom: 30px;
-    min-width: 100px;
+    margin: 0 15% 40px 15%;
+    min-width: 600px;
     text-align: center;
     font-size: medium;
   }
