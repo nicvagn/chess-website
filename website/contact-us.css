@@ -10,10 +10,9 @@
 
 
 .split-page {
-  flex-basis: 1200;
+  flex-basis: 1200px;
   flex-shrink: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 50px;
   display: flex;
   text-align: left;
   font-family: 'Bebas Neue', san9A978Es-serif;
@@ -23,7 +22,7 @@
 .split-page-column {
   flex: 50%;
   display: block;
-  margin: 10px;
+  margin: 50px;
 }
 
 .icon-txt {
@@ -46,7 +45,7 @@ h1{
 /* start of forum styling */
 
 #contact_form{
-  padding: 0 10px 10px 10px;
+  padding: 0 100px 10px 100px;
   margin-top: 0;
   border: none;
   margin-right: 25%;
@@ -57,7 +56,7 @@ h1{
   margin: 2px;
   width: 250px;
   display: block;
-  text-align: center;
+  text-align: right;
 }
 #email_addr{
   padding: 5px;
@@ -106,7 +105,12 @@ form button:hover{
 }
 
 .navbar{
-  min-width: 750px;
+	min-width: 1200px;
 }
+
+.footer__container{
+	min-width: 1200px;
+}
+
 
 /* end form */

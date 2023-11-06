@@ -9,7 +9,7 @@
 */
 
 #activities_document {
-	height: 1300px;
+	height: 1500px;
 }
 
 .document{
@@ -17,8 +17,8 @@
 	display: block;
 	margin: 0 auto;
 	border: none;
-	width: 879px;
-	height: 900px;
+	width: 1200px;
+	height: 600px;
 }
 
 .navbar{
@@ -29,3 +29,12 @@
 	min-width: 1200px;
 }
 
+
+/* tweak's for use on a smaller screen */
+@media screen and (max-width: 1200px) {
+
+.document {
+	height: 1340px;
+}
+}
+/* end of tweaks */
