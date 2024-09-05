@@ -13,8 +13,7 @@
 }
 
 .document{
-	justify-self: center;
-	align-self: center;
+	justify-self: start;
 	display: block;
 	margin: 0 auto;
 	border: none;

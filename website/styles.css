@@ -24,7 +24,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-family: "Bebas Neue", san9A978Es-serif;
   min-width: 750px;
 }
 
@@ -90,18 +90,18 @@
   height: 100%;
 }
 
-.navbar__links:hover{
-  box-shadow: inset 5em 5em #FDD401;
+.navbar__links:hover {
+  box-shadow: inset 5em 5em #fdd401;
   color: #000;
   transition-duration: 10ms;
 }
 
-#navbar__links_current{
-  box-shadow: inset 5em 5em #FDD401;
+#navbar__links_current {
+  box-shadow: inset 5em 5em #fdd401;
   color: #000;
 }
 
-.navbar__links:hover h2{
+.navbar__links:hover h2 {
   color: #000000;
 }
 /* END navbar css */
@@ -117,15 +117,14 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #FDD401;
+  background: #fdd401;
   color: #fff;
 }
 
 .button:hover {
-  background: #DD1810;
+  background: #dd1810;
   transition: all 0.3s ease;
 }
-
 
 /* Main Content CSS */
 .main {
@@ -138,14 +137,14 @@
   justify-self: center;
   margin: 0;
   background-color: #1e9c9c;
-  background-image: url('images/back.jpg');
+  background-image: url("images/back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: contain;
   height: 950px;
 }
 
-.main__title  {
+.main__title {
   font-size: 1.5cm;
   margin-top: 30px;
   margin-left: 3%;
@@ -162,9 +161,8 @@
   display: block;
   font-style: italic;
   font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 
 #main__img {
   height: 600px;
@@ -200,7 +198,6 @@
   font-size: 2rem;
 }
 
-
 .footer__links {
   width: 100%;
   max-width: 1000px;
@@ -224,7 +221,7 @@
 
 .footer__link--items h2 {
   margin-bottom: 16px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .footer__link--items > h2 {
@@ -235,7 +232,7 @@
   color: white;
   text-decoration: none;
   margin-bottom: 0.5rem;
-  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-family: "Bebas Neue", san9A978Es-serif;
 }
 
 .footer__link--items a:hover {
@@ -250,7 +247,7 @@
 
 /* Social styling start */
 .social__icon--link {
-  color: #FDD401;
+  color: #fdd401;
   font-size: 34px;
   margin-right: 5px;
   align-items: end;
@@ -295,15 +292,15 @@ a {
   position: relative;
 }
 
-#self-promo a{
+#self-promo a {
   position: relative;
   text-decoration: none;
   color: darkgray;
-  text-size-adjust: .8;
+  text-size-adjust: 0.8;
   font-family: monospace;
 }
 
-#mission-text{
+#mission-text {
   display: flex;
   margin: 0 auto;
   text-align: center;
@@ -330,12 +327,12 @@ img {
   margin-top: 45px;
 }
 
-p{
+p {
   color: black;
 }
 
 h1 {
-  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-family: "Bebas Neue", san9A978Es-serif;
   font-weight: bold;
   font-style: italic;
   font-size: 300%;
@@ -344,9 +341,9 @@ h1 {
   position: relative;
 }
 
-.sub-title{
+.sub-title {
   margin: 0 20px 20px 15%;
-  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-family: "Bebas Neue", san9A978Es-serif;
   font-style: italic;
   color: #242424;
   display: block;
@@ -360,7 +357,7 @@ h1 {
   height: 50px;
   flex-basis: 700px;
   flex-shrink: 0;
-  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-family: "Bebas Neue", san9A978Es-serif;
   font-weight: bold;
   font-style: italic;
   text-align: center;
@@ -369,38 +366,37 @@ h1 {
 }
 
 /* What we play for section */
-.what-we-play-for{
+.what-we-play-for {
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
   align-self: center;
-  background-color: white;
   display: flex;
   flex-basis: 1009px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-bottom: 100px ;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 100px;
 }
 .what-we-play-for h3 {
   font-style: italic;
   color: #242424;
   font-size: x-large;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* service bubble styling start*/
-.service-bubble-container{
+.service-bubble-container {
   display: block;
   margin: auto;
   min-width: 700px;
 }
-.services__bubble{
+.services__bubble {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: auto;
 }
 
-.services__bubbles{
+.services__bubbles {
   display: flex;
   align-items: flex;
   align-self: center;
@@ -409,7 +405,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-.services__bubble img{
+.services__bubble img {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -421,27 +417,26 @@ h1 {
   align-items: center;
 }
 
-.services__bubble h2{
+.services__bubble h2 {
   color: #242424;
   text-align: center;
   margin-top: 9px;
 }
 
-.services__bubble a{
+.services__bubble a {
   text-decoration: none;
 }
 
 /*end service bubble styling */
-.stuff-we-offer{
-  background-color: white;
+.stuff-we-offer {
   color: #242424;
-  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-family: "Bebas Neue", san9A978Es-serif;
   margin-top: 90px;
 }
 
 /*start of hr */
 .hr {
-  border:none;
+  border: none;
   width: 100%;
   text-align: center;
   width: 100%;
@@ -453,8 +448,8 @@ h1 {
 .hr img {
   position: relative;
   top: -33px;
-  background:white;
-  padding:0 5px;
+  background: white;
+  padding: 0 5px;
   min-block-size: 0;
   border-radius: 0;
   -webkit-border-radius: 0;
@@ -468,29 +463,29 @@ h1 {
   margin-left: 15%;
   margin-right: 15%;
   background-color: transparent;
-  border-top:3px dotted #000;
+  border-top: 3px dotted #000;
   border-bottom: none;
 }
 /*end of hr*/
 
 /* start calender and puzzle styling */
-#calenderAndPuzzle{
+#calenderAndPuzzle {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 75px;
 }
 
-#calenderAndPuzzle h2{
+#calenderAndPuzzle h2 {
   text-align: center;
 }
 
-#puzzle-iframe{
+#puzzle-iframe {
   width: 400px;
   height: 444px;
   align-self: center;
 }
 
-.styled-calendar-container{
+.styled-calendar-container {
   border: none;
   block-size: fit-content;
   width: 400px;
@@ -500,11 +495,11 @@ h1 {
 }
 
 /* chessboard puzzle*/
-.puzzle-container{
+.puzzle-container {
   margin: auto;
 }
 
-.puzzleButtons{
+.puzzleButtons {
   align-self: center;
 }
 
@@ -522,7 +517,7 @@ h1 {
 }
 
 .puzzleButtons button:hover {
-  background: #DD1810;
+  background: #dd1810;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -531,22 +526,21 @@ h1 {
 }
 /* end calender n puzzle */
 
-
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1200px) {
-  #calenderAndPuzzle{
+  #calenderAndPuzzle {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .styled-calendar-container{
+  .styled-calendar-container {
     border: none;
     block-size: fit-content;
     width: 350px;
     min-height: 475px;
     margin: auto;
   }
-  #puzzle-iframe{
+  #puzzle-iframe {
     width: 300px;
     height: 444px;
   }
@@ -560,7 +554,7 @@ h1 {
     padding-right: 50px;
     padding-left: 50px;
     padding-top: 50px;
-    background-image: url('images/back.jpg');
+    background-image: url("images/back.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: fit-content;
@@ -583,17 +577,17 @@ h1 {
     object-fit: contain;
     margin-top: 10px;
   }
-  .stuff-we-offer{
+  .stuff-we-offer {
     background-color: white;
     color: #242424;
-    font-family: 'Bebas Neue', san9A978Es-serif;
+    font-family: "Bebas Neue", san9A978Es-serif;
     margin-top: 90px;
   }
   .title {
     display: flex;
     margin: auto auto 50px auto;
     height: 50px;
-    font-family: 'Bebas Neue', san9A978Es-serif;
+    font-family: "Bebas Neue", san9A978Es-serif;
     font-weight: bold;
     font-style: italic;
     text-align: center;
@@ -642,3 +636,4 @@ h1 {
   }
 }
 /* end of tweaks */
+

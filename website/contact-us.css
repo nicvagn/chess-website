@@ -8,14 +8,13 @@
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
-
 .split-page {
   flex-basis: 1200px;
   flex-shrink: 0;
   padding: 50px;
   display: flex;
   text-align: left;
-  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-family: "Bebas Neue", san9A978Es-serif;
   justify-content: space-evenly;
 }
 
@@ -33,39 +32,39 @@ img {
   margin: 0;
   display: inline;
 }
-h1{
+h1 {
   margin-left: 0px;
 }
 
-#icons{
+#icons {
   align-items: block;
   margin-left: 25%;
 }
 
 /* start of forum styling */
 
-#contact_form{
+#contact_form {
   padding: 0 100px 10px 100px;
   margin-top: 0;
   border: none;
   margin-right: 25%;
   color: #242424;
 }
-#name_input{
+#name_input {
   padding: 5px;
   margin: 2px;
   width: 250px;
   display: block;
-  text-align: right;
+  text-align: left;
 }
-#email_addr{
+#email_addr {
   padding: 5px;
   margin: 2px;
   width: 250px;
   display: block;
 }
 
-#message{
+#message {
   align-self: center;
   width: 250px;
   height: 150px;
@@ -78,13 +77,13 @@ h1{
   display: block;
 }
 
-#send{
+#send {
   width: 250px;
 }
 
 form {
   margin-left: 25%;
-  font-family: 'Bebas Neue', san9A978Es-serif;
+  font-family: "Bebas Neue", san9A978Es-serif;
 }
 
 form button {
@@ -95,22 +94,22 @@ form button {
   padding: 10px 20px;
   outline: none;
   border-radius: 4px;
-  background: #FDD401;
+  background: #fdd401;
   color: black;
   margin-top: 3px;
 }
-form button:hover{
-  background: #DD1810;
+form button:hover {
+  background: #dd1810;
   transition: all 0.3s ease;
 }
 
-.navbar{
-	min-width: 1200px;
+.navbar {
+  min-width: 1200px;
 }
 
-.footer__container{
-	min-width: 1200px;
+.footer__container {
+  min-width: 1200px;
 }
-
 
 /* end form */
+
