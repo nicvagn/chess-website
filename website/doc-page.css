@@ -9,32 +9,33 @@
 */
 
 #activities_document {
-	height: 1500px;
+  height: 1500px;
+  margin: 0 auto;
 }
 
-.document{
-	justify-self: start;
-	display: block;
-	margin: 0 auto;
-	border: none;
-	width: 1200px;
-	height: 600px;
+.document {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  width: 1200px;
+  height: 600px;
 }
 
-.navbar{
-	min-width: 1200px;
+.navbar {
+  min-width: 1200px;
 }
 
-.footer__container{
-	min-width: 1200px;
+.activities-main {
+  display: flex;
 }
-
+.footer__container {
+  min-width: 1200px;
+}
 
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1200px) {
-
-.document {
-	height: 1340px;
-}
+  .document {
+    height: 1340px;
+  }
 }
 /* end of tweaks */
