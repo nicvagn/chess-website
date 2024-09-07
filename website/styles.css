@@ -427,6 +427,14 @@ h1 {
   text-decoration: none;
 }
 
+.bubble-text {
+  color: #242424;
+  text-align: center;
+  margin-top: 9px;
+  font-family: "Bebas Neue", san9A978Es-serif;
+  text-decoration-line: underline;
+}
+
 /*end service bubble styling */
 .stuff-we-offer {
   color: #242424;
@@ -636,4 +644,3 @@ h1 {
   }
 }
 /* end of tweaks */
-
