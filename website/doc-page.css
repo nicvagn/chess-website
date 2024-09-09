@@ -9,32 +9,38 @@
 */
 
 #activities_document {
-	height: 1500px;
+  height: 1500px;
 }
 
-.document{
-	justify-self: start;
-	display: block;
-	margin: 0 auto;
-	border: none;
-	width: 1200px;
-	height: 600px;
+#upcoming-workshops {
+  height: 1000px;
 }
 
-.navbar{
-	min-width: 1200px;
+.doc__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer__container{
-	min-width: 1200px;
+.document {
+  justify-self: center;
+  border: none;
+  width: 1200px;
+  height: 600px;
 }
 
+.navbar {
+  min-width: 1200px;
+}
+
+.footer__container {
+  min-width: 1200px;
+}
 
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1200px) {
-
-.document {
-	height: 1340px;
-}
+  .document {
+    height: 1340px;
+  }
 }
 /* end of tweaks */
