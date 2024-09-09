@@ -1,0 +1,188 @@
+/*
+    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+/* join-tournament-insert CSS */
+#join-tournament-insert {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 2em 4em;
+  border: 3px dashed #1e9c9c;
+  background-color: #f3f3f3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2em;
+  min-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  text-align: center;
+  padding: 0.8em;
+  box-shadow: 0 0 15px rgba(0, 0, 14, 0.1);
+  min-width: 28em;
+  padding: 0.5em;
+  margin: 2em 8em;
+  font-family: "Bebas Neue", san9A978Es-serif;
+  background-color: #fdd401;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 2em;
+  border: 3px solid black;
+  flex-grow: 96%;
+}
+
+input[type="submit"]:hover {
+  background-color: #dd1810;
+  color: black;
+}
+
+/* Table CSS */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 1.3em;
+  font-family: sans-serif;
+  min-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+tr,
+th {
+  text-align: center;
+}
+
+.tournaments-btn {
+  text-align: center;
+  padding: 0.8em;
+  box-shadow: 0 0 15px rgba(0, 0, 14, 0.1);
+  min-width: 28em;
+  padding: 0.5em;
+  margin: 2em 8em;
+  font-family: "Bebas Neue", san9A978Es-serif;
+  background-color: #fdd401;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 2em;
+  border: 3px solid black;
+  flex-grow: 96%;
+}
+
+.tournaments-btn:hover {
+  background: #dd1810;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.tournaments-table {
+  width: 75%;
+}
+.tournaments-column {
+  padding: 1em;
+}
+.round-time-table {
+  min-width: 400px;
+}
+.round-time-table thead tr {
+  background-color: #1e9c9c;
+  color: #ffffff;
+  text-align: center;
+}
+.round-time-table th,
+.round-time-table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+.round-time-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.round-time-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.round-time-table tbody tr:last-of-type {
+  border-bottom: 2px solid #1e9c9c;
+}
+
+.tournaments-table thead tr {
+  background-color: #1e9c9c;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tournaments-table th,
+.tournaments-table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.tournaments-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tournaments-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.tournaments-table tbody tr:last-of-type {
+  border-bottom: 2px solid #1e9c9c;
+}
+
+.organizer {
+  text-align: center;
+  color: #242424;
+  font-family: "Bebas Neue", san9A978Es-serif;
+}
+
+/* Insert CSS */
+.tournament-insert {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 2em 4em;
+  border: 3px dashed #1e9c9c;
+  background-color: #f3f3f3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2em;
+  min-width: 800px;
+}
+.tournament-insert h3 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tournament-insert button {
+  padding: 0.5em;
+  margin: 2em 8em;
+  font-family: "Bebas Neue", san9A978Es-serif;
+  background-color: #fdd401;
+  border: 3px solid black;
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "noUnusedParameters": true,
+    "target": "ES6",
+    "lib": [
+      "dom", "ES6"
+    ],
+    "outFile": "tsBundle.js",
+    "sourceMap": true,
+    "explainFiles": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/*.spec.ts"]
+}
