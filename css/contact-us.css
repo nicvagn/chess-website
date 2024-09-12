@@ -9,10 +9,11 @@
 */
 
 .split-page {
+  display: flex;
+  gap: 3em;
   flex-basis: 1200px;
   flex-shrink: 0;
   padding: 50px;
-  display: flex;
   text-align: left;
   font-family: "Bebas Neue", san9A978Es-serif;
   justify-content: space-evenly;
@@ -21,7 +22,6 @@
 .split-page-column {
   flex: 50%;
   display: block;
-  margin: 50px;
 }
 
 .icon-txt {
@@ -112,4 +112,3 @@ form button:hover {
 }
 
 /* end form */
-
