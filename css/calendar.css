@@ -10,67 +10,32 @@
   padding: 0;
 }
 
-.body {
-  color: #ffff;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-cal {
   position: relative;
-  height: 900px;
   width: 1200px;
-  flex-basis: 1200px;
+  flex-basis: max-content;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  border: none;
 }
 
 .main-cal iframe {
   flex-shrink: 0;
-  border: none;
-  width: 1200px;
-  height: 100%;
-  min-width: 1200;
-  margin: 0 20px 0 20px;
 }
 
-#main_calendar {
+#meeain_calendar {
   border: none;
   align-self: center;
 }
 
-.tournaments-table {
-  border-collapse: collapse;
-  margin: 25px auto;
-  font-size: 0.9em;
-  font-family: sans-serif;
-  min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-.tournaments-table thead tr {
-  background-color: #1e9c9c;
-  color: #ffffff;
-  text-align: left;
-}
-
-.tournaments-table th,
-.tournaments-table td {
-  padding: 12px 15px;
-}
-
-.tournaments-table tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-
-.tournaments-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.tournaments-table tbody tr:last-of-type {
-  border-bottom: 2px solid #1e9c9c;
-}
 #title {
   position: relative;
   min-width: 1200px;
 }
-
