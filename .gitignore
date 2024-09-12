@@ -3,3 +3,6 @@ best
 shcc
 cspell*
 node_modules
+
+script/tsBundle.js
+script/tsBundle.js.map

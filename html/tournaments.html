@@ -29,10 +29,7 @@
     <link rel="icon" href="../images/shcc-logo-notxt.png" />
 
     <title>SHCC: Tournaments</title>
-    <!-- jquery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- mustache CDN -->
-    <script src="https://unpkg.com/mustache@latest"></script>
+
     <!-- our template for displaying tournaments -->
     <script id="show-tournament-template" type="text/x-tmpl-mustache">
       <div class="tournament-insert">
@@ -47,29 +44,43 @@
       </div>
     </script>
 
+    <!-- the template for joining tournaments -->
     <script id="join-tournament-template" type="text/x-tmpl-mustache">
       <div id="join-tournament-insert">
         <h1>Join Tournament</h1>
         <h3>Tournament: {{title}}</h3>
 
-        <form action="javascript:joinTournamentView({{number}})" method="post" id="signup">
+        <form action="https://formsubmit.co/164df152fb568aa3ec0c0967e8d5f4d7" method="POST" id="tournament-signup">
+          <input type="hidden" name="_subject" value="{{title}}">
           <div class="field">
-            <label for="name">Name:</label>
+            <label class="field-lbl" for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your fullname" />
             <small></small>
           </div>
           <div class="field">
-            <label for="email">Email:</label>
+            <label class="field-lbl" for="email">Email:</label>
             <input type="text" id="email" name="email" placeholder="Enter your email address" />
             <small></small>
+          </div>
+          <div class="field">
+            <label class="field-lbl" for="cfc-id">Enter CFC id:</label>
+            <input type="text" id="cfc-id" name="cfc-id" placeholder="Canadian Chess Federation ID" />
+            <small></small>
+          </div>
+          <label for="tournament/section">section:</label>
+          <div name="tournament/section" id="tournament/section" class="field">
+            <label for="open">Open</label>
+            <input type="radio" id="open" value="open" name="section"/>
+            <label for="u1600">Under 1600 CFC</label>
+            <input type="radio" id="u1600" value="u1600" name="section"/>
+            <label for="u10">Under 10 years old</label>
+            <input type="radio" id="u10" value="u10" name="section">
           </div>
           <input type="submit" value="Enter Tournament"></input>
         </form>
 
       </div>
     </script>
-    <!-- our bundled script -->
-    <script src="../script/tsBundle.js"></script>
   </head>
 
   <body>
@@ -383,5 +394,11 @@
         </div>
       </section>
     </div>
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- mustache CDN -->
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <!-- our bundled script -->
+    <script src="../script/tsBundle.js"></script>
   </body>
 </html>

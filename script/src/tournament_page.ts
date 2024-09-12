@@ -84,3 +84,20 @@ function joinTournamentView(num: number) {
 
   $("#page-content").replaceWith(joinPg);
 }
+
+// Submit the join tournament form
+function submitJoinTournament() {
+  console.log("submit tournament forum");
+  const forum = document.getElementById("tournament-signup") as HTMLFormElement;
+  console.log(forum);
+
+  const name = forum.elements["name"].value;
+  const email = forum.elements["email"].value;
+  const cfcId = forum.elements["cfc-id"].value;
+  const section = forum.elements["section"].value;
+
+  console.log("Name: ", name);
+  console.log("Email: ", email);
+  console.log("Cfc ID: ", cfcId);
+  console.log("Section: ", section);
+}

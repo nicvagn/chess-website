@@ -30,11 +30,23 @@ button {
   flex-direction: column;
 }
 
+label {
+  display: inline-block;
+  border-spacing: 0;
+  font-size: 1.3em;
+  font-family: sans-serif;
+}
+
+.field-lbl {
+  min-width: 7em;
+}
+
 input[type="text"],
 select {
-  width: 100%;
+  align-self: center;
+  width: 80%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 8px;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -46,7 +58,6 @@ input[type="submit"] {
   text-align: center;
   padding: 0.8em;
   box-shadow: 0 0 15px rgba(0, 0, 14, 0.1);
-  min-width: 28em;
   padding: 0.5em;
   margin: 2em 8em;
   font-family: "Bebas Neue", san9A978Es-serif;
@@ -54,7 +65,7 @@ input[type="submit"] {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   border-radius: 2em;
   border: 3px solid black;
-  flex-grow: 96%;
+  width: 80%;
 }
 
 input[type="submit"]:hover {
