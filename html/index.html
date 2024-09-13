@@ -33,6 +33,14 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"
+      nonce="GcBFJ9AT"
+    ></script>
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
@@ -191,13 +199,26 @@
           ></script
         ></iframe>
       </div>
+
       <div class="puzzle-container">
-        <iframe
-          src="https://lichess.org/training/frame?theme=brown&bg=dark"
-          id="puzzle-iframe"
-          allowtransparency="true"
-          frameborder="0"
-        ></iframe>
+        <div
+          class="fb-page"
+          data-href="https://www.facebook.com/skhorizonchess"
+          data-tabs="timeline, events"
+          data-width="800"
+          data-height="600"
+          data-small-header="false"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="true"
+        >
+          <blockquote
+            cite="https://www.facebook.com/facebook"
+            class="fb-xfbml-parse-ignore"
+          >
+            <a href="https://www.facebook.com/facebook">Facebook</a>
+          </blockquote>
+        </div>
       </div>
     </div>
 

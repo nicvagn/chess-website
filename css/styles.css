@@ -490,9 +490,8 @@ h1 {
   margin: auto;
 }
 
-/* chessboard puzzle*/
 .puzzle-container {
-  margin: auto;
+  margin: 0 10%;
 }
 
 .puzzleButtons {
