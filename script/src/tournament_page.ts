@@ -14,11 +14,6 @@ Players are only eligible to win prizes corresponding to the section they regist
 
     `Brilliancy Prize: Each section will have a brilliancy prize. Anyone can nominate a ‘brilliancy’ for anyone, but cannot nominate a brilliancy for oneself. The brilliancy must be recorded on both players’ records of the game and should be recreated and presented to the Tournament Director. The brilliancy prize will be considered and chosen on the basis of subjective aesthetic opinion of the TD.`,
   ],
-  // 1
-  [
-    "Grand Prix Leg 1 on September 7",
-    "Organized by SCC: https://saskatoonchessclub.weebly.com/tournaments.html",
-  ],
   // 2
   [
     "Horizon Classical on October 4-7",
@@ -35,12 +30,6 @@ Players are only eligible to win prizes corresponding to the section they regist
     `Brilliancy Prize: Each section will have a brilliancy prize. Anyone can nominate a ‘brilliancy’ for anyone, but cannot nominate a brilliancy for oneself. The brilliancy must be recorded on both players’ records of the game and should be recreated and presented to the Tournament Director. The brilliancy prize will be considered and chosen on the basis of subjective aesthetic opinion of the TD.`,
   ],
   // 3
-
-  [
-    "Grand Prix Leg 2 on November 2",
-    "Organized by SCC: https://saskatoonchessclub.weebly.com/tournaments.html",
-  ],
-  // 4
   [
     `Official CFC Rated Classical Tournament:
     60 | 30 – 60 minutes with 30 second increment 
@@ -54,12 +43,6 @@ Players are only eligible to win prizes corresponding to the section they regist
 
     `Brilliancy Prize: Each section will have a brilliancy prize. Anyone can nominate a ‘brilliancy’ for anyone, but cannot nominate a brilliancy for oneself. The brilliancy must be recorded on both players’ records of the game and should be recreated and presented to the Tournament Director. The brilliancy prize will be considered and chosen on the basis of subjective aesthetic opinion of the TD.`,
   ],
-  // 5
-  [
-    "Grand Prix Leg 3 on January 2",
-    "Organized by SCC: https://saskatoonchessclub.weebly.com/tournaments.html",
-  ],
-  // 6
   [
     "Horizon Classical on February 21-23",
     `Official CFC Rated Classical Tournament:
@@ -74,12 +57,6 @@ Players are only eligible to win prizes corresponding to the section they regist
 
     `Brilliancy Prize: Each section will have a brilliancy prize. Anyone can nominate a ‘brilliancy’ for anyone, but cannot nominate a brilliancy for oneself. The brilliancy must be recorded on both players’ records of the game and should be recreated and presented to the Tournament Director. The brilliancy prize will be considered and chosen on the basis of subjective aesthetic opinion of the TD.`,
   ],
-  // 7
-  [
-    "Grand Prix Leg 4 on March 15",
-    "Organized by SCC: https://saskatoonchessclub.weebly.com/tournaments.html",
-  ],
-  // 8
   [
     "Horizon Classical on April 11-13",
     `Official CFC Rated Classical Tournament:
@@ -94,17 +71,6 @@ Players are only eligible to win prizes corresponding to the section they regist
 
     `Brilliancy Prize: Each section will have a brilliancy prize. Anyone can nominate a ‘brilliancy’ for anyone, but cannot nominate a brilliancy for oneself. The brilliancy must be recorded on both players’ records of the game and should be recreated and presented to the Tournament Director. The brilliancy prize will be considered and chosen on the basis of subjective aesthetic opinion of the TD.`,
   ],
-  // 9
-  [
-    "Grand Prix Leg 5 on May 10",
-    "Organized by SCC: https://saskatoonchessclub.weebly.com/tournaments.html",
-  ],
-  // 10
-  [
-    "Grand Prix Super Final on June 7",
-    "Organized by SCC: https://saskatoonchessclub.weebly.com/tournaments.html",
-  ],
-  // 11
   [
     "Horizon Classical on July 25-27",
     `Official CFC Rated Classical Tournament:
@@ -140,6 +106,7 @@ function showTournamentPg(tournament_num: number) {
   // hide the tournament list and title
   $("#tournament-list").hide();
   $("#tournament-title").hide();
+  $("#scc-tournament-info").hide();
   // render tournament info to the DOM
   $("#tournament-info").html(tournamentData);
   $("#tournament-info").show();

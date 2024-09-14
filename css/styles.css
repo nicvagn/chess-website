@@ -415,7 +415,7 @@ h1 {
 }
 
 .services__bubble a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .bubble-text {
@@ -423,7 +423,6 @@ h1 {
   text-align: center;
   margin-top: 9px;
   font-family: "Bebas Neue", san9A978Es-serif;
-  text-decoration-line: underline;
 }
 
 /*end service bubble styling */
