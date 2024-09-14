@@ -2,14 +2,24 @@ const tournaments = [
   // 0
   [
     "Horizon Classical on August 23-25",
-    "tournament details 1: something about the sections and rating etc.",
+    `Official CFC Rated Classical Tournament:
+    60 | 30 – 60 minutes with 30 second increment 
+    5-round swiss`,
+    `Sections: Open, U1500, 10 Years Old and Under 
+One ½ point bye available upon request. No final round byes.
+Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
+1st place Open will have their name carved on to the club trophy.
+Players are only eligible to win prizes corresponding to the section they registered in.
+50% of the registration fee will go to the club, and 50% will go to the cash prizes.`,
+
+    `Brilliancy Prize: Each section will have a brilliancy prize. Anyone can nominate a ‘brilliancy’ for anyone, but cannot nominate a brilliancy for oneself. The brilliancy must be recorded on both players’ records of the game and should be recreated and presented to the Tournament Director. The brilliancy prize will be considered and chosen on the basis of subjective aesthetic opinion of the TD.`,
   ],
   // 1
   ["Grand Prix Leg 1 on September 7", "Organized by SCC rapid, idk"],
   // 2
   [
     "Horizon Classical on October 4-7",
-    "tournament details 2: something about the sections and rating etc.",
+    "tournament details 2: something about the and rating etc.",
   ],
   // 3
 
@@ -51,7 +61,9 @@ const joinTemplate: string = $("#join-tournament-template").html();
 function showTournamentPg(tournament_num: number) {
   let view = {
     title: tournaments[tournament_num][0],
-    description: tournaments[tournament_num][1],
+    time_control: tournaments[tournament_num][1],
+    sections: tournaments[tournament_num][2],
+    brilliancy_prize: tournaments[tournament_num][3],
     number: tournament_num,
   };
   let tournamentData = Mustache.render(tournamentTemplate, view);

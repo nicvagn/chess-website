@@ -34,7 +34,13 @@
     <script id="show-tournament-template" type="text/x-tmpl-mustache">
       <div class="tournament-insert">
         <h1>{{title}}</h1>
-        <h3>{{description}}</h3>
+        <br>
+        <h3>{{time_control}}</h3>
+        <br>
+        <p class="left-aligned">{{sections}}</p>
+        <br>
+        <h5 class="left-aligned">{{brilliancy_prize}}<h5/>
+
         <button
           id="joinTournamentBtn" class="tournaments-btn" onclick="joinTournamentView({{number}})"
           >Enter this tournament</button>
@@ -67,7 +73,7 @@
             <input type="text" id="cfc-id" name="cfc-id" placeholder="Canadian Chess Federation ID" />
             <small></small>
           </div>
-          <label for="tournament/section">section:</label>
+          <label for="tournament/section"><b>section:</b></label>
           <div name="tournament/section" id="tournament/section" class="field">
             <input type="radio" id="open" value="open" name="section"/>
             <label for="open">Open</label>
@@ -75,6 +81,13 @@
             <label for="u1600">Under 1600 CFC</label>
             <input type="radio" id="u10" value="u10" name="section">
             <label for="u10">Under 10 years old</label>
+          </div>
+          <div id="payment-details">
+            <h3>Registration fee: $50</h3>
+            <h4>How to register for SK Horizon Classical Chess Tournament:</h4>
+
+            <h5>E-transfer the $50 registration fee to skhorizonchessclub@gmail.com to finalize your registration.<br>
+          You will receive confirmation via email that you have been registered for the tournament.</h5>
           </div>
           <input type="submit" value="Enter Tournament"></input>
         </form>
