@@ -56,7 +56,7 @@
         <h1>Join Tournament</h1>
         <h3>Tournament: {{title}}</h3>
 
-        <form action="https://formsubmit.co/164df152fb568aa3ec0c0967e8d5f4d7" method="POST" id="tournament-signup">
+        <form action="https://formsubmit.co/send/skhorizonchessclub@gmail.com" method="POST" id="tournament-signup">
           <input type="hidden" name="_subject" value="{{title}}">
           <div class="field">
             <label class="field-lbl" for="name">Name:</label>
@@ -73,6 +73,7 @@
             <input type="text" id="cfc-id" name="cfc-id" placeholder="Canadian Chess Federation ID" />
             <small></small>
           </div>
+
           <label for="tournament/section"><b>section:</b></label>
           <div name="tournament/section" id="tournament/section" class="field">
             <input type="radio" id="open" value="open" name="section"/>
@@ -90,8 +91,8 @@
           You will receive confirmation via email that you have been registered for the tournament.</h5>
           </div>
           <input type="submit" value="Enter Tournament"></input>
+          <input name="_formsubmit_id" type="text" style="display:none">
         </form>
-
       </div>
     </script>
   </head>
@@ -166,7 +167,7 @@
                   <button
                     type="button"
                     class="tournaments-btn"
-                    onclick="showTournamentPg(1)"
+                    onclick="showSCCTournament()"
                   >
                     Grand Prix Leg 1
                   </button>
@@ -194,7 +195,7 @@
                   <button
                     type="button"
                     class="tournaments-btn"
-                    onclick="showTournamentPg(3)"
+                    onclick="showSCCTournament()"
                   >
                     Grand Prix Leg 2
                   </button>
@@ -221,7 +222,7 @@
                   <button
                     type="button"
                     class="tournaments-btn"
-                    onclick="showTournamentPg(5)"
+                    onclick="showSCCTournament()"
                   >
                     Grand Prix Leg 3
                   </button>
@@ -248,7 +249,7 @@
                   <button
                     type="button"
                     class="tournaments-btn"
-                    onclick="showTournamentPg(7)"
+                    onclick="showSCCTournament()"
                   >
                     Grand Prix Leg 4
                   </button>
@@ -275,7 +276,7 @@
                   <button
                     type="button"
                     class="tournaments-btn"
-                    onclick="showTournamentPg(9)"
+                    onclick="showSCCTournament()"
                   >
                     Grand Prix Leg 5
                   </button>
@@ -289,7 +290,7 @@
                   <button
                     type="button"
                     class="tournaments-btn"
-                    onclick="showTournamentPg(10)"
+                    onclick="showSCCTournament()"
                   >
                     Grand Prix Super Final
                   </button>
@@ -316,6 +317,12 @@
       </div>
       <!-- used to insert tournament data via script -->
       <div id="tournament-info"></div>
+      <div id="scc-tournament-info">
+        <h1>Saskatoon Chess Club Tournament</h1>
+        <a href="https://saskatoonchessclub.weebly.com/tournaments.html">
+          Join here: SCC Website
+        </a>
+      </div>
 
       <h3 class="organizer">Grand Prix Tournament Rounds Schedule</h3>
       <table class="round-time-table">

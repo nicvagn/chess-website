@@ -30,6 +30,23 @@ button {
   flex-direction: column;
 }
 
+#scc-tournament-info {
+  display: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 2em 4em;
+  border: 3px dashed #1e9c9c;
+  background-color: #f3f3f3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2em;
+  min-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
 .left-aligned {
   text-align: left;
   margin: 1em 3em;
