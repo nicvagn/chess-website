@@ -46,6 +46,21 @@ button {
   flex-direction: column;
 }
 
+#scc-tournament-info a {
+  cursor: pointer;
+  text-align: center;
+  padding: 0.8em;
+  box-shadow: 0 0 15px rgba(0, 0, 14, 0.1);
+  padding: 0.5em;
+  margin: 2em 8em;
+  font-family: "Bebas Neue", san9A978Es-serif;
+  background-color: #fdd401;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 2em;
+  border: 3px solid black;
+  width: 80%;
+}
+
 .left-aligned {
   text-align: left;
   margin: 1em 3em;
