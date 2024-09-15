@@ -16,7 +16,7 @@ Players are only eligible to win prizes corresponding to the section they regist
   ],
   // 2
   [
-    "Horizon Classical on October 4-7",
+    "Horizon Classical on October 4-6",
     `Official CFC Rated Classical Tournament:
     60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
@@ -31,6 +31,7 @@ Players are only eligible to win prizes corresponding to the section they regist
   ],
   // 3
   [
+    "Horizon Classical on December 13-15",
     `Official CFC Rated Classical Tournament:
     60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
@@ -110,6 +111,8 @@ function showTournamentPg(tournament_num: number) {
   // render tournament info to the DOM
   $("#tournament-info").html(tournamentData);
   $("#tournament-info").show();
+  // and bring it into view
+  $("#tournament-info").get(0).scrollTo({ behavior: "smooth" });
 }
 
 function showSCCTournament() {
@@ -117,8 +120,8 @@ function showSCCTournament() {
   $("#tournament-list").hide();
   $("#tournament-title").hide();
   $("#tournament-info").hide();
-  // render tournament info to the DOM
   $("#scc-tournament-info").show();
+  $("#tournament-info").get(0).scrollTo({ behavior: "smooth" });
 }
 
 // show the list list view
@@ -129,6 +132,7 @@ function showTournamentLst() {
   // show the tournament list and title
   $("#tournament-list").show();
   $("#tournament-title").show();
+  $("#tournament-title").get(0).scrollTo({ behavior: "smooth" });
 }
 
 function joinTournamentView(num: number) {
@@ -140,21 +144,5 @@ function joinTournamentView(num: number) {
   let joinPg = Mustache.render(joinTemplate, view);
 
   $("#page-content").replaceWith(joinPg);
-}
-
-// Submit the join tournament form
-function submitJoinTournament() {
-  console.log("submit tournament forum");
-  const forum = document.getElementById("tournament-signup") as HTMLFormElement;
-  console.log(forum);
-
-  const name = forum.elements["name"].value;
-  const email = forum.elements["email"].value;
-  const cfcId = forum.elements["cfc-id"].value;
-  const section = forum.elements["section"].value;
-
-  console.log("Name: ", name);
-  console.log("Email: ", email);
-  console.log("Cfc ID: ", cfcId);
-  console.log("Section: ", section);
+  $("#top").get(0).scrollTo({ behavior: "smooth" });
 }

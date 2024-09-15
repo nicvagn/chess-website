@@ -10,24 +10,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#top {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
 button {
   cursor: pointer;
+}
+
+h4 {
+  text-align: center;
+  border-radius: 2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #242424;
 }
 /* join-tournament-insert CSS */
 #join-tournament-insert {
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-content: center;
-  flex-direction: column;
   margin: 2em 4em;
+  padding: 1em;
   border: 3px dashed #1e9c9c;
   background-color: #f3f3f3;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   border-radius: 2em;
   min-width: 800px;
-  display: flex;
-  flex-direction: column;
 }
 
 #scc-tournament-info {
@@ -44,21 +56,34 @@ button {
   min-width: 800px;
   display: flex;
   flex-direction: column;
+  padding: 1em;
 }
 
-#scc-tournament-info a {
+.tournament-title {
+  padding: 0.5em;
+}
+
+.scc-info {
   cursor: pointer;
   text-align: center;
-  padding: 0.8em;
   box-shadow: 0 0 15px rgba(0, 0, 14, 0.1);
-  padding: 0.5em;
   margin: 2em 8em;
   font-family: "Bebas Neue", san9A978Es-serif;
   background-color: #fdd401;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 2em;
   border: 3px solid black;
-  width: 80%;
+  min-width: 28em;
+  flex-grow: 96%;
+  padding: 1em;
+}
+
+.scc-info:hover {
+  background: #dd1810;
+  color: white;
+  transition: all 0.3s ease;
 }
 
 .left-aligned {
@@ -92,21 +117,22 @@ select {
 input[type="submit"] {
   cursor: pointer;
   text-align: center;
-  padding: 0.8em;
-  box-shadow: 0 0 15px rgba(0, 0, 14, 0.1);
-  padding: 0.5em;
+  padding: 1em;
   margin: 2em 8em;
   font-family: "Bebas Neue", san9A978Es-serif;
   background-color: #fdd401;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 2em;
   border: 3px solid black;
   width: 80%;
 }
 
 input[type="submit"]:hover {
-  background-color: #dd1810;
-  color: black;
+  background: #dd1810;
+  color: white;
+  transition: all 0.3s ease;
 }
 
 /* Table CSS */
@@ -129,17 +155,18 @@ th {
 
 .tournaments-btn {
   text-align: center;
-  padding: 0.8em;
-  box-shadow: 0 0 15px rgba(0, 0, 14, 0.1);
-  min-width: 28em;
-  padding: 0.5em;
-  margin: 2em 8em;
-  font-family: "Bebas Neue", san9A978Es-serif;
-  background-color: #fdd401;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   border-radius: 2em;
   border: 3px solid black;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 2em;
+  margin: 2em 8em;
+  min-width: 28em;
+
+  background-color: #fdd401;
   flex-grow: 96%;
+  font-family: "Bebas Neue", san9A978Es-serif;
 }
 
 .tournaments-btn:hover {
@@ -164,7 +191,7 @@ th {
 }
 .round-time-table th,
 .round-time-table td {
-  padding: 12px 15px;
+  padding: 12px 1em;
   text-align: center;
 }
 .round-time-table tbody tr {
@@ -185,7 +212,7 @@ th {
 
 .tournaments-table th,
 .tournaments-table td {
-  padding: 12px 15px;
+  padding: 0.6em 1em;
   text-align: center;
 }
 
@@ -209,6 +236,8 @@ th {
 
 /* Insert CSS */
 .tournament-insert {
+  position: sticky;
+  bottom: 0;
   display: flex;
   text-align: center;
   justify-content: center;

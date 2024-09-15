@@ -33,7 +33,7 @@
     <!-- our template for displaying tournaments -->
     <script id="show-tournament-template" type="text/x-tmpl-mustache">
       <div class="tournament-insert">
-        <h1>{{title}}</h1>
+        <h1 class="tournament-title">{{title}}</h1>
         <br>
         <h3>{{time_control}}</h3>
         <br>
@@ -87,8 +87,9 @@
             <h3>Registration fee: $50</h3>
             <h4>How to register for SK Horizon Classical Chess Tournament:</h4>
 
-            <h5>E-transfer the $50 registration fee to skhorizonchessclub@gmail.com to finalize your registration.<br>
-          You will receive confirmation via email that you have been registered for the tournament.</h5>
+            <h5><b>E-transfer the $50 registration fee to skhorizonchessclub@gmail.com to finalize your registration.
+            </b><br>
+            You will receive confirmation via email that you have been registered for the tournament.</h5>
           </div>
           <input type="submit" value="Enter Tournament"></input>
           <input name="_formsubmit_id" type="text" style="display:none">
@@ -98,6 +99,8 @@
   </head>
 
   <body>
+    <!-- for scroll control -->
+    <div id="top"></div>
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
@@ -137,6 +140,10 @@
         <h1 class="heading" id="tournament-title">
           Horizon and SCC Chess Tournament Schedule 2024-25
         </h1>
+        <h4>
+          Sk. Horizon CC Tournaments are 50$ to enter.<br />
+          Paid via E-transfer to skhorizonchessclub@gmail.com.
+        </h4>
         <div class="tournaments-column">
           <table class="tournaments-table">
             <thead>
@@ -318,8 +325,11 @@
       <!-- used to insert tournament data via script -->
       <div id="tournament-info"></div>
       <div style="display: none" id="scc-tournament-info">
-        <h1>Saskatoon Chess Club Tournament</h1>
-        <a href="https://saskatoonchessclub.weebly.com/tournaments.html">
+        <h1 class="tournament-title">Saskatoon Chess Club Tournament</h1>
+        <a
+          class="scc-info"
+          href="https://saskatoonchessclub.weebly.com/tournaments.html"
+        >
           Join here: SCC Website
         </a>
         <button
