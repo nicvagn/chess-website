@@ -317,11 +317,18 @@
       </div>
       <!-- used to insert tournament data via script -->
       <div id="tournament-info"></div>
-      <div id="scc-tournament-info">
+      <div style="display: none" id="scc-tournament-info">
         <h1>Saskatoon Chess Club Tournament</h1>
         <a href="https://saskatoonchessclub.weebly.com/tournaments.html">
           Join here: SCC Website
         </a>
+        <button
+          id="showTournamentBtn"
+          class="tournaments-btn"
+          onclick="showTournamentLst()"
+        >
+          Return to tournament list
+        </button>
       </div>
 
       <h3 class="organizer">Grand Prix Tournament Rounds Schedule</h3>
