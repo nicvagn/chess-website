@@ -486,7 +486,10 @@ h1 {
   margin: auto;
 }
 
-.fakebook-container {
+.facebook-container {
+  block-size: fit-content;
+  justify-self: center;
+  min-width: 400px;
   margin: auto;
   text-align: center;
 }
