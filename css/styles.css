@@ -415,7 +415,7 @@ h1 {
 }
 
 .services__bubble a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .bubble-text {
@@ -423,7 +423,6 @@ h1 {
   text-align: center;
   margin-top: 9px;
   font-family: "Bebas Neue", san9A978Es-serif;
-  text-decoration-line: underline;
 }
 
 /*end service bubble styling */
@@ -467,7 +466,7 @@ h1 {
 }
 /*end of hr*/
 
-/* start calendar and puzzle styling */
+/* start calendar n facebook embed */
 #calendarAndPuzzle {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -476,12 +475,6 @@ h1 {
 
 #calendarAndPuzzle h2 {
   text-align: center;
-}
-
-#puzzle-iframe {
-  width: 400px;
-  height: 444px;
-  align-self: center;
 }
 
 .styled-calendar-container {
@@ -493,36 +486,14 @@ h1 {
   margin: auto;
 }
 
-.puzzle-container {
-  margin: 0 10%;
+.facebook-container {
+  block-size: fit-content;
+  justify-self: center;
+  min-width: 400px;
+  margin: auto;
+  text-align: center;
 }
-
-.puzzleButtons {
-  align-self: center;
-}
-
-.puzzleButtons button {
-  padding: 10px 20px;
-
-  background: #242424;
-  color: white;
-
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-}
-
-.puzzleButtons button:hover {
-  background: #dd1810;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-}
-/* end calendar n puzzle */
+/* end calendar n facebook embed */
 
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1200px) {
@@ -537,10 +508,6 @@ h1 {
     width: 350px;
     min-height: 475px;
     margin: auto;
-  }
-  #puzzle-iframe {
-    width: 300px;
-    height: 444px;
   }
   .main__container {
     display: block;
