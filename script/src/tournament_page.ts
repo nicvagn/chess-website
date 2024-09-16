@@ -112,7 +112,7 @@ function showTournamentPg(tournament_num: number) {
   $("#tournament-info").html(tournamentData);
   $("#tournament-info").show();
   // and bring it into view
-  $("#tournament-info").get(0).scrollTo({ behavior: "smooth" });
+  $("#tournament-info").get(0).scrollTo({ behavior: "auto" });
 }
 
 function showSCCTournament() {
@@ -121,7 +121,7 @@ function showSCCTournament() {
   $("#tournament-title").hide();
   $("#tournament-info").hide();
   $("#scc-tournament-info").show();
-  $("#tournament-info").get(0).scrollTo({ behavior: "smooth" });
+  $("#tournament-info").get(0).scrollTo({ behavior: "auto" });
 }
 
 // show the list list view
@@ -132,7 +132,7 @@ function showTournamentLst() {
   // show the tournament list and title
   $("#tournament-list").show();
   $("#tournament-title").show();
-  $("#tournament-title").get(0).scrollTo({ behavior: "smooth" });
+  $("#tournament-title").get(0).scrollTo({ behavior: "auto" });
 }
 
 function joinTournamentView(num: number) {
@@ -144,5 +144,5 @@ function joinTournamentView(num: number) {
   let joinPg = Mustache.render(joinTemplate, view);
 
   $("#page-content").replaceWith(joinPg);
-  $("#top").get(0).scrollTo({ behavior: "smooth" });
+  $("#top").get(0).scrollTo({ behavior: "auto" });
 }
