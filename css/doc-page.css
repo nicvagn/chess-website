@@ -41,5 +41,8 @@
   .document {
     height: 1340px;
   }
+  .doc__container {
+      justify-content: flex-start;
+  }
 }
 /* end of tweaks */
