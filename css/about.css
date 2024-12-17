@@ -30,6 +30,11 @@
 .facilitator-img {
   width: 300px;
   height: 400px;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
 }
 
 .facilitator-row {

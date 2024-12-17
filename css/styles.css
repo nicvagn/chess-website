@@ -16,6 +16,16 @@
 body {
   background-color: white;
 }
+
+.promo {
+  position: relative;
+}
+
+.promo a{
+  text-decoration: none;
+  color: darkgray;
+  font-family: monospace;
+}
 /* start navbar styling */
 .navbar {
   background: #1e9c9c;
@@ -56,11 +66,6 @@ body {
   cursor: pointer;
   text-decoration: none;
   font-size: 4rem;
-  border-radius: 0%;
-  -webkit-border-radius: 0%;
-  -moz-border-radius: 0%;
-  -ms-border-radius: 0%;
-  -o-border-radius: 0%;
 }
 
 .chess_icon {
@@ -194,12 +199,11 @@ body {
   min-width: 750px;
 }
 
-#footer__logo {
+.footer__logo {
   background-size: 100%;
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 2rem;
 }
 
 .footer__links {
@@ -296,13 +300,6 @@ a {
   position: relative;
 }
 
-#self-promo a {
-  position: relative;
-  text-decoration: none;
-  color: darkgray;
-  text-size-adjust: 0.8;
-  font-family: monospace;
-}
 
 #mission-text {
   display: flex;
@@ -313,11 +310,6 @@ a {
 img {
   margin: 5px;
   height: 4rem;
-  border-radius: 15%;
-  -webkit-border-radius: 15%;
-  -moz-border-radius: 15%;
-  -ms-border-radius: 15%;
-  -o-border-radius: 15%;
 }
 
 .heading {
