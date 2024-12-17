@@ -101,6 +101,11 @@ p {
   height: 200px;
   align-self: center;
   margin: 0;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
 }
 
 #footer_spacer {

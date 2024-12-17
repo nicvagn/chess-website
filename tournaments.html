@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--
     Made by Nicolas Vaagen for Horizon Chess Club
 
@@ -7,7 +7,7 @@
     This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
--->
+  -->
 
 <html lang="en">
   <head>
@@ -17,7 +17,7 @@
     <link
       href="https://fonts.googleapis.com/css?family=Bebas Neue"
       rel="stylesheet"
-    />
+      />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/tournaments.css" />
     <link
@@ -25,76 +25,76 @@
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
-    />
+      />
     <link rel="icon" href="./images/shcc-logo-notxt.png" />
 
     <title>SHCC: Tournaments</title>
 
     <!-- our template for displaying tournaments -->
     <script id="show-tournament-template" type="text/x-tmpl-mustache">
-      <div class="tournament-insert">
-        <h1 class="tournament-title">{{title}}</h1>
-        <br>
-        <h3>{{time_control}}</h3>
-        <br>
-        <p class="left-aligned">{{sections}}</p>
-        <br>
-        <h5 class="left-aligned">{{brilliancy_prize}}<h5/>
+    <div class="tournament-insert">
+    <h1 class="tournament-title">{{title}}</h1>
+    <br>
+    <h3>{{time_control}}</h3>
+    <br>
+    <p class="left-aligned">{{sections}}</p>
+    <br>
+    <h5 class="left-aligned">{{brilliancy_prize}}<h5/>
 
-        <button
-          id="joinTournamentBtn" class="tournaments-btn" onclick="joinTournamentView({{number}})"
-          >Enter this tournament</button>
-        <button
-          id="showTournamentBtn" class="tournaments-btn" onclick="showTournamentLst()"
-          >Return to tournament list</button>
-      </div>
+    <button
+      id="joinTournamentBtn" class="tournaments-btn" onclick="joinTournamentView({{number}})"
+    >Enter this tournament</button>
+    <button
+      id="showTournamentBtn" class="tournaments-btn" onclick="showTournamentLst()"
+    >Return to tournament list</button>
+    </div>
     </script>
 
     <!-- the template for joining tournaments -->
     <script id="join-tournament-template" type="text/x-tmpl-mustache">
-      <div id="join-tournament-insert">
-        <h1>Join Tournament</h1>
-        <h3>Tournament: {{title}}</h3>
+    <div id="join-tournament-insert">
+    <h1>Join Tournament</h1>
+    <h3>Tournament: {{title}}</h3>
 
-        <form action="https://formsubmit.co/skhorizonchessclub@gmail.com" method="POST" id="tournament-signup">
-          <input type="hidden" name="_subject" value="{{title}}">
-          <div class="field">
-            <label class="field-lbl" for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" />
-            <small></small>
-          </div>
-          <div class="field">
-            <label class="field-lbl" for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Enter your email address" />
-            <small></small>
-          </div>
-          <div class="field">
-            <label class="field-lbl" for="cfc-id">Enter CFC id:</label>
-            <input type="text" id="cfc-id" name="cfc-id" placeholder="Canadian Chess Federation ID" />
-            <small></small>
-          </div>
+    <form action="https://formsubmit.co/skhorizonchessclub@gmail.com" method="POST" id="tournament-signup">
+    <input type="hidden" name="_subject" value="{{title}}">
+    <div class="field">
+    <label class="field-lbl" for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" />
+    <small></small>
+    </div>
+    <div class="field">
+    <label class="field-lbl" for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Enter your email address" />
+    <small></small>
+    </div>
+    <div class="field">
+    <label class="field-lbl" for="cfc-id">Enter CFC id:</label>
+    <input type="text" id="cfc-id" name="cfc-id" placeholder="Canadian Chess Federation ID" />
+    <small></small>
+    </div>
 
-          <label for="tournament/section"><b>section:</b></label>
-          <div name="tournament/section" id="tournament/section" class="field">
-            <input type="radio" id="open" value="open" name="section"/>
-            <label for="open">Open</label>
-            <input type="radio" id="u1600" value="u1600" name="section"/>
-            <label for="u1600">Under 1600 CFC</label>
-            <input type="radio" id="u10" value="u10" name="section">
-            <label for="u10">Under 10 years old</label>
-          </div>
-          <div id="payment-details">
-            <h3>Registration fee: $50</h3>
-            <h4>How to register for SK Horizon Classical Chess Tournament:</h4>
+    <label for="tournament/section"><b>section:</b></label>
+    <div name="tournament/section" id="tournament/section" class="field">
+    <input type="radio" id="open" value="open" name="section"/>
+    <label for="open">Open</label>
+    <input type="radio" id="u1600" value="u1600" name="section"/>
+    <label for="u1600">Under 1600 CFC</label>
+    <input type="radio" id="u10" value="u10" name="section">
+    <label for="u10">Under 10 years old</label>
+    </div>
+    <div id="payment-details">
+    <h3>Registration fee: $50</h3>
+    <h4>How to register for SK Horizon Classical Chess Tournament:</h4>
 
-            <h5><b>E-transfer the $50 registration fee to skhorizonchessclub@gmail.com to finalize your registration.
-            </b><br>
-            You will receive confirmation via email that you have been registered for the tournament.</h5>
-          </div>
-          <input type="submit" value="Enter Tournament"></input>
-          <input name="_formsubmit_id" type="text" style="display:none">
-        </form>
-      </div>
+    <h5><b>E-transfer the $50 registration fee to skhorizonchessclub@gmail.com to finalize your registration.
+    </b><br>
+    You will receive confirmation via email that you have been registered for the tournament.</h5>
+    </div>
+    <input type="submit" value="Enter Tournament"></input>
+    <input name="_formsubmit_id" type="text" style="display:none">
+    </form>
+    </div>
     </script>
   </head>
 
@@ -104,15 +104,10 @@
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="index.html" class="navbar__logo"
-          ><img src="./images/shcc-logo-notxt.png" alt="(opens in a new tab)"
-        /></a>
-        <ul class="navbar__menu">
+	<a href="about.html" class="navbar__logo"><img src="./images/shcc-logo-notxt.png" /></a>
+	<ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="index.html" class="navbar__links">HOME</a>
-          </li>
-          <li class="navbar__item">
-            <a href="about.html" class="navbar__links">ABOUT</a>
+            <a href="index.html"  class="navbar__links">HOME</a>
           </li>
           <li class="navbar__item">
             <a
@@ -120,12 +115,12 @@
               class="navbar__links"
               id="navbar__links_current"
               >TOURNAMENTS</a
-            >
+			    >
           </li>
           <li class="navbar__item">
             <a href="workshops.html" class="navbar__links">WORKSHOPS</a>
           </li>
-	  <li class="navbar__item">
+          <li class="navbar__item">
             <a href="activities.html" class="navbar__links">ACTIVITIES</a>
           </li>
           <li class="navbar__item">
@@ -134,7 +129,7 @@
           <li class="navbar__item">
             <a href="contact-us.html" class="navbar__links">CONTACT US</a>
           </li>
-        </ul>
+	</ul>
       </div>
     </nav>
 
@@ -164,7 +159,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showTournamentPg(0)"
-                  >
+                    >
                     Sk Horizon Classical Tournament
                   </button>
                 </td>
@@ -178,7 +173,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showSCCTournament()"
-                  >
+                    >
                     Grand Prix Leg 1
                   </button>
                 </td>
@@ -192,7 +187,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showTournamentPg(1)"
-                  >
+                    >
                     Sk Horizon Classical Tournament
                   </button>
                 </td>
@@ -206,7 +201,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showSCCTournament()"
-                  >
+                    >
                     Grand Prix Leg 2
                   </button>
                 </td>
@@ -220,7 +215,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showTournamentPg(2)"
-                  >
+                    >
                     Sk Horizon Classical Tournament
                   </button>
                 </td>
@@ -233,7 +228,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showSCCTournament()"
-                  >
+                    >
                     Grand Prix Leg 3
                   </button>
                 </td>
@@ -247,7 +242,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showTournamentPg(3)"
-                  >
+                    >
                     Sk Horizon Classical Tournament
                   </button>
                 </td>
@@ -260,7 +255,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showSCCTournament()"
-                  >
+                    >
                     Grand Prix Leg 4
                   </button>
                 </td>
@@ -274,7 +269,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showTournamentPg(4)"
-                  >
+                    >
                     Sk Horizon Classical Tournament
                   </button>
                 </td>
@@ -287,7 +282,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showSCCTournament()"
-                  >
+                    >
                     Grand Prix Leg 5
                   </button>
                 </td>
@@ -301,7 +296,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showSCCTournament()"
-                  >
+                    >
                     Grand Prix Super Final
                   </button>
                 </td>
@@ -314,7 +309,7 @@
                     type="button"
                     class="tournaments-btn"
                     onclick="showTournamentPg(5)"
-                  >
+                    >
                     Sk Horizon Classical Tournament
                   </button>
                 </td>
@@ -332,14 +327,14 @@
         <a
           class="scc-info"
           href="https://saskatoonchessclub.weebly.com/tournaments.html"
-        >
+          >
           Join here: SCC Website
         </a>
         <button
           id="showTournamentBtn"
           class="tournaments-btn"
           onclick="showTournamentLst()"
-        >
+          >
           Return to tournament list
         </button>
       </div>
@@ -383,55 +378,43 @@
     <!-- Footer Section -->
     <div class="footer__container">
       <div class="footer__links">
-        <div class="footer__link--wrapper">
+	<div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>About Us</h2>
             <a href="about.html">About the Club</a>
             <a href="calendar.html">Calendar</a>
             <a href="contact-us.html">Contact Us</a>
           </div>
-        </div>
-        <div class="footer__link--wrapper">
+	</div>
+	<div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Resources</h2>
+            <a href="https://www.libib.com/u/saskhorizonchessclub">Library</a>
+          </div>
+	</div>
+	<div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>Social Media</h2>
             <a href="https://www.facebook.com/skhorizonchess/">Facebook</a>
-            <a href="https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw"
-              >Youtube channel</a
-            >
+            <a href="https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw">Youtube channel</a>
           </div>
-        </div>
+	</div>
       </div>
       <section class="social__media">
-        <div class="social__media--wrap">
-          <div class="footer__logo">
-            <a href="about.html"
-              ><img alt="logo" src="./images/shcc-logo-notxt.png"
-            /></a>
-            <div id="self-promo">
-              <a href="mailto:nicolasvaagen@gmail.com"
-                ><small>Website made by: Nicolas Vaagen</small></a
-              >
-            </div>
+	<div class="social__media--wrap">
+          <div class="footer__logo promo">
+            <a href="about.html"><img src="./images/shcc-logo-notxt.png" />
+	      <BR>
+	      <small>Website made by: Nicolas Vaagen</small></a>
           </div>
-          <div class="social__icons">
-            <a
-              class="social__icon--link"
-              href="https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw"
-              target="_blank"
-              aria-label="Youtube"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a
-              class="social__icon--link"
-              aria-label="Facebook"
-              target="_blank"
-              href="https://www.facebook.com/skhorizonchess/"
-            >
-              <i class="fab fa-facebook"></i>
-            </a>
-          </div>
-        </div>
+	  <div class="footer__logo promo">
+	    <a href="https://www.quadrant.net/">
+	      <img src="images/quadrant.svg">
+	      <BR>
+              <small>Hosting and database services</small>
+	    </a>
+	  </div>
+	</div>
       </section>
     </div>
     <!-- jquery CDN -->
@@ -441,4 +424,3 @@
     <!-- our bundled script -->
     <script src="./script/tsBundle.js"></script>
   </body>
-</html>
