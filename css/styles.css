@@ -17,6 +17,9 @@ body {
   background-color: white;
 }
 
+#quadrant {
+    display: none;
+}
 .promo {
   position: relative;
 }
