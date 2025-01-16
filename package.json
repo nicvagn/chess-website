@@ -7,6 +7,7 @@
 	"packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
 	"devDependencies": {
 		"@types/jquery": "^3.5.30",
+		"prettier": "3.4.2",
 		"simple-autoreload-server": "^0.2.15"
 	}
 }

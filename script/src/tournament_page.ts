@@ -3,9 +3,9 @@ const tournaments = [
   [
     "Horizon Classical on August 23-25",
     `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment 
+    60 | 30 – 60 minutes with 30 second increment
     5-round swiss`,
-    `Sections: Open, U1500, 10 Years Old and Under 
+    `Sections: Open, U1500, 10 Years Old and Under
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -18,9 +18,9 @@ Players are only eligible to win prizes corresponding to the section they regist
   [
     "Horizon Classical on October 4-6",
     `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment 
+    60 | 30 – 60 minutes with 30 second increment
     5-round swiss`,
-    `Sections: Open, U1500, 10 Years Old and Under 
+    `Sections: Open, U1500, 10 Years Old and Under
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -33,9 +33,9 @@ Players are only eligible to win prizes corresponding to the section they regist
   [
     "Horizon Classical on December 13-15",
     `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment 
+    60 | 30 – 60 minutes with 30 second increment
     5-round swiss`,
-    `Sections: Open, U1500, 10 Years Old and Under 
+    `Sections: Open, U1500, 10 Years Old and Under
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -47,9 +47,9 @@ Players are only eligible to win prizes corresponding to the section they regist
   [
     "Horizon Classical on February 21-23",
     `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment 
+    60 | 30 – 60 minutes with 30 second increment
     5-round swiss`,
-    `Sections: Open, U1500, 10 Years Old and Under 
+    `Sections: Open, U1500, 10 Years Old and Under
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -61,9 +61,9 @@ Players are only eligible to win prizes corresponding to the section they regist
   [
     "Horizon Classical on April 11-13",
     `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment 
+    60 | 30 – 60 minutes with 30 second increment
     5-round swiss`,
-    `Sections: Open, U1500, 10 Years Old and Under 
+    `Sections: Open, U1500, 10 Years Old and Under
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -75,9 +75,9 @@ Players are only eligible to win prizes corresponding to the section they regist
   [
     "Horizon Classical on July 25-27",
     `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment 
+    60 | 30 – 60 minutes with 30 second increment
     5-round swiss`,
-    `Sections: Open, U1500, 10 Years Old and Under 
+    `Sections: Open, U1500, 10 Years Old and Under
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -109,7 +109,7 @@ function showTournamentPg(tournament_num: number) {
   $("#tournament-title").hide();
   $("#scc-tournament-info").hide();
   // render tournament info to the DOM
-  $("#tournament-info").html(tournamentData);
+-  $("#tournament-info").html(tournamentData);
   $("#tournament-info").show();
   // and bring it into view
   $("#tournament-info").get(0).scrollTo({ behavior: "smooth" });
