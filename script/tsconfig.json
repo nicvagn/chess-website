@@ -5,12 +5,17 @@
     "noUnusedParameters": true,
     "target": "ES6",
     "lib": [
-      "dom", "ES6"
+      "dom",
+      "ES6"
     ],
-    "outFile": "tsBundle.js",
+    "outDir": "dist",
     "sourceMap": true,
     "explainFiles": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["**/*.spec.ts"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "**/*.spec.ts"
+  ]
 }

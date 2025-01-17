@@ -14,6 +14,7 @@
   width: 100%;
   display: block;
 }
+
 .library-book {
   padding: 0 .3em;
   text-align: center;
@@ -21,9 +22,11 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .library-book img {
   height: 9em;
 }
+
 .library-book-title {
   color: #242424;
   font-family: "Bebas Neue", san9A978Es-serif;
@@ -35,13 +38,13 @@
   text-align: center;
   color: #5e5c64;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size:xx-small;
+  font-size: xx-small;
 }
 
 .library-row {
-    width: 100%;
-    margin: 3em 1em;
-    display: block;
+  width: 100%;
+  margin: 3em 1em;
+  display: block;
 }
 
 .letter-break {
@@ -53,14 +56,44 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 700px){
+.search-container {
+  width: 80%;
+  padding: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.search-container input[type=text] {
+  padding: 6px;
+  font-size: 1.3em;
+  outline: 2px black;
+}
+
+.search-container button {
+  padding: 6px;
+  background: #fdd401;
+  font-size: 1.3em;
+  border: black;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 9px
+}
+
+.search-container button:hover {
+  color: white;
+  background: #dd1810;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
   .responsive {
     width: 100%;
   }

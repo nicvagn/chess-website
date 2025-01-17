@@ -1,3 +1,4 @@
+"use strict";
 /*
 const booksobj = new Object();
 
@@ -30,10 +31,8 @@ function showBook(name: string) {
 
 showBook("1 ... d6 Move by Move")
  */
-
 let books = document.getElementsByClassName("library-book");
-
 for (let i = 0; i < books.length; i++) {
-  // This get's the title of each book
-  console.log(books.item(i).children[1].innerHTML)
+    console.log(books.item(i).children[1].innerHTML);
 }
+//# sourceMappingURL=library_page.js.map
