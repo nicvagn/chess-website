@@ -4,6 +4,8 @@
     "alwaysStrict": true,
     "noUnusedParameters": true,
     "target": "ES6",
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
     "lib": [
       "dom",
       "ES6"

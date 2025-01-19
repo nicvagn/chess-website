@@ -109,7 +109,7 @@ function showTournamentPg(tournament_num: number) {
   $("#tournament-title").hide();
   $("#scc-tournament-info").hide();
   // render tournament info to the DOM
--  $("#tournament-info").html(tournamentData);
+  $("#tournament-info").html(tournamentData);
   $("#tournament-info").show();
   // and bring it into view
   $("#tournament-info").get(0).scrollTo({ behavior: "smooth" });

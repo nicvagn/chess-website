@@ -1,39 +1,34 @@
-/*
-const booksobj = new Object();
-
-booksobj.book = JSON.parse(`"title": "1 ... d6 Move by Move",
-    "author": "Cyrus Lakdawala",
-    "description": "Cyrus Lakdawala examines the universal defence 1...d6, constructs an opening repertoire for Black and provides answers to all the key questions in this opening.",
-
-"tags": ["1. ...d6", "opening", "repertoire"]`)
-
-
+import { books } from "./library_books.js";
+import { Mustache } from "https://unpkg.com/mustache@latest"
 // get the template strings from html
 const bookTemplate: string = $("#book-template").html();
 
-type ObjectKey = keyof typeof books
-
+type ObjectKey = keyof typeof books;
 
 function showBook(name: string) {
+  let book_info: string = String(books[name as ObjectKey]);
+  let book_template: string = Mustache.render(bookTemplate, book_info);
 
-  let book_info: string = String(books[name as ObjectKey])
-  let book_template: string = Mustache.render(bookTemplate, book_info)
-
-  console.log(name + ": " + book_info)
+  console.log(name + ": " + book_info);
 
   let book = document.createElement("div");
 
-  book.innerHTML = book_info
+  book.innerHTML = book_template;
 
-  document.body.appendChild(book)
+  document.body.appendChild(book);
 }
 
-showBook("1 ... d6 Move by Move")
- */
+let book_elements = document.getElementsByClassName("library-book");
 
-let books = document.getElementsByClassName("library-book");
+function searchBook(name: string) {
+  for (let i = 0; i < books.length; i++) {
+    let book_el = book_elements.item(i).children[1].children[1].innerHTML
 
-for (let i = 0; i < books.length; i++) {
-  // This get's the title of each book
-  console.log(books.item(i).children[1].innerHTML)
+    // This gets the title of each book
+    if(book_el.includes(name)){
+      console.log("Found in: " + book_el)
+    }
+  }
 }
+showBook("1 ... d6 Move by Move");
+searchBook("1");
