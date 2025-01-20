@@ -8,6 +8,7 @@
 	"devDependencies": {
 		"@types/jquery": "^3.5.30",
 		"prettier": "3.4.2",
-		"simple-autoreload-server": "^0.2.15"
+		"simple-autoreload-server": "^0.2.15",
+		"sql.js": "^1.12.0"
 	}
 }
