@@ -9,7 +9,8 @@
     ],
     "outFile": "tsBundle.js",
     "sourceMap": true,
-    "explainFiles": true
+    "explainFiles": true,
+    "moduleResolution": "bundler"
   },
   "include": ["src/**/*"],
   "exclude": ["**/*.spec.ts"]
