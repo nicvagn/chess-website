@@ -1,7 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.books = void 0;
-exports.books = [
+/**
+ * Index of all the books SHCC has.
+ */
+export const books = [
     { title: "1 ... d6 Move by Move", author: "Cyrus Lakdawala" },
     { title: "107 Great Chess Battles, 1939-1945", author: "Alexander Alekhine" },
     { title: "200 Open Games", author: "David Bronstein" },
@@ -422,4 +422,3 @@ exports.books = [
         author: "David Rudel",
     },
 ];
-//# sourceMappingURL=library_books.js.map

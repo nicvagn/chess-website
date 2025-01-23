@@ -1,14 +1,18 @@
 {
-	"dependencies": {
-		"@types/mustache": "^4.2.5",
-		"jquery": "^3.7.1",
-		"mustache": "^4.2.0"
-	},
-	"packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
-	"devDependencies": {
-		"@types/jquery": "^3.5.30",
-		"prettier": "3.4.2",
-		"simple-autoreload-server": "^0.2.15",
-		"sql.js": "^1.12.0"
-	}
+  "dependencies": {
+    "@types/node": "^22.10.7",
+    "fuse.js": "^7.0.0",
+    "jquery": "^3.7.1",
+    "mustache": "^4.2.0"
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
+  "devDependencies": {
+    "@types/jquery": "^3.5.30",
+    "@types/mustache": "^4.2.5",
+    "esbuild": "0.24.2",
+    "prettier": "3.4.2",
+    "simple-autoreload-server": "^0.2.15",
+    "sql.js": "^1.12.0"
+  },
+  "type": "module"
 }

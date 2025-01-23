@@ -1,4 +1,15 @@
-export const books = [
+/**
+ * Index of all the books SHCC has.
+ */
+
+export interface book {
+  title: string;
+  author: string;
+}
+
+type library = book[];
+
+export const books: library = [
   { title: "1 ... d6 Move by Move", author: "Cyrus Lakdawala" },
   { title: "107 Great Chess Battles, 1939-1945", author: "Alexander Alekhine" },
   { title: "200 Open Games", author: "David Bronstein" },

@@ -1,3 +1,5 @@
+import mustache from "mustache";
+
 const tournaments = [
   // 0
   [
@@ -93,7 +95,7 @@ const tournamentTemplate: string = $("#show-tournament-template").html();
 
 const joinTemplate: string = $("#join-tournament-template").html();
 
-function showTournamentPg(tournament_num: number) {
+export function showTournamentPg(tournament_num: number) {
   let view = {
     title: tournaments[tournament_num][0],
     time_control: tournaments[tournament_num][1],
@@ -101,7 +103,7 @@ function showTournamentPg(tournament_num: number) {
     brilliancy_prize: tournaments[tournament_num][3],
     number: tournament_num,
   };
-  let tournamentData = Mustache.render(tournamentTemplate, view);
+  let tournamentData = mustache.render(tournamentTemplate, view);
   console.log(tournamentData);
 
   // hide the tournament list and title
@@ -115,7 +117,7 @@ function showTournamentPg(tournament_num: number) {
   $("#tournament-info").get(0).scrollTo({ behavior: "smooth" });
 }
 
-function showSCCTournament() {
+export function showSCCTournament() {
   // hide the tournament list and title
   $("#tournament-list").hide();
   $("#tournament-title").hide();
@@ -125,7 +127,7 @@ function showSCCTournament() {
 }
 
 // show the list list view
-function showTournamentLst() {
+export function showTournamentLst() {
   $("#tournament-info").hide();
   $("#scc-tournament-info").hide();
 
@@ -135,13 +137,13 @@ function showTournamentLst() {
   $("#tournament-title").get(0).scrollTo({ behavior: "smooth" });
 }
 
-function joinTournamentView(num: number) {
+export function joinTournamentView(num: number) {
   console.log("joined ", num);
   let view = {
     title: tournaments[num][0],
     number: num,
   };
-  let joinPg = Mustache.render(joinTemplate, view);
+  let joinPg = mustache.render(joinTemplate, view);
 
   $("#page-content").replaceWith(joinPg);
   $("#top").get(0).scrollTo({ behavior: "smooth" });
