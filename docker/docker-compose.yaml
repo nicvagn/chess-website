@@ -12,6 +12,8 @@ services:
     volumes:
       - ../:/var/www/html
 
+      - ./srv::/srv/
+
   db:
     image: mysql:8.0
     environment:
