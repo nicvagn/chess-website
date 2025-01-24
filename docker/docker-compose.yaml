@@ -12,7 +12,7 @@ services:
     volumes:
       - ../:/var/www/html
 
-      - ./srv::/srv/
+      - ./srv:/srv/
 
   db:
     image: mysql:8.0

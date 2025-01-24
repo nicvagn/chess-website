@@ -66,16 +66,27 @@
     <h1>Search results for: <i><?php echo $_REQUEST["search"]?></i></h1>
 
     <?php
+      // Database connect
       $servername = "localhost";
       $username = "user";
       $password = "password";
-
       $dbh = new PDO('sqlite:/srv/library.sqlite3');
 
-      $stmt = $dbh->query('SELECT * FROM BOOK');
-      echo $stmt ->fetch(); 
-     
-    
+      // Get our search term from GET request.
+      $search = $_REQUEST["search"];
+
+      $sqlstmt = "SELECT * FROM BOOK
+        WHERE Title LIKE '%$search%'
+        OR Authors LIKE '%$search%'";
+
+      $stmt = $dbh->query($sqlstmt);
+      $get = $stmt->fetch();
+
+      //print_r($get);
+
+      foreach ($dbh->query($sqlstmt) as $b) {
+        print $b['Title'];
+      }
     ?>
 
     <!-- Footer Section -->
