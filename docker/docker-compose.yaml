@@ -18,6 +18,6 @@ services:
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: database
+      MYSQL_DATABASE: library
       MYSQL_USER: user
       MYSQL_PASSWORD: password

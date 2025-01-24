@@ -68,9 +68,10 @@
     <?php
       // Database connect
       $servername = "localhost";
-      $username = "user";
+      $dbname= "library.mysql";
+      $username = "root";
       $password = "password";
-      $dbh = new PDO('sqlite:/srv/library.sqlite3');
+      $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
       // Get our search term from GET request.
       $search = $_REQUEST["search"];
