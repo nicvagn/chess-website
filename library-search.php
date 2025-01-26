@@ -80,13 +80,19 @@
         WHERE Title LIKE '%$search%'
         OR Authors LIKE '%$search%'";
 
-      $stmt = $dbh->query($sqlstmt);
-      $get = $stmt->fetch();
+      //$stmt = $dbh->query($sqlstmt);
+      //$get = $stmt->fetch();
 
       //print_r($get);
+      $search_results = $dbh->query($sqlstmt);
 
-      foreach ($dbh->query($sqlstmt) as $b) {
-        print $b['Title'];
+      foreach ($search_results as $b) {
+        $t = $b['Title']; 
+        $a = $b['Authors'];
+        $i = $b['Img_URL'];
+        echo "book: $t";
+        echo " by: $a ";
+        //echo "<img src="$i">";
       }
     ?>
 
