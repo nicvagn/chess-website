@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <!--
     Created for Saskatchewan Horizon Chess Club by Nicolas Vaagen
@@ -30,6 +30,7 @@
 
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/library.css" />
     <link rel="icon" href="./images/shcc-logo-notxt.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
           integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
@@ -63,38 +64,46 @@
       </div>
     </nav>
 
-    <h1>Search results for: <i><?php echo $_REQUEST["search"]?></i></h1>
+<?php
 
-    <?php
-      // Database connect
-      $servername = "localhost";
-      $dbname= "library.mysql";
-      $username = "root";
-      $password = "password";
-      $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+// Database connect
+$servername = "localhost";
+$dbname= "library.mysql";
+$username = "root";
+$password = "password";
+$dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
-      // Get our search term from GET request.
-      $search = $_REQUEST["search"];
+// Get our search term from GET request.
+$search = $_REQUEST["search"];
 
-      $sqlstmt = "SELECT * FROM BOOK
-        WHERE Title LIKE '%$search%'
-        OR Authors LIKE '%$search%'";
+$sqlstmt = "SELECT * FROM BOOK
+  WHERE Title LIKE '%$search%'
+  OR Authors LIKE '%$search%'";
 
-      //$stmt = $dbh->query($sqlstmt);
-      //$get = $stmt->fetch();
+// get the search result by asking the db 
+$search_results = $dbh->query($sqlstmt);
 
-      //print_r($get);
-      $search_results = $dbh->query($sqlstmt);
+// build html from here
+echo "<h1>Search results for: <i>$search</i></h1>";
 
-      foreach ($search_results as $b) {
-        $t = $b['Title']; 
-        $a = $b['Authors'];
-        $i = $b['Img_URL'];
-        echo "book: $t";
-        echo " by: $a ";
-        //echo "<img src="$i">";
-      }
-    ?>
+foreach ($search_results as $b) {
+  //Book specific vars
+  $t = $b['Title']; 
+  $a = $b['Authors'];
+  $i = $b['Img_URL'];
+
+
+
+  //book html
+  echo "<div class='library-book'>";
+  echo "<div class='cover-wrapper'>";
+  echo "<img src=" . $i . " alt=$t>";
+  echo "</div>";
+  echo "<div class='library-book-title'>" . $t . "</div>";
+  echo "<div class='library-book-author'>" . $a . "</div>";
+  echo "</div>"; // end book
+}
+?>
 
     <!-- Footer Section -->
     <div class="footer__container">
