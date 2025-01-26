@@ -91,9 +91,10 @@ foreach ($search_results as $b) {
   $t = $b['Title']; 
   $a = $b['Authors'];
   $i = $b['Img_URL'];
-
-
-
+  
+  //form for the POST request
+  echo "<form id='select_book' action='book.php'>";
+  echo "<a href='book.php' onclick=\"document.getElementById('select_book').submit() \" >";
   //book html
   echo "<div class='library-book'>";
   echo "<div class='cover-wrapper'>";
@@ -102,6 +103,8 @@ foreach ($search_results as $b) {
   echo "<div class='library-book-title'>" . $t . "</div>";
   echo "<div class='library-book-author'>" . $a . "</div>";
   echo "</div>"; // end book
+  echo "</a>";
+  echo '</form>';
 }
 ?>
 
