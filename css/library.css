@@ -48,6 +48,7 @@ a {
 }
 
 .book-page img {
+    display: block;
     height: 15em;
     margin: 5em auto;
 }
@@ -76,6 +77,7 @@ a {
 .letter-break {
   font-family: "Bebas Neue", san9A978Es-serif;
   padding: .2em;
+  margin: 0.5em 0; 
   color: white;
   background: #1e9c9c;
   page-break-after: always;

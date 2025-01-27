@@ -54,6 +54,7 @@
             $authors = test_input($_POST['Authors']);
             $img_URL = test_input($_POST['Img_URL']);
         } else {
+            // else redirect
             header("Location: library.php");
             exit(); // do not run any more php from this script
         }

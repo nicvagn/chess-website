@@ -24,7 +24,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         <title>SK Horizon Chess Club</title>
         <link rel="stylesheet" href="./css/styles.css" />
         <link rel="stylesheet" href="./css/library.css" />
-        <link rel="icon" href="./images/shcc-logo-notxt.png" />
+        <link rel="icon" href="./images/shcc-logo-notxt-icon.png" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
               integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" />
@@ -1016,14 +1016,6 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                         <a href="contact-us.html">Contact Us</a>
                     </div>
                 </div>
-                <!--
-                     <div class="footer__link--wrapper">
-                     <div class="footer__link--items">
-                     <h2>Resources</h2>
-                     <a href="https://www.libib.com/u/saskhorizonchessclub">Library</a>
-                     </div>
-                     </div>
-                -->
                 <div class="footer__link--wrapper">
                     <div class="footer__link--items">
                         <h2>Social Media</h2>
