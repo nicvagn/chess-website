@@ -92,8 +92,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -101,9 +101,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -134,8 +134,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -143,9 +143,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -179,8 +179,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post' method='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -188,9 +188,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -222,8 +222,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -231,9 +231,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -265,8 +265,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -274,9 +274,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -311,8 +311,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -320,9 +320,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -357,8 +357,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -366,9 +366,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -399,8 +399,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -408,9 +408,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -442,8 +442,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -451,9 +451,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -485,8 +485,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -494,9 +494,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -528,8 +528,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -537,9 +537,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -571,8 +571,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -580,9 +580,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -614,8 +614,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -623,9 +623,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -657,8 +657,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -666,9 +666,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -700,8 +700,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -709,9 +709,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -743,8 +743,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='POST'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -752,9 +752,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -786,8 +786,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -795,9 +795,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -829,8 +829,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -838,9 +838,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -872,8 +872,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -881,9 +881,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -915,8 +915,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -924,9 +924,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -958,8 +958,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -967,9 +967,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -1001,8 +1001,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -1010,9 +1010,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -1044,8 +1044,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -1053,9 +1053,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -1087,8 +1087,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php' methot='post'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
@@ -1096,9 +1096,9 @@ foreach ($search_results as $b) {
         echo "<div class='library-book-author'>" . $a . "</div>";
       echo "</a>";
       // hidden inputs in the form we submit. Classic.
-      echo "<input type='hidden' value=\"$Title\" name='Title' />";
-      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
-      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
       echo "<noscript><input type='submit' value='select'></noscript>";
     echo '</form>';
   echo "</td>"; // end book
@@ -1122,12 +1122,14 @@ echo "</table>";
           <a href="contact-us.html">Contact Us</a>
         </div>
       </div>
+      <!--
       <div class="footer__link--wrapper">
         <div class="footer__link--items">
           <h2>Resources</h2>
           <a href="https://www.libib.com/u/saskhorizonchessclub">Library</a>
         </div>
       </div>
+      -->
       <div class="footer__link--wrapper">
         <div class="footer__link--items">
           <h2>Social Media</h2>
@@ -1155,9 +1157,9 @@ echo "</table>";
   </div>
 
   <!--
-  <-- jquery CDN -->
+  <-- jquery CDN --
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <-- our script -->
+  <-- our script --
   <script type="module" src="./script/library_pg_bun.js"></script>
   -->
 </body>

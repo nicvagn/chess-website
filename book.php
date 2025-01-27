@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -42,27 +42,38 @@
     </div>
   </nav>
 
-  <main>
-  <h2 class="library-title"><?php echo $_POST["book"]; ?></h2>
+    <h1></h1>
   <?php
-    //Book specific vars
-    $b = $_POST["book"];
-    $t = $b['Title']; 
-    $a = $b['Authors'];
-    $i = $b['Img_URL'];
 
-    //book html
-    echo "<div class='library-book'>";
-      echo "<div class='cover-wrapper'>";
-        echo "<img src=" . $i . " alt=$t>";
+
+   function test_input($data) {
+     // make sure we are getting good input
+     $data = trim($data);
+     $data = stripslashes($data);
+     $data = htmlspecialchars($data);
+     return $data;
+   }
+   
+   // if request is a post set vars
+   if ($_SERVER["REQUEST_METHOD"] == "POST") {
+     $title = $authors = $img_URL = "";
+     error_log("REQUEST POST!", 0);
+     $title = test_input($_POST['Title']); 
+     $authors = test_input($_POST['Authors']);
+     $img_URL = test_input($_POST['Img_URL']);
+   }
+
+  echo "<h2 class='library-title'>$title</h2>";
+
+  //book html
+  echo "<div class='library-book'>";
+    echo "<div class='cover-wrapper'>";
+      echo "<img src=" . $img_URL . " alt=" . $title . ">";
       echo "</div>";
-      echo "<div class='library-book-title'>" . $t . "</div>";
-      echo "<div class='library-book-author'>" . $a . "</div>";
-    echo "</div>"; // end book
+    echo "<div class='library-book-title'>" . $title . "</div>";
+    echo "<div class='library-book-author'>" . $authors . "</div>";
+    echo "</div>";
   ?>
-
-  </main>
-
   </body>
 </html>
 

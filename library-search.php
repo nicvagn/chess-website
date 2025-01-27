@@ -71,6 +71,46 @@ $password = "password";
 // library search: books per row
 $num_book_in_row = 10;
 
+<?php
+//Get all books starting with a number
+$sqlstmt = "SELECT * FROM BOOK
+  WHERE Title REGEXP '^[wW]'";
+
+// get the search result by asking the db 
+$search_results = $dbh->query($sqlstmt);
+
+echo "<table class='library-book-table'>";
+echo "<tr>"; // all books on one row
+foreach ($search_results as $b) {
+  //Book specific vars
+  $t = $b['Title']; 
+  $a = $b['Authors'];
+  $i = $b['Img_URL'];
+
+  //book html
+  echo "<td class='library-book'>";
+    //form for the POST request
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
+        echo "<div class='cover-wrapper'>";
+          echo "<img src=" . $i . " alt='$t'>";
+        echo "</div>";
+        echo "<div class='library-book-title'>" . $t . "</div>";
+        echo "<div class='library-book-author'>" . $a . "</div>";
+      echo "</a>";
+      // hidden inputs in the form we submit. Classic.
+      echo "<input type='hidden' value=\"$t\" name='Title' />";
+      echo "<input type='hidden' value=\"$a\" name='Authors' />";
+      echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+      echo "<noscript><input type='submit' value='select'></noscript>";
+    echo '</form>';
+  echo "</td>"; // end book
+}
+//finish out the table of search results
+        
+echo "</tr>";
+echo "</table>";
+?>
 // Database connect
 $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
@@ -98,8 +138,8 @@ foreach ($search_results as $b) {
   //book html
   echo "<td class='library-book'>";
     //form for the POST request
-    echo "<form class='select_book' action='book.php'>";
-      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+    echo "<form class='select_book' action='book.php' method='post'>";
+      echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
         echo "<div class='cover-wrapper'>";
           echo "<img src=" . $i . " alt='$t'>";
         echo "</div>";
