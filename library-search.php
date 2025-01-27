@@ -24,10 +24,7 @@
       }
     </script>
     <meta property="og:image" content="https://www.skhorizonchess.ca/images/shcc-logo-notxt.png" />
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="viewport" content="min-width=1200px, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/library.css" />
@@ -43,7 +40,7 @@
         <a href="about.html" class="navbar__logo"><img src="./images/shcc-logo-notxt.png" alt="SHCC Logo" /></a>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="index.html"  id="navbar__links_current" class="navbar__links">HOME</a>
+            <a href="index.html" class="navbar__links">HOME</a>
           </li>
           <li class="navbar__item">
             <a href="tournaments.html" class="navbar__links">TOURNAMENTS</a>
@@ -65,12 +62,16 @@
     </nav>
 
 <?php
-
-// Database connect
+// CONSTANTS
+// db info
 $servername = "localhost";
 $dbname= "library.mysql";
 $username = "root";
 $password = "password";
+// library search: books per row
+$num_book_in_row = 10;
+
+// Database connect
 $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
 // Get our search term from GET request.
@@ -86,26 +87,37 @@ $search_results = $dbh->query($sqlstmt);
 // build html from here
 echo "<h1>Search results for: <i>$search</i></h1>";
 
+echo "<table class='library-book-table'>";
+echo "<tr>"; // all books on one row
 foreach ($search_results as $b) {
   //Book specific vars
   $t = $b['Title']; 
   $a = $b['Authors'];
   $i = $b['Img_URL'];
-  
-  //form for the POST request
-  echo "<form id='select_book' action='book.php'>";
-  echo "<a href='book.php' onclick=\"document.getElementById('select_book').submit() \" >";
+
   //book html
-  echo "<div class='library-book'>";
-  echo "<div class='cover-wrapper'>";
-  echo "<img src=" . $i . " alt=$t>";
-  echo "</div>";
-  echo "<div class='library-book-title'>" . $t . "</div>";
-  echo "<div class='library-book-author'>" . $a . "</div>";
-  echo "</div>"; // end book
-  echo "</a>";
-  echo '</form>';
+  echo "<td class='library-book'>";
+    //form for the POST request
+    echo "<form class='select_book' action='book.php'>";
+      echo "<a href='book.php' class='select_book' onclick=\"this.parentNode.submit() \" >";
+        echo "<div class='cover-wrapper'>";
+          echo "<img src=" . $i . " alt='$t'>";
+        echo "</div>";
+        echo "<div class='library-book-title'>" . $t . "</div>";
+        echo "<div class='library-book-author'>" . $a . "</div>";
+      echo "</a>";
+      // hidden inputs in the form we submit. Classic.
+      echo "<input type='hidden' value=\"$Title\" name='Title' />";
+      echo "<input type='hidden' value=\"$Authors\" name='Authors' />";
+      echo "<input type='hidden' value=\"$Img_URL\" name='Img_URL' />";
+      echo "<noscript><input type='submit' value='select'></noscript>";
+    echo '</form>';
+  echo "</td>"; // end book
 }
+//finish out the table of search results
+        
+echo "</tr>";
+echo "</table>";
 ?>
 
     <!-- Footer Section -->
@@ -137,17 +149,18 @@ foreach ($search_results as $b) {
         <div class="social__media--wrap">
           <div class="footer__logo promo">
             <a href="about.html"><img alt="shcc logo" src="./images/shcc-logo-notxt.png" />
-	      <BR>
-	      <small>Website made by: Nicolas Vaagen</small></a>
+              <BR>
+              <small>Website made by: Nicolas Vaagen</small></a>
           </div>
-	  <div id="quadrant" class="footer__logo promo">
-	    <a href="https://www.quadrant.net/">
-	      <img src="images/quadrant.svg" alt="quadrant logo">
-	      <BR>
+	      <div id="quadrant" class="footer__logo promo">
+	        <a href="https://www.quadrant.net/">
+	          <img src="images/quadrant.svg" alt="quadrant logo">
+	          <BR>
               <small>Hosting and Web services</small>
-	    </a>
-	  </div>
+	        </a>
+	      </div>
         </div>
       </section>
     </div>
   </body>
+</html>

@@ -40,8 +40,9 @@ body {
   top: 0;
   z-index: 999;
   font-family: "Bebas Neue", san9A978Es-serif;
-  flex-basis: max-content;
+  flex-basis: 100%
   flex-grow: 100%;
+  flex-shrink: 0;
 }
 
 .navbar__container {

@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="wdata-titleth=1200px, initial-scale=1.0" />
+  <meta name="viewport" content="min-width=1200px, initial-scale=1.0" />
   <title>SK Horizon Chess Club</title>
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/library.css" />
@@ -42,9 +42,11 @@
     </div>
   </nav>
 
-  <h2 class="library-title"><?php echo $_GET["book"]; ?></h2>
+  <main>
+  <h2 class="library-title"><?php echo $_POST["book"]; ?></h2>
   <?php
     //Book specific vars
+    $b = $_POST["book"];
     $t = $b['Title']; 
     $a = $b['Authors'];
     $i = $b['Img_URL'];
@@ -59,6 +61,7 @@
     echo "</div>"; // end book
   ?>
 
+  </main>
 
   </body>
 </html>

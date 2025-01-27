@@ -1,4 +1,4 @@
-/*
+
   Made by nicolas Vaagen for SK Horizon Chess Club
 
     This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -8,10 +8,15 @@
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
-* {
-  box-sizing: border-box;
+.select_book a {
+  color: #fdd401;
+  display: block;
 }
 
+.library-book-table {
+    text-align: center;
+    margin: 0 auto;
+}
 /* main page title */
 .library-title {
   margin: 0.5em auto;
@@ -24,10 +29,6 @@
   color: #242424;
 }
 
-#library-inventory {
-  width: 100%;
-  display: block;
-}
 
 .library-book {
   padding: 0 .3em;
@@ -47,7 +48,9 @@
   text-align: center;
   width: 8em;
 }
-
+ td {
+  text-align: center;
+}
 .library-book-author {
   text-align: center;
   color: #5e5c64;
@@ -56,8 +59,8 @@
 }
 
 .library-row {
-  width: 100%;
-  margin: 3em 1em;
+  width: 94%;
+  margin: 0 3%;
   display: block;
 }
 
@@ -101,10 +104,14 @@
   transition: all 0.3s ease;
 }
 
-/* TODO */
+.noscript {
+    display: block;
+}
+
+/* TODO
 @media only screen and (max-width: 700px) {
   #library-inventory {
     width: 1200px;
   }
 }
-
+*/
