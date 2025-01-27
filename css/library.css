@@ -8,7 +8,7 @@
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
-.select_book a {
+a {
   color: #fdd401;
   display: block;
 }
@@ -42,6 +42,15 @@
   height: 9em;
 }
 
+.book-page div {
+    margin: auto;
+    display: block;
+}
+
+.book-page img {
+    height: 15em;
+    margin: 5em auto;
+}
 .library-book-title {
   color: #242424;
   font-family: "Bebas Neue", san9A978Es-serif;
@@ -53,7 +62,7 @@
 }
 .library-book-author {
   text-align: center;
-  color: #5e5c64;
+  color: #0a0a0f;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: xx-small;
 }
