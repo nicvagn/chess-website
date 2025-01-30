@@ -1,4 +1,4 @@
-
+/*
   Made by nicolas Vaagen for SK Horizon Chess Club
 
     This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -7,16 +7,16 @@
 
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
-
 a {
-  color: #fdd401;
-  display: block;
+  text-decoration: none;
 }
 
 .library-book-table {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  min-width: 1000px;
+  margin: 0 auto;
 }
+
 /* main page title */
 .library-title {
   margin: 0.5em auto;
@@ -29,49 +29,50 @@ a {
   color: #242424;
 }
 
-
+/* this is terribly named. It is for all the bits that will link you to the book pg. */
+.select-book {
+    margin: 1em 3em;
+}
 .library-book {
   padding: 0 .3em;
   text-align: center;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 8em;
 }
 
 .library-book img {
-  height: 9em;
+  width: auto;
+  height: 100%;
+  margin: 0;
+}
+.cover-wrapper {
+    width: 8em;
 }
 
-.book-page div {
-    margin: auto;
-    display: block;
-}
-
-.book-page img {
-    display: block;
-    height: 15em;
-    margin: 5em auto;
-}
 .library-book-title {
   color: #242424;
   font-family: "Bebas Neue", san9A978Es-serif;
   text-align: center;
   width: 8em;
 }
- td {
+
+td {
   text-align: center;
 }
 .library-book-author {
   text-align: center;
   color: #0a0a0f;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: xx-small;
+  font-size: smaller;
 }
 
 .library-row {
   width: 94%;
   margin: 0 3%;
   display: block;
+  min-width: 950px;
 }
 
 .letter-break {
@@ -82,8 +83,80 @@ a {
   background: #1e9c9c;
   page-break-after: always;
   text-align: center;
+  min-width: 1000px;
 }
 
+
+
+/* Individual book pg */
+
+#book-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  outline: 0.6em dashed black;
+  min-width: 20em;
+  width: 65%;
+  margin: 1em auto;
+  background: #79eaea;
+  border-radius: 2em;
+}
+
+.rental-info {
+    margin: 1em 0;
+    font-family: "Bebas Neue", san9A978Es-serif;
+}
+.field {
+    display: block;
+    margin: 3px 0;
+}
+.book-page-title {
+    font-style: normal;
+}
+.book-page-author {
+    text-align: center;
+    margin: 0;
+    font-family:Cursive;
+}
+
+.book-page img {
+    display: block;
+    height: 15em;
+    margin: 1em auto 0;
+}
+
+.book-radio {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.form-btn {
+  text-align: center;
+  border-radius: 0.8em;
+  width: 100%;
+  border: 3px solid black;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 1em;
+  background-color: #fdd401;
+  font-family: "Bebas Neue", san9A978Es-serif;
+  margin: 0 1em;
+}
+
+.form-btn:hover {
+  background: #dd1810;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+
+.side-by-side {
+    display: inline-flex;
+    flex-direction: row;
+    flex-grow: 50%;
+    margin-bottom: 1em;
+}
+/* search container */
 .search-container {
   margin: 0.5em;
 }
@@ -105,6 +178,7 @@ a {
   font-size: 1.3em;
   text-decoration: none;
   border-radius: 9px;
+  min-width: 3em;
   text-align: center;
   font-family: "Bebas Neue", san9A978Es-serif;
 }
@@ -117,6 +191,10 @@ a {
 
 .noscript {
     display: block;
+}
+
+.footer__container {
+    min-width: 1000px;
 }
 
 /* TODO

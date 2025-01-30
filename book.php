@@ -38,6 +38,7 @@
                 </ul>
             </div>
         </nav>
+
         <?php
         function test_input($data) {
             // make sure we are getting good input
@@ -58,15 +59,49 @@
             header("Location: library.php");
             exit(); // do not run any more php from this script
         }
-        echo "<h1 class='library-title'>$title</h1>";
         //book html
         echo "<div class='book-page'>";
-        echo "<div class='cover-wrapper book-page'>";
-        echo "<img class='book-page' src=" . $img_URL . " alt=" . $title . ">";
+        echo "<div class='book-page'>";
+        echo "<img class='book-page' src=" . $img_URL . " alt='" . $title . "'>";
         echo "</div>";
-        echo "<div class='library-book-title'>" . $title . "</div>";
-        echo "<div class='library-book-author'>" . $authors . "</div>";
-        echo "</div>";
+        echo "<h1 class='book-page-title'>" . $title . "</h1>";
+        echo "<h3 class='book-page-author'>" . $authors . "</h3>";
         ?>
+
+
+        <form id="book-form" action="https://formsubmit.co/skhorizonchessclub@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="<?php echo $title . " by " . $authors . " request " ?>">
+            <section class="rental-info">
+                <div class="field">
+                    <label class="field" for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" />
+                </div>
+                <div class="field">
+                    <label class="field" for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email address" />
+                </div>
+                <h4>Rental term:</h4>
+                <div class="book-radio">
+                    <input type="radio" id="one-week" name="num-weeks" value="One Week" />
+                    <label  for="one-week">One week</label>
+                    <input type="radio" id="two-week" name="num-weeks" value="Two Week" />
+                    <label for="two-week">Two weeks</label>
+                    <input type="radio" id="three-weeks" name="num-weeks" value="Three Week" />
+                    <label for="three-weeks">Three weeks</label>
+                </div>
+
+                <div id="payment-details">
+                    <h3>Rental cost: $650 per week.</h3>
+                    <h4>To be paid in advance.</h4>
+                    <h5>If you loose it we will come for you.</h5>
+                </div>
+            </section>
+            <div class="side-by-side">
+                <input class="form-btn" type="submit" value="Request book">
+                <input class="form-btn" type="button" value="Return" onclick="window.location='/library.php';">
+                <input name="_formsubmit_id" type="text" style="display:none">
+            </div>
+        </form>
+            </div>
     </body>
 </html>

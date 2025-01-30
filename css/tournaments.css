@@ -179,7 +179,7 @@ th {
   width: 75%;
 }
 .tournaments-column {
-  padding: 1em;
+  padding: 1em 0.5em;
 }
 .round-time-table {
   min-width: 400px;
