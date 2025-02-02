@@ -86,7 +86,7 @@
             echo "<form class='select_book' action='book.php' method='post'>";
             echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
             echo "<div class='cover-wrapper'>";
-            echo "<img src=" . $i . " alt='$t'>";
+            echo "<img src=" . $i . " class='library-book' alt='$t'>";
             echo "</div>";
             echo "<div class='library-book-title'>" . $t . "</div>";
             echo "<div class='library-book-author'>" . $a . "</div>";
