@@ -10,6 +10,6 @@ tsc
 
 # make tournament bundle
 
-../node_modules/.bin/esbuild dist/tournament_page.js --bundle --outfile=library_pg_bun.js
+../node_modules/.bin/esbuild dist/tournament_page.js --bundle --outfile=tournament_pg_bun.js
 
 echo "All Done!"
