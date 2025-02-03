@@ -18,7 +18,7 @@ body {
 }
 
 #quadrant {
-    display: none;
+    display: block;
 }
 .promo {
   position: relative;
