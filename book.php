@@ -54,6 +54,7 @@
             $title = test_input($_POST['Title']);
             $authors = test_input($_POST['Authors']);
             $img_URL = test_input($_POST['Img_URL']);
+            $description = test_input($_POST['Description']);
         } else {
             // else redirect
             header("Location: library.php");
@@ -66,6 +67,7 @@
         echo "</div>";
         echo "<h1 class='book-page-title'>" . $title . "</h1>";
         echo "<h3 class='book-page-author'>" . $authors . "</h3>";
+        echo "<p class='book-page-description'>" . $description . "</p>";
         ?>
 
 

@@ -31,15 +31,23 @@ a {
 
 /* this is terribly named. It is for all the bits that will link you to the book pg. */
 .select-book {
-    margin: 1em 3em;
+  margin: 1em 3em;
 }
 .library-book {
-  padding: 0 .3em;
+  padding: 0 0.3em;
   text-align: center;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   max-width: 8em;
+}
+
+.book-page-description {
+  display: flex;
+  min-width: 20em;
+  width: 65%;
+  text-align: center;
+  margin: 0.5em auto;
 }
 
 .library-book img {
@@ -48,7 +56,7 @@ a {
   margin: 0;
 }
 .cover-wrapper {
-    width: 8em;
+  width: 8em;
 }
 
 .library-book-title {
@@ -77,16 +85,14 @@ td {
 
 .letter-break {
   font-family: "Bebas Neue", san9A978Es-serif;
-  padding: .2em;
-  margin: 0.5em 0; 
+  padding: 0.2em;
+  margin: 0.5em 0;
   color: white;
   background: #1e9c9c;
   page-break-after: always;
   text-align: center;
   min-width: 1000px;
 }
-
-
 
 /* Individual book pg */
 
@@ -103,32 +109,32 @@ td {
 }
 
 .rental-info {
-    margin: 1em 0;
-    font-family: "Bebas Neue", san9A978Es-serif;
+  margin: 1em 0;
+  font-family: "Bebas Neue", san9A978Es-serif;
 }
 .field {
-    display: block;
-    margin: 3px 0;
+  display: block;
+  margin: 3px 0;
 }
 .book-page-title {
-    font-style: normal;
+  font-style: normal;
 }
 .book-page-author {
-    text-align: center;
-    margin: 0;
-    font-family:Cursive;
+  text-align: center;
+  margin: 0;
+  font-family: Cursive;
 }
 
 .book-page img {
-    display: block;
-    height: 15em;
-    margin: 1em auto 0;
+  display: block;
+  height: 15em;
+  margin: 1em auto 0;
 }
 
 .book-radio {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .form-btn {
@@ -136,7 +142,9 @@ td {
   border-radius: 0.8em;
   width: 100%;
   border: 3px solid black;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 1em;
   background-color: #fdd401;
   font-family: "Bebas Neue", san9A978Es-serif;
@@ -149,19 +157,18 @@ td {
   transition: all 0.3s ease;
 }
 
-
 .side-by-side {
-    display: inline-flex;
-    flex-direction: row;
-    flex-grow: 50%;
-    margin-bottom: 1em;
+  display: inline-flex;
+  flex-direction: row;
+  flex-grow: 50%;
+  margin-bottom: 1em;
 }
 /* search container */
 .search-container {
   margin: 0.5em;
 }
 
-.search-container input[type=text] {
+.search-container input[type="text"] {
   padding: 6px;
   font-size: 1.3em;
   border: 3px solid black;
@@ -190,11 +197,11 @@ td {
 }
 
 .noscript {
-    display: block;
+  display: block;
 }
 
 .footer__container {
-    min-width: 1000px;
+  min-width: 1000px;
 }
 
 /* TODO

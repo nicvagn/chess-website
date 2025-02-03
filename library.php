@@ -79,6 +79,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -94,6 +95,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -118,6 +120,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -157,6 +160,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -172,6 +176,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -196,6 +201,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -211,6 +217,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -235,6 +242,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -250,6 +258,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -261,43 +270,45 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
             </section>
             <h3 class="letter-break">E</h3>
             <section class="library-row">
-            <?php
-            //Get all books starting with a number
-            $sqlstmt = "SELECT * FROM BOOK
+                <?php
+                //Get all books starting with a number
+                $sqlstmt = "SELECT * FROM BOOK
   WHERE Title REGEXP '^[eE]'";
-            // get the search result by asking the db
-            $search_results = $dbh->query($sqlstmt);
-            // build html from here
-            echo "<table class='library-book-table'>";
-            echo "<tr>"; // all books on one row
-            foreach ($search_results as $b) {
-                //Book specific vars
-                $t = $b['Title'];
-                $a = $b['Authors'];
-                $i = $b['Img_URL'];
-                //book html
-                echo "<td class='library-book'>";
-                //form for the POST request
-                echo "<form class='select_book' action='book.php' method='post'>";
-                echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
-                echo "<div class='cover-wrapper'>";
-                echo "<img src=" . $i . " alt='$t' class='library-book'>";
-                echo "</div>";
-                echo "<div class='library-book-title'>" . $t . "</div>";
-                echo "<div class='library-book-author'>" . $a . "</div>";
-                echo "</a>";
-                // hidden inputs in the form we submit. Classic.
-                echo "<input type='hidden' value=\"$t\" name='Title' />";
-                echo "<input type='hidden' value=\"$a\" name='Authors' />";
-                echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
-                echo "<noscript><input type='submit' value='select'></noscript>";
-                echo '</form>';
-                echo "</td>"; // end book
-            }
-            //finish out the table of search results
-            echo "</tr>";
-            echo "</table>";
-            ?>
+                // get the search result by asking the db
+                $search_results = $dbh->query($sqlstmt);
+                // build html from here
+                echo "<table class='library-book-table'>";
+                echo "<tr>"; // all books on one row
+                foreach ($search_results as $b) {
+                    //Book specific vars
+                    $t = $b['Title'];
+                    $a = $b['Authors'];
+                    $i = $b['Img_URL'];
+                    $description = $b['Description'];
+                    //book html
+                    echo "<td class='library-book'>";
+                    //form for the POST request
+                    echo "<form class='select_book' action='book.php' method='post'>";
+                    echo "<a href='#' class='select_book' onclick=\"this.parentNode.submit() \" >";
+                    echo "<div class='cover-wrapper'>";
+                    echo "<img src=" . $i . " alt='$t' class='library-book'>";
+                    echo "</div>";
+                    echo "<div class='library-book-title'>" . $t . "</div>";
+                    echo "<div class='library-book-author'>" . $a . "</div>";
+                    echo "</a>";
+                    // hidden inputs in the form we submit. Classic.
+                    echo "<input type='hidden' value=\"$t\" name='Title' />";
+                    echo "<input type='hidden' value=\"$a\" name='Authors' />";
+                    echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
+                    echo "<noscript><input type='submit' value='select'></noscript>";
+                    echo '</form>';
+                    echo "</td>"; // end book
+                }
+                //finish out the table of search results
+                echo "</tr>";
+                echo "</table>";
+                ?>
             </section>
             <h3 class="letter-break">F</h3>
             <section class="library-row">
@@ -315,6 +326,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -330,6 +342,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -354,6 +367,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -369,6 +383,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -393,6 +408,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -408,6 +424,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -432,6 +449,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -447,6 +465,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -471,6 +490,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -486,6 +506,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -510,6 +531,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -525,6 +547,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -549,6 +572,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -564,6 +588,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -588,6 +613,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -603,6 +629,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -627,6 +654,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -642,6 +670,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -666,6 +695,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -681,6 +711,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -705,6 +736,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -720,6 +752,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -744,6 +777,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -759,6 +793,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -783,6 +818,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -798,6 +834,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -822,6 +859,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -837,6 +875,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -861,6 +900,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -876,6 +916,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -900,6 +941,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -915,6 +957,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -939,6 +982,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -954,6 +998,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book
@@ -978,6 +1023,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     $t = $b['Title'];
                     $a = $b['Authors'];
                     $i = $b['Img_URL'];
+                    $description = $b['Description'];
                     //book html
                     echo "<td class='library-book'>";
                     //form for the POST request
@@ -993,6 +1039,7 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                     echo "<input type='hidden' value=\"$t\" name='Title' />";
                     echo "<input type='hidden' value=\"$a\" name='Authors' />";
                     echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+                    echo "<input type='hidden' value=\"$description\" name='Description' />";
                     echo "<noscript><input type='submit' value='select'></noscript>";
                     echo '</form>';
                     echo "</td>"; // end book

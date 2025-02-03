@@ -80,6 +80,7 @@
             $t = $b['Title'];
             $a = $b['Authors'];
             $i = $b['Img_URL'];
+            $description = $b['Description'];
             //book html
             echo "<td class='library-book'>";
             //form for the POST request
@@ -95,6 +96,7 @@
             echo "<input type='hidden' value=\"$t\" name='Title' />";
             echo "<input type='hidden' value=\"$a\" name='Authors' />";
             echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+            echo "<input type='hidden' value=\"$description\" name='Description' />";
             echo "<noscript><input type='submit' value='select'></noscript>";
             echo '</form>';
             echo "</td>"; // end book
