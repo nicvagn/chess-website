@@ -1,12 +1,12 @@
-import mustache from "mustache";
+"use strict";
 const tournaments = [
     // 0
     [
         "Horizon Classical on August 23-25",
         `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment
+    60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under
+        `Sections: Open, U1500, 10 Years Old and Under 
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -18,9 +18,9 @@ Players are only eligible to win prizes corresponding to the section they regist
     [
         "Horizon Classical on October 4-6",
         `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment
+    60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under
+        `Sections: Open, U1500, 10 Years Old and Under 
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -32,9 +32,9 @@ Players are only eligible to win prizes corresponding to the section they regist
     [
         "Horizon Classical on December 13-15",
         `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment
+    60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under
+        `Sections: Open, U1500, 10 Years Old and Under 
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -45,9 +45,9 @@ Players are only eligible to win prizes corresponding to the section they regist
     [
         "Horizon Classical on February 21-23",
         `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment
+    60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under
+        `Sections: Open, U1500, 10 Years Old and Under 
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -58,9 +58,9 @@ Players are only eligible to win prizes corresponding to the section they regist
     [
         "Horizon Classical on April 11-13",
         `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment
+    60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under
+        `Sections: Open, U1500, 10 Years Old and Under 
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -71,9 +71,9 @@ Players are only eligible to win prizes corresponding to the section they regist
     [
         "Horizon Classical on July 25-27",
         `Official CFC Rated Classical Tournament:
-    60 | 30 – 60 minutes with 30 second increment
+    60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under
+        `Sections: Open, U1500, 10 Years Old and Under 
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -85,7 +85,7 @@ Players are only eligible to win prizes corresponding to the section they regist
 // get the template strings from html
 const tournamentTemplate = $("#show-tournament-template").html();
 const joinTemplate = $("#join-tournament-template").html();
-export function showTournamentPg(tournament_num) {
+function showTournamentPg(tournament_num) {
     let view = {
         title: tournaments[tournament_num][0],
         time_control: tournaments[tournament_num][1],
@@ -93,7 +93,7 @@ export function showTournamentPg(tournament_num) {
         brilliancy_prize: tournaments[tournament_num][3],
         number: tournament_num,
     };
-    let tournamentData = mustache.render(tournamentTemplate, view);
+    let tournamentData = Mustache.render(tournamentTemplate, view);
     console.log(tournamentData);
     // hide the tournament list and title
     $("#tournament-list").hide();
@@ -105,7 +105,7 @@ export function showTournamentPg(tournament_num) {
     // and bring it into view
     $("#tournament-info").get(0).scrollTo({ behavior: "smooth" });
 }
-export function showSCCTournament() {
+function showSCCTournament() {
     // hide the tournament list and title
     $("#tournament-list").hide();
     $("#tournament-title").hide();
@@ -114,7 +114,7 @@ export function showSCCTournament() {
     $("#tournament-info").get(0).scrollTo({ behavior: "smooth" });
 }
 // show the list list view
-export function showTournamentLst() {
+function showTournamentLst() {
     $("#tournament-info").hide();
     $("#scc-tournament-info").hide();
     // show the tournament list and title
@@ -122,13 +122,14 @@ export function showTournamentLst() {
     $("#tournament-title").show();
     $("#tournament-title").get(0).scrollTo({ behavior: "smooth" });
 }
-export function joinTournamentView(num) {
+function joinTournamentView(num) {
     console.log("joined ", num);
     let view = {
         title: tournaments[num][0],
         number: num,
     };
-    let joinPg = mustache.render(joinTemplate, view);
+    let joinPg = Mustache.render(joinTemplate, view);
     $("#page-content").replaceWith(joinPg);
     $("#top").get(0).scrollTo({ behavior: "smooth" });
 }
+//# sourceMappingURL=tsBundle.js.map
