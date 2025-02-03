@@ -18,13 +18,13 @@ body {
 }
 
 #quadrant {
-    display: none;
+  display: block;
 }
 .promo {
   position: relative;
 }
 
-.promo a{
+.promo a {
   text-decoration: none;
   color: darkgray;
   font-family: monospace;
@@ -305,7 +305,6 @@ body {
 a {
   position: relative;
 }
-
 
 #mission-text {
   display: flex;
