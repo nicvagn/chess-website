@@ -1,14 +1,4 @@
 <!doctype html>
-<?php
-// CONSTANTS
-// db info
-$servername = "localhost";
-$dbname= "library.mysql";
-$username = "root";
-$password = "password";
-// Database connect
-$dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-?>
 <!--
      Site skeleton created by Brian Design on youtube @ www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber
      Created for Saskatchewan Horizon Chess Club by Nicolas Vaagen
@@ -17,6 +7,9 @@ $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
      You should have received a copy of the GNU General Public License along with this program. If not, see
      <https://www.gnu.org/licenses/>.
 -->
+<?php
+require_once './modules/dbh.php';
+?>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />

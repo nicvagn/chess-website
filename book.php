@@ -1,4 +1,15 @@
 <!doctype html>
+<!--
+     Site skeleton created by Brian Design on youtube @ www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber
+     Created for Saskatchewan Horizon Chess Club by Nicolas Vaagen
+     This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+     This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+     You should have received a copy of the GNU General Public License along with this program. If not, see
+     <https://www.gnu.org/licenses/>.
+-->
+<?php
+require_once './modules/dbh.php';
+?>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -104,6 +115,5 @@
                 <input name="_formsubmit_id" type="text" style="display:none">
             </div>
         </form>
-            </div>
     </body>
 </html>

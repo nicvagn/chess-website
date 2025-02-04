@@ -5,6 +5,9 @@
      This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
      You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 -->
+<?php
+require_once './modules/dbh.php';
+?>
 <html lang="en">
     <head>
         <title>results for: <?php echo $_REQUEST["search"] ?></title>
@@ -56,14 +59,6 @@
             </div>
         </nav>
         <?php
-        // CONSTANTS
-        // db info
-        $servername = "localhost";
-        $dbname= "library.mysql";
-        $username = "root";
-        $password = "password";
-        // Database connect
-        $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         // Get our search term from GET request.
         $search = $_REQUEST["search"];
         $sqlstmt = "SELECT * FROM BOOK
