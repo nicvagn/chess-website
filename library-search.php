@@ -58,6 +58,13 @@ require_once './modules/dbh.php';
                 </ul>
             </div>
         </nav>
+
+        <div class="search-container">
+            <form action="/library-search.php">
+                <input class="search-container" type="text" placeholder="Search..." name="search" />
+                <button type="submit">🔍</button>
+            </form>
+        </div>
         <?php
         // Get our search term from GET request.
         $search = $_REQUEST["search"];

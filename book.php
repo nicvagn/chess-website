@@ -50,6 +50,13 @@ require_once './modules/dbh.php';
             </div>
         </nav>
 
+        <div class="search-container">
+            <form action="/library-search.php">
+                <input class="search-container" type="text" placeholder="Search..." name="search" />
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+
         <?php
         function test_input($data) {
             // make sure we are getting good input
