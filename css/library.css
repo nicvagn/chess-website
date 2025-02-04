@@ -77,8 +77,9 @@ td {
 }
 
 .library-row {
-  width: 94%;
-  margin: 0 3%;
+ /* margin: 0 3%; */
+  padding: 1em;
+
   display: block;
   min-width: 950px;
 }
@@ -160,7 +161,6 @@ td {
 .side-by-side {
   display: inline-flex;
   flex-direction: row;
-  flex-grow: 50%;
   margin-bottom: 1em;
 }
 /* search container */

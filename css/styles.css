@@ -41,7 +41,7 @@ body {
   z-index: 999;
   font-family: "Bebas Neue", san9A978Es-serif;
   flex-basis: 100%;
-  flex-grow: 100%;
+  flex-grow: 1;
   flex-shrink: 0;
   min-width: 8em;
 }
@@ -197,11 +197,11 @@ body {
   background-color: #1e9c9c;
   padding: 5rem 0;
   display: flex;
-  flex-basis: 1200;
+  flex-basis: 100%;
   flex-direction: column;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
-  width: 100%;
   min-width: 750px;
 }
 
@@ -322,7 +322,7 @@ img {
   font-weight: bold;
   text-align: center;
   color: #242424;
-  align-self: middle;
+  align-self: center;
   font-size: 3.2em;
   margin-top: 1em;
   margin-bottom: 0.3em;
