@@ -50,10 +50,10 @@ require_once './modules/dbh.php';
             </div>
         </nav>
 
-        <div class="search-container">
-            <form action="/library-search.php">
+        <div class="search-bar">
+            <form class="search-container" action="/library-search.php">
                 <input class="search-container" type="text" placeholder="Search..." name="search" />
-                <button type="submit">🔍</button>
+                <button class="search-container" type="submit">🔍</button>
             </form>
         </div>
 
@@ -73,6 +73,7 @@ require_once './modules/dbh.php';
             $authors = test_input($_POST['Authors']);
             $img_URL = test_input($_POST['Img_URL']);
             $description = test_input($_POST['Description']);
+            $tags = test_input($_POST['Tags']);
         } else {
             // else redirect
             header("Location: library.php");
@@ -85,6 +86,7 @@ require_once './modules/dbh.php';
         echo "</div>";
         echo "<h1 class='book-page-title'>" . $title . "</h1>";
         echo "<h3 class='book-page-author'>" . $authors . "</h3>";
+        echo "<h4 class='book-page-description'>Tags: " . $tags . "</h4>";
         echo "<p class='book-page-description'>" . $description . "</p>";
         ?>
 

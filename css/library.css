@@ -19,7 +19,7 @@ a {
 
 /* main page title */
 .library-title {
-  margin: 0.5em auto;
+  margin-left: 5px;
   height: max-content;
   font-family: "Bebas Neue", san9A978Es-serif;
   font-weight: bold;
@@ -81,7 +81,7 @@ td {
   padding: 1em;
 
   display: block;
-  min-width: 950px;
+  min-width: 1000px;
 }
 
 .letter-break {
@@ -163,31 +163,35 @@ td {
   flex-direction: row;
   margin-bottom: 1em;
 }
+/* searce bar, the real container */
+.search-bar {
+    margin-top: 2px;
+    margin-left: 3rem;
+    display: inline-flex;
+    flex-direction: row;
+}
 /* search container */
 .search-container {
-  margin: 0.5em;
+  height: 100%;
+  margin: 5px;
+  font-size: 1rem;
 }
 
 .search-container input[type="text"] {
-  padding: 6px;
-  font-size: 1.3em;
   border: 3px solid black;
 }
 
 .search-container button {
   border: 3px solid black;
+  padding: 7px;
   box-shadow:
     rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  padding: 6px;
   background: #fdd401;
   cursor: pointer;
-  font-size: 1.3em;
   text-decoration: none;
   border-radius: 9px;
-  min-width: 3em;
   text-align: center;
-  font-family: "Bebas Neue", san9A978Es-serif;
 }
 
 .search-container button:hover {

@@ -49,13 +49,13 @@ require_once './modules/dbh.php';
                 </ul>
             </div>
         </nav>
-        <h2 class="library-title">SHCC: Library</h2>
-        <div class="search-container">
-            <form action="/library-search.php">
+        <div class="search-bar">
+            <form class="search-container" action="/library-search.php">
                 <input class="search-container" type="text" placeholder="Search..." name="search" />
-                <button type="submit">🔍</button>
+                <button class="search-container" type="submit">🔍</button>
             </form>
         </div>
+
         <main id="library-inventory">
             <h3 class="letter-break">#</h3>
             <section class="library-row">

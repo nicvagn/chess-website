@@ -59,18 +59,20 @@ require_once './modules/dbh.php';
             </div>
         </nav>
 
-        <div class="search-container">
-            <form action="/library-search.php">
+        <div class="search-bar">
+            <form class="search-container" action="/library-search.php">
                 <input class="search-container" type="text" placeholder="Search..." name="search" />
-                <button type="submit">🔍</button>
+                <button class="search-container" type="submit">🔍</button>
             </form>
         </div>
         <?php
         // Get our search term from GET request.
         $search = $_REQUEST["search"];
         $sqlstmt = "SELECT * FROM BOOK
-  WHERE Title LIKE '%$search%'
-  OR Authors LIKE '%$search%'";
+            WHERE Title LIKE '%$search%'
+            OR (Authors LIKE '%$search%'
+            OR tags LIKE '%$search%')";
+
         // get the search result by asking the db
         $search_results = $dbh->query($sqlstmt);
         // build html from here
@@ -83,6 +85,7 @@ require_once './modules/dbh.php';
             $a = $b['Authors'];
             $i = $b['Img_URL'];
             $description = $b['Description'];
+            $tags = $b['tags'];
             //book html
             echo "<td class='library-book'>";
             //form for the POST request
@@ -98,6 +101,7 @@ require_once './modules/dbh.php';
             echo "<input type='hidden' value=\"$t\" name='Title' />";
             echo "<input type='hidden' value=\"$a\" name='Authors' />";
             echo "<input type='hidden' value=\"$i\" name='Img_URL' />";
+            echo "<input type='hidden' value=\"$tags\" name='Tags' />";
             echo "<input type='hidden' value=\"$description\" name='Description' />";
             echo "<noscript><input type='submit' value='select'></noscript>";
             echo '</form>';
@@ -121,7 +125,7 @@ require_once './modules/dbh.php';
                 <div class="footer__link--wrapper">
                     <div class="footer__link--items">
                         <h2>Resources</h2>
-                        <a href="https://www.libib.com/u/saskhorizonchessclub">Library</a>
+                        <a href="library.php">Library</a>
                     </div>
                 </div>
                 <div class="footer__link--wrapper">
