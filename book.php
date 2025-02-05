@@ -17,7 +17,12 @@ require_once './modules/dbh.php';
         <title>SHCC Library</title>
         <link rel="stylesheet" href="./css/styles.css" />
         <link rel="stylesheet" href="./css/library.css" />
-        <link rel="icon" href="./images/shcc-logo-notxt.png" />
+        <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <link rel="manifest" href="/images/site.webmanifest" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
               integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" />
@@ -91,7 +96,7 @@ require_once './modules/dbh.php';
         ?>
 
 
-        <form id="book-form" action="https://formsubmit.co/skhorizonchessclub@gmail.com" method="POST">
+        <form id="book-form" action="https://formsubmit.co/davidallansteer@gmail.com" method="POST">
             <input type="hidden" name="_subject" value="<?php echo $title . " by " . $authors . " request " ?>">
             <section class="rental-info">
                 <div class="field">
