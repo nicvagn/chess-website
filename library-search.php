@@ -68,10 +68,13 @@ require_once './modules/dbh.php';
         <?php
         // Get our search term from GET request.
         $search = $_REQUEST["search"];
+        // replace the quotes that muck up our sql
+        $cleansearch = str_replace("'","\'", $search);
+        $cleansearch = str_replace('"','\"', $cleansearch);
         $sqlstmt = "SELECT * FROM BOOK
-            WHERE Title LIKE '%$search%'
-            OR (Authors LIKE '%$search%'
-            OR tags LIKE '%$search%')";
+            WHERE Title LIKE '%$cleansearch%'
+            OR (Authors LIKE '%$cleansearch%'
+            OR tags LIKE '%$cleansearch%')";
 
         // get the search result by asking the db
         $search_results = $dbh->query($sqlstmt);
