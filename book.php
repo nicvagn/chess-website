@@ -14,7 +14,7 @@ require_once './modules/dbh.php';
 <head>
     <meta name="generator" content=
     "HTML Tidy for HTML5 for Linux version 5.8.0">
-    <meta charset="iso-8859-1">
+    <meta charset="utf-8">
     <meta name="viewport" content=
     "min-width=1200px, initial-scale=1.0">
     <title>SHCC Library</title>
@@ -72,7 +72,8 @@ require_once './modules/dbh.php';
     <div class="search-bar">
         <form class="search-container" action="/library-search.php">
             <input class="search-container" type="text" placeholder=
-            "Search..." name="search"> <button class="search-container" type="submit">&#x1F50E;</button>
+            "Search..." name="search"> <button class="search-container"
+            type="submit">🔎</button>
         </form>
     </div><?php
         function test_input($data) {
@@ -110,7 +111,7 @@ require_once './modules/dbh.php';
     "https://formsubmit.co/davidallansteer@gmail.com" method="post"
     name="book-form">
         <input type="hidden" name="_subject" value=
-        "<?php echo $title . " by " . $authors . " request " ?>">
+        "<?php echo $title . " by=".">"&gt;
         <section class="rental-info">
             <div class="field">
                 <label class="field" for="name">Name:</label>
@@ -141,9 +142,8 @@ require_once './modules/dbh.php';
         <div class="side-by-side">
             <input class="form-btn" type="submit" value="Request book">
             <input class="form-btn" type="button" value="Return"
-            onclick="window.location=&#39;/library.php&#39;;">
-            <input name="_formsubmit_id" type="text" style=
-            "display:none">
+            onclick="window.location='/library.php';"> <input name=
+            "_formsubmit_id" type="text" style="display:none">
         </div>
     </form>
 </body>
