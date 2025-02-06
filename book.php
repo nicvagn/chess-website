@@ -110,8 +110,9 @@ require_once './modules/dbh.php';
     <form id="book-form" action=
     "https://formsubmit.co/davidallansteer@gmail.com" method="post"
     name="book-form">
-        <input type="hidden" name="_subject" value=
-        "<?php echo $title . " by=".">"&gt;
+        <input type="hidden" name="_subject"
+               value="<?php echo $title . " by " . $authors . " request " ?>">
+
         <section class="rental-info">
             <div class="field">
                 <label class="field" for="name">Name:</label>
