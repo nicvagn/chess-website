@@ -3,3 +3,7 @@ cspell*
 node_modules
 modules/dbh.php
 .pnpm-store
+halt
+restart
+start
+status
