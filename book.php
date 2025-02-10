@@ -137,8 +137,8 @@ require_once './modules/dbh.php';
                 "three-weeks">Three weeks</label>
             </div>
             <div id="payment-details">
-                <h3 class="book-page">Rental cost: by donation. Our librarian will contact you to orgaize recipt. </h3>
-                <h4 class="book-page">We hope you enjoy the library, and give walue for value.</h4>
+                <h3 class="book-page">Rental cost: by donation. Our librarian will contact you to organize exchange. </h3>
+                <h4 class="book-page">We hope you enjoy the library, and give value for value.</h4>
                 <h6 class="book-page"><small>If you loose it, we will come for you.</small></h6>
             </div>
         </section>
