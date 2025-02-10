@@ -12,14 +12,14 @@ require_once './modules/dbh.php';
 <head>
     <meta name="generator" content=
     "HTML Tidy for HTML5 for Linux version 5.8.0">
-    <meta charset="iso-8859-1">
+    <meta charset="utf-8">
     <link rel="icon" type="image/png" href="/images/favicon-96x96.png"
     sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="shortcut icon" href="/images/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href=
     "/images/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-title" content="MyWebSite">
+    <meta name="apple-mobile-web-app-title" content="SHCC: library">
     <link rel="manifest" href="/images/site.webmanifest">
     <title>results for: <?php echo $_REQUEST["search"] ?></title>
     <!-- Come bots, come. -->
@@ -85,7 +85,7 @@ require_once './modules/dbh.php';
         <form class="search-container" action="/library-search.php">
             <input class="search-container" type="text" placeholder=
             "Search..." name="search"> <button class="search-container"
-            type="submit">&#x1F50E;</button>
+            type="submit">🔎</button>
         </form>
     </div><?php
         // Get our search term from GET request.

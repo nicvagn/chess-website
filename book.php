@@ -14,7 +14,7 @@ require_once './modules/dbh.php';
 <head>
     <meta name="generator" content=
     "HTML Tidy for HTML5 for Linux version 5.8.0">
-    <meta charset="iso-8859-1">
+    <meta charset="utf-8">
     <meta name="viewport" content=
     "min-width=1200px, initial-scale=1.0">
     <title>SHCC Library</title>
@@ -72,7 +72,8 @@ require_once './modules/dbh.php';
     <div class="search-bar">
         <form class="search-container" action="/library-search.php">
             <input class="search-container" type="text" placeholder=
-            "Search..." name="search"> <button class="search-container" type="submit">&#x1F50E;</button>
+            "Search..." name="search"> <button class="search-container"
+            type="submit">🔎</button>
         </form>
     </div><?php
         function test_input($data) {
@@ -109,20 +110,23 @@ require_once './modules/dbh.php';
     <form id="book-form" action=
     "https://formsubmit.co/davidallansteer@gmail.com" method="post"
     name="book-form">
-        <input type="hidden" name="_subject" value=
-        "<?php echo $title . " by " . $authors . " request " ?>">
+        <input type="hidden" name="_subject"
+               value="<?php echo $title . " by " . $authors . " request " ?>">
+
         <section class="rental-info">
             <div class="field">
-                <label class="field" for="name">Name:</label>
+                <label for="name">Name:</label>
+                <BR>
                 <input type="text" id="name" name="name" placeholder=
                 "Enter your full name">
             </div>
             <div class="field">
-                <label class="field" for="email">Email:</label>
+                <label for="email">Email:</label>
+                <BR>
                 <input type="text" id="email" name="email" placeholder=
-                "Enter your email address">
+                "Enter your email address" size="30">
             </div>
-            <h4>Rental term:</h4>
+            <h4 class="book-page">Rental term:</h4>
             <div class="book-radio">
                 <input type="radio" id="one-week" name="num-weeks"
                 value="One Week"> <label for="one-week">One
@@ -133,17 +137,16 @@ require_once './modules/dbh.php';
                 "three-weeks">Three weeks</label>
             </div>
             <div id="payment-details">
-                <h3>Rental cost: $650 per week.</h3>
-                <h4>To be paid in advance.</h4>
-                <h5>If you loose it we will come for you.</h5>
+                <h3 class="book-page">Rental cost: by donation.</h3>
+                <h4 class="book-page">We hope you enjoy the library, and give walue for value.</h4>
+                <h6 class="book-page"><small>If you loose it, we will come for you.</small></h6>
             </div>
         </section>
         <div class="side-by-side">
             <input class="form-btn" type="submit" value="Request book">
             <input class="form-btn" type="button" value="Return"
-            onclick="window.location=&#39;/library.php&#39;;">
-            <input name="_formsubmit_id" type="text" style=
-            "display:none">
+            onclick="window.location='/library.php';"> <input name=
+            "_formsubmit_id" type="text" style="display:none">
         </div>
     </form>
 </body>
