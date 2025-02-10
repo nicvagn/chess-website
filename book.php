@@ -40,7 +40,7 @@ require_once './modules/dbh.php';
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="about.html" class="navbar__logo"><img src=
+            <a href="index.html" class="navbar__logo"><img src=
             "./images/shcc-logo-notxt.png" alt="SHCC logo"></a>
             <ul class="navbar__menu">
                 <li class="navbar__item">
@@ -99,7 +99,7 @@ require_once './modules/dbh.php';
         }
         //book html
         echo "<div class='book-page'>";
-        echo "<div class='book-page'>";
+        echo "<div class='book-page-cover-wrapper'>";
         echo "<img class='book-page' src=" . $img_URL . " alt='" . $title . "'>";
         echo "</div>";
         echo "<h1 class='book-page-title'>" . $title . "</h1>";
@@ -137,7 +137,7 @@ require_once './modules/dbh.php';
                 "three-weeks">Three weeks</label>
             </div>
             <div id="payment-details">
-                <h3 class="book-page">Rental cost: by donation.</h3>
+                <h3 class="book-page">Rental cost: by donation. Our librarian will contact you to orgaize recipt. </h3>
                 <h4 class="book-page">We hope you enjoy the library, and give walue for value.</h4>
                 <h6 class="book-page"><small>If you loose it, we will come for you.</small></h6>
             </div>
@@ -149,5 +149,6 @@ require_once './modules/dbh.php';
             "_formsubmit_id" type="text" style="display:none">
         </div>
     </form>
+  </div>
 </body>
 </html>

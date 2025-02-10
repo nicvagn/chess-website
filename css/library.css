@@ -44,8 +44,8 @@ a {
 
 .book-page-description {
   display: block;
-  min-width: 20em;
   width: 65%;
+  min-width: 40em;
   text-align: center;
   margin: 0.5em auto;
 }
@@ -102,7 +102,7 @@ td {
   align-items: center;
   flex-direction: column;
   outline: 0.6em dashed black;
-  min-width: 20em;
+  min-width: 40em;
   width: 65%;
   margin: 1em auto;
   background: #79eaea;
@@ -112,6 +112,11 @@ td {
 #payment-details {
     margin: 0.35em auto;
 }
+
+.book-info {
+  min-width: 40em;
+}
+
 .rental-info {
   margin: 1em auto;
   font-family: "Bebas Neue", san9A978Es-serif;
@@ -125,21 +130,29 @@ td {
 .field {
   display: block;
   margin: 3px auto;
-  min-width: 6em;
 }
 
 .book-page-title {
   font-style: normal;
+  display: block;
+  min-width: 40rem;
+  width: 65%;
+  text-align: center;
+  margin: 0.2em auto 0;
 }
 .book-page-author {
+  display: block;
+  width: 65%;
+  min-width: 40em;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   font-family: Cursive;
 }
 
 .book-page input[type=text] {
     border: 3px solid #555;
     width: 45em;
+    margin: 0 auto;
 }
 
 .book-page img {
@@ -147,8 +160,15 @@ td {
   height: 15em;
   margin: 1em auto 0;
 }
+
+.book-page-cover-wrapper {
+    min-width: 45em;
+    text-align: center;
+    margin: 0 auto;
+}
 .book-radio {
   display: flex;
+  margin: 0 .7em;
   justify-content: center;
   flex-direction: row;
 }
@@ -196,6 +216,9 @@ td {
   border: 3px solid black;
 }
 
+input[type="radio"] {
+  margin: 0 3px;
+}
 .search-container button {
   border: 3px solid black;
   padding: 7px;
