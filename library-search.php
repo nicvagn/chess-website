@@ -39,7 +39,6 @@ require_once './modules/dbh.php';
     "min-width=1200px, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/library.css">
-    <link rel="icon" href="./images/shcc-logo-notxt.png">
     <link rel="stylesheet" href=
     "https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity=
@@ -59,24 +58,8 @@ require_once './modules/dbh.php';
                     <a href="index.html" class="navbar__links">HOME</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="tournaments.html" class=
-                    "navbar__links">TOURNAMENTS</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="workshops.html" class=
-                    "navbar__links">WORKSHOPS</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="activities.html" class=
-                    "navbar__links">ACTIVITIES</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="calendar.html" class=
-                    "navbar__links">CALENDAR</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="contact-us.html" class=
-                    "navbar__links">CONTACT US</a>
+                    <a href="library.php" class=
+                    "navbar__links">FULL INVENTORY</a>
                 </li>
             </ul>
         </div>

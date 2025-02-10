@@ -41,30 +41,14 @@ require_once './modules/dbh.php';
     <nav class="navbar">
         <div class="navbar__container">
             <a href="index.html" class="navbar__logo"><img src=
-            "./images/shcc-logo-notxt.png" alt="SHCC logo"></a>
+            "./images/shcc-logo-notxt.png" alt="SHCC Logo"></a>
             <ul class="navbar__menu">
                 <li class="navbar__item">
                     <a href="index.html" class="navbar__links">HOME</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="tournaments.html" class=
-                    "navbar__links">TOURNAMENTS</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="workshops.html" class=
-                    "navbar__links">WORKSHOPS</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="activities.html" class=
-                    "navbar__links">ACTIVITIES</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="calendar.html" class=
-                    "navbar__links">CALENDAR</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="contact-us.html" class=
-                    "navbar__links">CONTACT US</a>
+                    <a href="library.php" class=
+                    "navbar__links">FULL INVENTORY</a>
                 </li>
             </ul>
         </div>
@@ -83,6 +67,13 @@ require_once './modules/dbh.php';
             $data = htmlspecialchars($data);
             return $data;
         }
+        function pretty_tags($data) {
+            //make pretty tags for David
+            $data = stripslashes($data);
+            $data = htmlspecialchars($data);
+            return str_replace(" ", ", ", $data);
+        }
+
         // if request is a post set vars
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $title = $authors = $img_URL = "";
@@ -91,7 +82,7 @@ require_once './modules/dbh.php';
             $authors = test_input($_POST['Authors']);
             $img_URL = test_input($_POST['Img_URL']);
             $description = test_input($_POST['Description']);
-            $tags = test_input($_POST['Tags']);
+            $tags = pretty_tags($_POST['Tags']);
         } else {
             // else redirect
             header("Location: library.php");
@@ -137,7 +128,7 @@ require_once './modules/dbh.php';
                 "three-weeks">Three weeks</label>
             </div>
             <div id="payment-details">
-                <h3 class="book-page">Rental cost: by donation. Our librarian will contact you to organize exchange. </h3>
+                <h3 class="book-page">Rental by donation. Books can be picked up 12-2 on Saturdays at the Bridge Club.</h3>
                 <h4 class="book-page">We hope you enjoy the library, and give value for value.</h4>
                 <h6 class="book-page"><small>If you loose it, we will come for you.</small></h6>
             </div>

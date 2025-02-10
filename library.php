@@ -12,6 +12,18 @@ require_once './modules/dbh.php';
 ?>
 <html lang="en">
 <head>
+    <!-- Come bots, come. -->
+    <script type="application/ld+json">
+         {
+             "@context": "https://schema.org/",
+             "@type": "Organization",
+             "name": "Saskatchewan Horizon Chess Club",
+             "image": "https://www.skhorizonchess.ca/images/shcc-logo.png",
+             "description": "A chess club from Saskatchewan. We have meetups and tournaments. See www.skhorizonchess.ca for more info."
+         }
+    </script>
+    <meta property="og:image" content=
+    "https://www.skhorizonchess.ca/images/shcc-logo-notxt.png">
     <meta name="generator" content=
     "HTML Tidy for HTML5 for Linux version 5.8.0">
     <meta charset="utf-8">
@@ -25,7 +37,7 @@ require_once './modules/dbh.php';
     <link rel="manifest" href="/images/site.webmanifest">
     <meta name="viewport" content=
     "min-width=1200px, initial-scale=1.0">
-    <title>SK Horizon Chess Club</title>
+    <title>SHCC: Library</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/library.css">
     <link rel="stylesheet" href=
@@ -40,7 +52,7 @@ require_once './modules/dbh.php';
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="about.html" class="navbar__logo"><img src=
+            <a href="index.html" class="navbar__logo"><img src=
             "./images/shcc-logo-notxt.png" alt="SHCC logo"></a>
             <ul class="navbar__menu">
                 <li class="navbar__item">
