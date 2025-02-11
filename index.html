@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <!--
      Site skeleton created by Brian Design on youtube @ www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber
-
      Created for Saskatchewan Horizon Chess Club by Nicolas Vaagen
-
      This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
      This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
      You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 -->
-
 <html lang="en">
-
     <head>
         <!-- Come bots, come. -->
         <script type="application/ld+json">
@@ -29,10 +22,10 @@
         <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <meta name="apple-mobile-web-app-title" content="SHCC WebSite" />
         <link rel="manifest" href="/images/site.webmanifest" />
         <meta property="og:image" content="https://www.skhorizonchess.ca/images/shcc-logo-notxt.png" />
-        <meta charset="UTF-8" />
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=1200px, initial-scale=1.0" />
         <title>SK Horizon Chess Club</title>
         <link rel="stylesheet" href="./css/styles.css" />
@@ -40,7 +33,6 @@
               integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" />
     </head>
-
     <body>
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"
@@ -71,50 +63,45 @@
                 </ul>
             </div>
         </nav>
-
         <!-- Horizon section -->
         <div class="main">
             <div class="main__container">
                 <div class="main__img--container">
-                    <img id="main__img" src="./images/shcc-logo-notxt.png" alt="club icon" />
-                    <div class="main__title">
-                        <h2>Welcome to the Saskatchewan Horizon Chess Club</h2>
-                    </div>
-                    <br />
+                    <h2 class="main__title">Welcome to the Saskatchewan Horizon Chess Club</h2>
                 </div>
             </div>
-        </div>
 
-        <div class="stuff-we-offer">
-            <div class="heading">
-                <h2>weekly chess meetups</h2>
+            <div class="stuff-we-offer">
+                <h2 class="heading">weekly chess meetups</h2>
             </div>
+            <!-- places we meet -->
+            <section class="where-we-play">
+                <div class="split">
+                    <h3>Saskatchewan Horizon Chess Club:</h3>
+                    <ul>
+                        <a href="https://dragonsdengames.com/">
+                            <li>Dragon’s Den Games</a><BR> every Thursday from 5:30-8:30 PM</li>
+
+                            <a href="https://www.saskatoonbridgeclub.ca/">
+                                <li>Saskatoon Bridge Club</a><BR> every Saturday 12:00-5:00 PM</li>
+                    </ul>
+                    <p>Note: Both venues can be accessed without stairs.</p>
+                </div>
+
+                <div class="split">
+                    <h3>Saskatoon Chess Club:</h3>
+                    <a href="https://saskatoonchessclub.weebly.com/where-to-play-chess.html">
+                        <ul>
+                            <li>Place Riel (Lower level, cafeteria, U of S)  <BR></a>Every Sunday from 12:00 p.m. to 3:00 p.m.</li>
+                        </ul>
+                </div>
+            </section>
         </div>
-
-        <!-- what we play for -->
-        <div class="where-we-play">
-            <h3 class="heading" >Saskatchewan Horizon Chess Club:</h3>
-            <ul>
-                <li>Dragon's Den Games every Thursday from 5:30-8:30 PM</li>
-
-                <li>Saskatoon Bridge Club every Saturday 12:00-5:00 PM</li>
-            </ul>
-
-
-            <p>Note: Both venues can be accessed without stairs.</p>
-
-            <h3>Saskatoon Chess Club:</h3>
-            <ul>
-                <li>Place Riel (Lower level, cafeteria, U of S)  Every Sunday from 12:00 p.m. to 3:00 p.m.</li>
-            </ul>
-        </div>
-
         <!-- page break -->
         <div class="hr">
             <hr />
             <img src="./images/threechesspawn.png" alt="Page Break" />
         </div>
-
         <!-- stuff we offer: new version "I bubbles" and calendar chess puzzle  -->
         <div class="stuff-we-offer">
             <div class="heading">
@@ -124,16 +111,16 @@
                 <div class="services__bubbles">
                     <!--meetups-->
                     <div class="services__bubble">
-	                    <a href="activities.html">
+                        <a href="activities.html">
                             <img src="./images/bubbles/face_off.jpg" alt="Meetups" />
                             <div class="bubble-text">
                                 <h2>MEETUPS</h2>
                             </div>
-	                    </a>
+                        </a>
                     </div>
                     <!--library-->
                     <div class="services__bubble">
-	                    <a href="library.php">
+                        <a href="library.php">
                             <img src="./images/bubbles/library.jpg" alt="book pile" />
                             <div class="bubble-text">
                                 <h2>LIBRARY</h2>
@@ -142,12 +129,12 @@
                     </div>
                     <!--tournaments-->
                     <div class="services__bubble">
-	                    <a href="tournaments.html">
+                        <a href="tournaments.html">
                             <img src="./images/bubbles/cole_and_reid.jpg" alt="chess tournament" />
                             <div class="bubble-text">
                                 <h2>TOURNAMENTS</h2>
                             </div>
-	                    </a>
+                        </a>
                     </div>
                     <!--coaching-- we do not have a page yet
                          <div class="services__bubble">
@@ -168,14 +155,11 @@
                 </div>
             </div>
         </div>
-        <br />
-
         <!-- page break -->
         <div class="hr">
             <hr />
             <img src="./images/threechesspawn.png" alt="page break" />
         </div>
-
         <div id="calendarAndPuzzle">
             <!--calendar section-->
             <div class="styled-calendar-container">
@@ -187,7 +171,6 @@
                     <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
                 </iframe>
             </div>
-
             <div class="facebook-container">
                 <div class="fb-page" data-href="https://www.facebook.com/skhorizonchess" data-tabs="timeline, events"
                      data-width="400" data-height="600" data-small-header="false" data-adapt-container-width="true"
@@ -198,7 +181,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Footer Section -->
         <div class="footer__container">
             <div class="footer__links">
@@ -228,16 +210,16 @@
                 <div class="social__media--wrap">
                     <div class="footer__logo promo">
                         <a href="about.html"><img src="./images/shcc-logo-notxt.png" />
-	                        <BR>
-	                        <small>Website made by: Nicolas Vaagen</small></a>
+                            <br>
+                            <small>Website made by: Nicolas Vaagen</small></a>
                     </div>
-	                <div id="quadrant" class="footer__logo promo">
-	                    <a href="https://www.quadrant.net/">
-	                        <img src="images/quadrant.svg" alt="quadrant logo">
-	                        <BR>
+                    <div id="quadrant" class="footer__logo promo">
+                        <a href="https://www.quadrant.net/">
+                            <img src="images/quadrant.svg" alt="quadrant logo">
+                            <br>
                             <small>Hosting and Web services</small>
-	                    </a>
-	                </div>
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>

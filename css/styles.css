@@ -43,7 +43,6 @@ body {
   flex-basis: 100%;
   flex-grow: 1;
   flex-shrink: 0;
-  min-width: 8em;
 }
 
 .navbar__container {
@@ -142,54 +141,36 @@ body {
 
 /* Main Content CSS */
 .main {
-  background-color: #1e9c9c;
-  object-fit: contain;
+    display: block;
 }
 
 .main__container {
   align-items: center;
   justify-self: center;
-  margin: 0;
-  background-color: #1e9c9c;
   background-image: url("../images/back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-width: 750px;
-  object-fit: contain;
   height: 15em;
 }
 
 .main__title {
-  font-size: 1.5cm;
-  margin-top: 30px;
-  margin-left: 3%;
-  margin-right: 10px;
-  margin-bottom: 60px;
-  background-color: white;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-align: left;
+  font-size: 3em;
+  margin: 0 1em;
+  color: white;
+  text-align: right;
   width: 95%;
   display: block;
+  padding-top: 1em;
   font-style: italic;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #main__img {
-  height: 600px;
+  height: 10em;
   border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  min-height: fit-content;
   object-fit: contain;
-  margin-top: 120px;
-  margin-left: 40px;
+  float: left;
 }
 
 /* Footer CSS */
@@ -323,9 +304,9 @@ img {
   text-align: center;
   color: #242424;
   align-self: center;
-  font-size: 3.2em;
-  margin-top: 1em;
-  margin-bottom: 0.3em;
+  font-size: 2rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 p {
@@ -354,21 +335,23 @@ h1 {
 }
 
 /* What we play for section */
-.what-we-play-for {
-  margin-left: 10%;
-  margin-right: 10%;
+.where-we-play {
   text-align: center;
   align-self: center;
   display: flex;
-  flex-basis: 1009px;
+  justify-content: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin-bottom: 100px;
 }
-.what-we-play-for h3 {
+.where-we-play h3 {
   font-style: italic;
   color: #242424;
   font-size: x-large;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+.where-we-play ul {
+    text-align: left;
+    text-decoration: none;
+    list-style-type: square;
 }
 
 /* service bubble styling start*/
@@ -425,7 +408,9 @@ h1 {
 .stuff-we-offer {
   color: #242424;
   font-family: "Bebas Neue", san9A978Es-serif;
-  margin-top: 90px;
+  font-size: x-large;
+  text-align: center;
+  margin-top: 0.5em;
 }
 
 /*start of hr */
@@ -433,8 +418,8 @@ h1 {
   border: none;
   width: 100%;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 3rem;
+  margin-bottom: 0;
   min-width: 700px;
 }
 
@@ -492,107 +477,5 @@ h1 {
 
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1200px) {
-  #calendarAndPuzzle {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .styled-calendar-container {
-    border: none;
-    block-size: fit-content;
-    width: 350px;
-    min-height: 475px;
-    margin: auto;
-  }
-  .main__container {
-    display: block;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    background-color: #1e9c9c;
-    width: 100%;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 50px;
-    background-image: url("../images/back.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: fit-content;
-    object-fit: cover;
-    height: 550px;
-  }
-  .main {
-    background-color: #1e9c9c;
-    width: 100%;
-    object-fit: contain;
-  }
-  #main__img {
-    display: flex;
-    height: 350px;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    object-fit: contain;
-    margin-top: 10px;
-  }
-  .stuff-we-offer {
-    background-color: white;
-    color: #242424;
-    font-family: "Bebas Neue", san9A978Es-serif;
-    margin-top: 90px;
-  }
-  .title {
-    display: flex;
-    margin: auto auto 50px auto;
-    height: 50px;
-    font-family: "Bebas Neue", san9A978Es-serif;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    font-size: 300%;
-    color: #242424;
-    font-size: 4vw;
-    align-self: center;
-  }
-
-  .services__bubbles {
-    display: flex;
-    align-items: baseline;
-    align-self: center;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 1800px;
-  }
-
-  .footer__link--wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hr {
-    text-align: center;
-    width: 100%;
-    position: relative;
-  }
-
-  .services__bubble img {
-    border-radius: 20%;
-    -webkit-border-radius: 20%;
-    -moz-border-radius: 20%;
-    -ms-border-radius: 20%;
-    -o-border-radius: 20%;
-
-    margin-top: 50px;
-    height: 350px;
-    align-self: center;
-    align-items: center;
-    color: #000000;
-  }
-
-  .main__title h2 {
-    font-size: 1cm;
-  }
 }
 /* end of tweaks */
