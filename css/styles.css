@@ -144,33 +144,31 @@ body {
     display: block;
 }
 
-.main__container {
-  align-items: center;
-  justify-self: center;
+.main__background {
   background-image: url("../images/back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 15em;
+  height: 15rem;
 }
 
 .main__title {
-  font-size: 3em;
-  margin: 0 1em;
+  font-size: 3rem;
+  margin: 0 .8rem;
   color: white;
   text-align: right;
-  width: 95%;
   display: block;
   padding-top: 1em;
   font-style: italic;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
+  float: right;
 }
 
 #main__img {
-  height: 10em;
+  height: 13rem;
   border-radius: 0;
-  object-fit: contain;
-  float: left;
+  margin-top: 1rem;
+  margin-left: 6rem;
 }
 
 /* Footer CSS */
@@ -183,7 +181,7 @@ body {
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  min-width: 750px;
+  min-width: 600px;
 }
 
 .footer__logo {
@@ -299,7 +297,7 @@ img {
 }
 
 .heading {
-  font-style: italic;
+  font-family: "Bebas Neue", san9A978Es-serif;
   font-weight: bold;
   text-align: center;
   color: #242424;
@@ -309,19 +307,6 @@ img {
   margin-bottom: 0.3rem;
 }
 
-p {
-  color: black;
-}
-
-h1 {
-  font-family: "Bebas Neue", san9A978Es-serif;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 300%;
-  color: #242424;
-  text-align: center;
-  position: relative;
-}
 
 .title {
   margin: 0.5em auto;
@@ -346,7 +331,6 @@ h1 {
   font-style: italic;
   color: #242424;
   font-size: x-large;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .where-we-play ul {
     text-align: left;
@@ -358,7 +342,6 @@ h1 {
 .service-bubble-container {
   display: block;
   margin: auto;
-  min-width: 700px;
 }
 .services__bubble {
   display: flex;
@@ -372,7 +355,7 @@ h1 {
   align-self: center;
   margin-right: 5%;
   margin-left: 5%;
-  margin-bottom: 30px;
+  margin-bottom: 5rem;
 }
 
 .services__bubble img {
@@ -382,7 +365,7 @@ h1 {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   /* height: 200px with 5 bubles */
-  height: 300px;
+  height: 15rem;
   align-self: center;
   align-items: center;
 }
@@ -420,7 +403,7 @@ h1 {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 0;
-  min-width: 700px;
+  min-width: 500px;
 }
 
 .hr img {
@@ -476,6 +459,93 @@ h1 {
 /* end calendar n facebook embed */
 
 /* tweak's for use on a smaller screen */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
+  #calendarAndPuzzle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .styled-calendar-container {
+    width: 350px;
+    min-height: 475px;
+    margin: auto;
+  }
+
+  #main__img {
+    height: 8rem;
+    border-radius: 0;
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+  .main__title {
+      font-size: 2.5rem;
+  }
+  .stuff-we-offer {
+    background-color: white;
+    color: #242424;
+    font-family: "Bebas Neue", san9A978Es-serif;
+    margin-top: 2rem;
+  }
+  .title {
+    display: flex;
+    margin: auto auto 50px auto;
+    height: 50px;
+    font-family: "Bebas Neue", san9A978Es-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 150%;
+    color: #242424;
+    font-size: 4vw;
+    align-self: center;
+  }
+
+  .services__bubbles {
+    display: flex;
+    align-items: baseline;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1800px;
+  }
+
+  .footer__link--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hr {
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .services__bubble img {
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+
+    margin-top: 50px;
+    height: 350px;
+    align-self: center;
+    align-items: center;
+    color: #000000;
+  }
+
+  .main__title h2 {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .main__title {
+      font-size: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main__title {
+      font-size: 1rem;
+  }
 }
 /* end of tweaks */

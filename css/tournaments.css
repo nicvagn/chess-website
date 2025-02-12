@@ -11,6 +11,9 @@
   box-sizing: border-box;
 }
 
+.navbar {
+    min-width: 1000px;
+}
 #top {
   position: absolute;
   left: 0px;
@@ -25,6 +28,9 @@ h4 {
   border-radius: 2em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #242424;
+}
+#tournament-title {
+    margin-top: 1em;
 }
 /* join-tournament-insert CSS */
 #join-tournament-insert {

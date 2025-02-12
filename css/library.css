@@ -11,6 +11,9 @@ a {
   text-decoration: none;
 }
 
+.navbar {
+    min-width: 1000px;
+}
 .library-book-table {
   text-align: center;
   min-width: 1000px;

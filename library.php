@@ -49,38 +49,32 @@ require_once './modules/dbh.php';
     rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" class="navbar__logo"><img src=
-            "./images/shcc-logo-notxt.png" alt="SHCC logo"></a>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links">HOME</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="tournaments.html" class=
-                    "navbar__links">TOURNAMENTS</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="workshops.html" class=
-                    "navbar__links">WORKSHOPS</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="activities.html" class=
-                    "navbar__links">ACTIVITIES</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="calendar.html" class=
-                    "navbar__links">CALENDAR</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="contact-us.html" class=
-                    "navbar__links">CONTACT US</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="about.html" class="navbar__logo"><img src="./images/shcc-logo-notxt.png" alt="SHCC Logo" /></a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__links">HOME</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="tournaments.html" class="navbar__links">TOURNAMENTS</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="workshops.html" class="navbar__links">WORKSHOPS</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="library.php" id="navbar__links_current" class="navbar__links">LIBRARY</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="calendar.html" class="navbar__links">CALENDAR</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="contact-us.html" class="navbar__links">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     <div class="search-bar">
         <form class="search-container" action="/library-search.php">
             <input class="search-container" type="text" placeholder=
