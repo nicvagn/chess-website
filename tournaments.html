@@ -17,6 +17,7 @@
   <meta name="viewport" content="width=1200px, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Bebas Neue"
   rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/georgia" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/tournaments.css">
   <link rel="stylesheet" href=
@@ -24,6 +25,7 @@
   integrity=
   "sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
   crossorigin="anonymous">
+  <link href="https://fonts.cdnfonts.com/css/georgia" rel="stylesheet">
   <link rel="icon" type="image/png" href=
   "/images/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
@@ -44,7 +46,6 @@
          <br>
          <p class="left-aligned">{{sections}}</p>
          <br>
-         <h5 class="left-aligned">{{brilliancy_prize}}<h5/>
 
          <button
          id="joinTournamentBtn" class="tournaments-btn" onclick="joinTournamentView({{number}})"
@@ -53,8 +54,9 @@
          id="showTournamentBtn" class="tournaments-btn" onclick="showTournamentLst()"
          >Return to tournament list</button>
          </div>
-  </script><!-- the template for joining tournaments -->
+  </script>
 
+  <!-- the template for joining tournaments -->
   <script id="join-tournament-template" type=
   "text/x-tmpl-mustache">
          <div id="join-tournament-insert">
@@ -326,11 +328,11 @@
   <script src=
   "https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
   <!-- jquery CDN -->
-   
+
   <script src=
   "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- our script -->
-   
+
   <script src="./script/tsBundle.js"></script>
 </body>
 </html>

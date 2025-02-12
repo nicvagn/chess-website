@@ -162,7 +162,7 @@ body {
   padding-top: 1em;
   font-style: italic;
   font-weight: bold;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Noto Serif Display", serif;
   float: right;
 }
 
@@ -332,7 +332,7 @@ img {
   align-self: center;
   display: flex;
   justify-content: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Roboto Slab", Times, serif;
 }
 .where-we-play h3 {
   font-style: italic;

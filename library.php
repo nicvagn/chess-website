@@ -47,6 +47,7 @@ require_once './modules/dbh.php';
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Bebas Neue"
     rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/georgia" rel="stylesheet">
 </head>
 <body>
         <!-- Navbar Section -->
