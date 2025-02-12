@@ -6,7 +6,7 @@ const tournaments = [
         `Official CFC Rated Classical Tournament:
     60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under 
+        `Sections: Open, u1600, 10 Years Old and Under. 
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -20,7 +20,7 @@ Players are only eligible to win prizes corresponding to the section they regist
         `Official CFC Rated Classical Tournament:
     60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under 
+        `Sections: Open, u1600, 10 Years Old and Under. 
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -34,7 +34,7 @@ Players are only eligible to win prizes corresponding to the section they regist
         `Official CFC Rated Classical Tournament:
     60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under 
+        `Sections: Open, u1600, 10 Years Old and Under. 
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -47,7 +47,7 @@ Players are only eligible to win prizes corresponding to the section they regist
         `Official CFC Rated Classical Tournament:
     60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under 
+        `Sections: Open, u1600, 10 Years Old and Under. 
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -60,7 +60,7 @@ Players are only eligible to win prizes corresponding to the section they regist
         `Official CFC Rated Classical Tournament:
     60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under 
+        `Sections: Open, u1600, 10 Years Old and Under. 
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
@@ -73,7 +73,7 @@ Players are only eligible to win prizes corresponding to the section they regist
         `Official CFC Rated Classical Tournament:
     60 | 30 – 60 minutes with 30 second increment 
     5-round swiss`,
-        `Sections: Open, U1500, 10 Years Old and Under 
+        `Sections: Open, u1600, 10 Years Old and Under.
 One ½ point bye available upon request. No final round byes.
 Prizes: Cash Prizes and Medals for 1st, 2nd, and 3rd places.
 1st place Open will have their name carved on to the club trophy.
