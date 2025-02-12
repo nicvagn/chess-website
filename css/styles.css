@@ -293,8 +293,13 @@ a {
   text-align: center;
 }
 
-/* was just img elements */
-.SHCC__logo {
+/* A legacy we are not proud of */
+img {
+  margin: 5px;
+  height: 4rem;
+}
+/* a new hope */
+.SHCC_logo {
   margin: 5px;
   height: 4rem;
 }
@@ -309,7 +314,6 @@ a {
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
 }
-
 
 .title {
   margin: 0.5em auto;

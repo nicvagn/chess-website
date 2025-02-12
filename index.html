@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--
      Site skeleton created by Brian Design on youtube @ www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber
      Created for Saskatchewan Horizon Chess Club by Nicolas Vaagen
@@ -7,9 +7,12 @@
      You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 -->
 <html lang="en">
-    <head>
-        <!-- Come bots, come. -->
-        <script type="application/ld+json">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.8.0">
+  <meta charset="utf-8"><!-- Come bots, come. -->
+
+  <script type="application/ld+json">
          {
              "@context": "https://schema.org/",
              "@type": "Organization",
@@ -17,208 +20,214 @@
              "image": "https://www.skhorizonchess.ca/images/shcc-logo.png",
              "description": "A chess club from Saskatchewan. We have meetups and tournaments. See www.skhorizonchess.ca for more info."
          }
-        </script>
-        <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-        <link rel="shortcut icon" href="/images/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="SHCC WebSite" />
-        <link rel="manifest" href="/images/site.webmanifest" />
-        <meta property="og:image" content="https://www.skhorizonchess.ca/images/shcc-logo-notxt.png" />
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=1200px, initial-scale=1.0" />
-        <title>SK Horizon Chess Club</title>
-        <link rel="stylesheet" href="./css/styles.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-              integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" />
-    </head>
-    <body>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"
-                nonce="GcBFJ9AT"></script>
-        <!-- Navbar Section -->
-        <nav class="navbar">
-            <div class="navbar__container">
-                <a href="about.html" class="navbar__logo"><img class="SHCC__logo" src="./images/shcc-logo-notxt.png" alt="SHCC Logo" /></a>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="index.html"  id="navbar__links_current" class="navbar__links">HOME</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="tournaments.html" class="navbar__links">TOURNAMENTS</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="workshops.html" class="navbar__links">WORKSHOPS</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="library.php" class="navbar__links">LIBRARY</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="calendar.html" class="navbar__links">CALENDAR</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="contact-us.html" class="navbar__links">CONTACT US</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Horizon section -->
-        <div class="main">
-            <div class="main__background">
-                    <h2 class="main__title">Welcome to the Saskatchewan Horizon Chess Club</h2>
-                    <img id="main__img" src="./images/shcc-logo.png" />
-            </div>
-
-            <h2 class="heading">weekly chess meetups in Saskatoon:</h2>
-            <!-- places we meet -->
-            <section class="where-we-play">
-                <div class="split">
-                    <h3>Saskatchewan Horizon Chess Club:</h3>
-                    <ul>
-                        <a href="https://dragonsdengames.com/">
-                            <li>Dragon’s Den Games</a><BR>every Thursday from 5:30-8:30 PM</li>
-
-                            <a href="https://www.saskatoonbridgeclub.ca/">
-                                <li>Saskatoon Bridge Club</a><BR>every Saturday 12:00-5:00 PM</li>
-                    </ul>
-                    <p>Note: Both venues can be accessed without stairs.</p>
-                </div>
-
-                <div class="split">
-                    <h3>Saskatoon Chess Club:</h3>
-                    <ul>
-                        <a href="https://saskatoonchessclub.weebly.com/where-to-play-chess.html">
-                            <li>Place Riel (Lower level, cafeteria, U of S)  <BR></a>Every Sunday from 12:00 p.m. to 3:00 p.m.</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <!-- page break -->
-        <div class="hr">
-            <hr />
-            <img src="./images/threechesspawn.png" alt="Page Break" />
-        </div>
-        <!-- stuff we offer: new version "I bubbles" and calendar chess puzzle  -->
-        <div class="stuff-we-offer">
-            <div class="heading">
-                <h2>WHAT WE OFFER:</h2>
-            </div>
-            <div class="service-bubble-container">
-                <div class="services__bubbles">
-                    <!--meetups-->
-                    <div class="services__bubble">
-                        <a href="activities.html">
-                            <img src="./images/bubbles/face_off.jpg" alt="Meetups" />
-                            <div class="bubble-text">
-                                <h2>MEETUPS</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <!--library-->
-                    <div class="services__bubble">
-                        <a href="library.php">
-                            <img src="./images/bubbles/library.jpg" alt="book pile" />
-                            <div class="bubble-text">
-                                <h2>LIBRARY</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <!--tournaments-->
-                    <div class="services__bubble">
-                        <a href="tournaments.html">
-                            <img src="./images/bubbles/cole_and_reid.jpg" alt="chess tournament" />
-                            <div class="bubble-text">
-                                <h2>TOURNAMENTS</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <!--coaching-- we do not have a page yet
+  </script>
+  <link rel="icon" type="image/png" href=
+  "/images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href=
+  "/images/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="SHCC WebSite">
+  <link rel="manifest" href="/images/site.webmanifest">
+  <meta property="og:image" content=
+  "https://www.skhorizonchess.ca/images/shcc-logo-notxt.png">
+  <meta name="viewport" content="width=1200px, initial-scale=1.0">
+  <title>SK Horizon Chess Club</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href=
+  "https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+  integrity=
+  "sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+  crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Bebas Neue"
+  rel="stylesheet">
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src=
+  "https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0"
+  nonce="GcBFJ9AT"></script> <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="about.html" class="navbar__logo"><img class=
+      "SHCC__logo" src="./images/shcc-logo-notxt.png" alt=
+      "SHCC Logo"></a>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="index.html" id="navbar__links_current" class=
+          "navbar__links">HOME</a>
+        </li>
+        <li class="navbar__item">
+          <a href="tournaments.html" class=
+          "navbar__links">TOURNAMENTS</a>
+        </li>
+        <li class="navbar__item">
+          <a href="workshops.html" class=
+          "navbar__links">WORKSHOPS</a>
+        </li>
+        <li class="navbar__item">
+          <a href="library.php" class="navbar__links">LIBRARY</a>
+        </li>
+        <li class="navbar__item">
+          <a href="calendar.html" class=
+          "navbar__links">CALENDAR</a>
+        </li>
+        <li class="navbar__item">
+          <a href="contact-us.html" class="navbar__links">CONTACT
+          US</a>
+        </li>
+      </ul>
+    </div>
+  </nav><!-- Horizon section -->
+  <div class="main">
+    <div class="main__background">
+    <h2 class="main__title">Welcome to the Saskatchewan Horizon
+    Chess Club</h2><img id="main__img" src=
+    "./images/shcc-logo.png"></div>
+    <h2 class="heading">weekly chess meetups in Saskatoon:</h2>
+    <!-- places we meet -->
+    <section class="where-we-play">
+      <div class="split">
+        <h3>Saskatchewan Horizon Chess Club:</h3>
+        <ul>
+          <a href="https://dragonsdengames.com/"></a>
+          <li>Dragon’s Den Games<br>
+          every Thursday from 5:30-8:30 PM</li><a href=
+          "https://www.saskatoonbridgeclub.ca/"></a>
+          <li>Saskatoon Bridge Club<br>
+          every Saturday 12:00-5:00 PM</li>
+        </ul>
+        <p>Note: Both venues can be accessed without stairs.</p>
+      </div>
+      <div class="split">
+        <h3>Saskatoon Chess Club:</h3>
+        <ul>
+          <a href=
+          "https://saskatoonchessclub.weebly.com/where-to-play-chess.html">
+          </a>
+          <li>Place Riel (Lower level, cafeteria, U of S)<br>
+          Every Sunday from 12:00 p.m. to 3:00 p.m.</li>
+        </ul>
+      </div>
+    </section>
+  </div><!-- page break -->
+  <div class="hr">
+  <hr>
+  <img src="./images/threechesspawn.png" alt="Page Break"></div>
+  <!-- stuff we offer: new version "I bubbles" and calendar chess puzzle  -->
+  <div class="stuff-we-offer">
+    <div class="heading">
+      <h2>WHAT WE OFFER:</h2>
+    </div>
+    <div class="service-bubble-container">
+      <div class="services__bubbles">
+        <!--meetups-->
+        <div class="services__bubble">
+          <a href="activities.html"><img src=
+          "./images/bubbles/face_off.jpg" alt="Meetups">
+          <div class="bubble-text">
+            <h2>MEETUPS</h2>
+          </div></a>
+        </div><!--library-->
+        <div class="services__bubble">
+          <a href="library.php"><img src=
+          "./images/bubbles/library.jpg" alt="book pile">
+          <div class="bubble-text">
+            <h2>LIBRARY</h2>
+          </div></a>
+        </div><!--tournaments-->
+        <div class="services__bubble">
+          <a href="tournaments.html"><img src=
+          "./images/bubbles/cole_and_reid.jpg" alt=
+          "chess tournament">
+          <div class="bubble-text">
+            <h2>TOURNAMENTS</h2>
+          </div></a>
+        </div><!--coaching-- we do not have a page yet
                          <div class="services__bubble">
                          <img src="./images/bubbles/presenting.jpg" alt="teaching kid chess" />
                          <div class="bubble-text">
                          <h2>COACHING</h2>
                          </div>
                          </div -->
-                    <!--workshops-->
-                    <div class="services__bubble">
-                        <a href="workshops.html">
-                            <img src="./images/bubbles/pamphlets.jpg" alt="man next to projector" />
-                            <div class="bubble-text">
-                                <h2>WORKSHOPS</h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <!--workshops-->
+        <div class="services__bubble">
+          <a href="workshops.html"><img src=
+          "./images/bubbles/pamphlets.jpg" alt=
+          "man next to projector">
+          <div class="bubble-text">
+            <h2>WORKSHOPS</h2>
+          </div></a>
         </div>
-        <!-- page break -->
-        <div class="hr">
-            <hr />
-            <img src="./images/threechesspawn.png" alt="page break" />
+      </div>
+    </div>
+  </div><!-- page break -->
+  <div class="hr">
+  <hr>
+  <img src="./images/threechesspawn.png" alt="page break"></div>
+  <div id="calendarAndPuzzle">
+    <!--calendar section-->
+    <div class="styled-calendar-container">
+      <a href="calendar.html">
+      <h2 class="bubble-text">COMMUNITY CALENDAR</h2></a>
+      <iframe src=
+      "https://embed.styledcalendar.com/#9wgtZyqbTE9J3y08XkkX"
+      title="list Calendar" class="styled-calendar-container" boa=
+      "" data-cy="calendar-embed-iframe">
+      <script async type="module" src=
+      "https://embed.styledcalendar.com/assets/parent-window.js"></script></iframe>
+    </div>
+    <div class="facebook-container">
+      <div class="fb-page" data-href=
+      "https://www.facebook.com/skhorizonchess" data-tabs=
+      "timeline, events" data-width="400" data-height="600"
+      data-small-header="false" data-adapt-container-width="true"
+      data-hide-cover="false" data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/facebook" class=
+        "fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/facebook">Facebook</a>
+        </blockquote>
+      </div>
+    </div>
+  </div><!-- Footer Section -->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>About Us</h2><a href="about.html">About the Club</a>
+          <a href="calendar.html">Calendar</a> <a href=
+          "contact-us.html">Contact Us</a>
         </div>
-        <div id="calendarAndPuzzle">
-            <!--calendar section-->
-            <div class="styled-calendar-container">
-                <a href="calendar.html">
-                    <h2 class="bubble-text">COMMUNITY CALENDAR</h2>
-                </a>
-                <iframe src="https://embed.styledcalendar.com/#9wgtZyqbTE9J3y08XkkX" title="list Calendar"
-                        class="styled-calendar-container" boa data-cy="calendar-embed-iframe">
-                    <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
-                </iframe>
-            </div>
-            <div class="facebook-container">
-                <div class="fb-page" data-href="https://www.facebook.com/skhorizonchess" data-tabs="timeline, events"
-                     data-width="400" data-height="600" data-small-header="false" data-adapt-container-width="true"
-                     data-hide-cover="false" data-show-facepile="true">
-                    <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
-                        <a href="https://www.facebook.com/facebook">Facebook</a>
-                    </blockquote>
-                </div>
-            </div>
+      </div>
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Resources</h2><a href="library.php">Library</a>
         </div>
-        <!-- Footer Section -->
-        <div class="footer__container">
-            <div class="footer__links">
-                <div class="footer__link--wrapper">
-                    <div class="footer__link--items">
-                        <h2>About Us</h2>
-                        <a href="about.html">About the Club</a>
-                        <a href="calendar.html">Calendar</a>
-                        <a href="contact-us.html">Contact Us</a>
-                    </div>
-                </div>
-                <div class="footer__link--wrapper">
-                    <div class="footer__link--items">
-                        <h2>Resources</h2>
-                        <a href="library.php">Library</a>
-                    </div>
-                </div>
-                <div class="footer__link--wrapper">
-                    <div class="footer__link--items">
-                        <h2>Social Media</h2>
-                        <a href="https://www.facebook.com/skhorizonchess/">Facebook</a>
-                        <a href="https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw">Youtube channel</a>
-                    </div>
-                </div>
-            </div>
-            <section class="social__media">
-                <div class="social__media--wrap">
-                    <div class="footer__logo promo">
-                        <a href="about.html"><img class="SHCC__logo" src="./images/shcc-logo-notxt.png" />
-                            <br>
-                            <small>Website made by: Nicolas Vaagen</small></a>
-                    </div>
-                    <div id="quadrant" class="footer__logo promo">
-                        <a href="https://www.quadrant.net/">
-                            <img src="images/quadrant.svg" alt="quadrant logo">
-                            <br>
-                            <small>Hosting and Web services</small>
-                        </a>
-                    </div>
-                </div>
-            </section>
+      </div>
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Social Media</h2><a href=
+          "https://www.facebook.com/skhorizonchess/">Facebook</a>
+          <a href=
+          "https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw">
+          Youtube channel</a>
         </div>
-    </body>
+      </div>
+    </div>
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo promo">
+          <a href="about.html"><img class="SHCC__logo" src=
+          "./images/shcc-logo-notxt.png"><br>
+          <small>Website made by: Nicolas Vaagen</small></a>
+        </div>
+        <div id="quadrant" class="footer__logo promo">
+          <a href="https://www.quadrant.net/"><img src=
+          "images/quadrant.svg" alt="quadrant logo"><br>
+          <small>Hosting and Web services</small></a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
 </html>

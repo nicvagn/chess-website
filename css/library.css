@@ -45,14 +45,6 @@ a {
   max-width: 8em;
 }
 
-.book-page-description {
-  display: block;
-  width: 65%;
-  min-width: 40em;
-  text-align: center;
-  margin: 0.5em auto;
-}
-
 .library-book img {
   width: auto;
   height: 100%;
@@ -89,7 +81,7 @@ td {
 
 .letter-break {
   font-family: "Bebas Neue", san9A978Es-serif;
-  padding: 0.2em;
+  padding: 0.2em 0;
   margin: 0.5em 0;
   color: white;
   background: #1e9c9c;
@@ -105,7 +97,7 @@ td {
   align-items: center;
   flex-direction: column;
   outline: 0.6em dashed black;
-  min-width: 40em;
+  min-width: 60rem;
   width: 65%;
   margin: 1em auto;
   background: #79eaea;
@@ -116,8 +108,16 @@ td {
     margin: 0.35em auto;
 }
 
+.book-page-description {
+  display: block;
+  width: 65%;
+  min-width: 60rem;
+  text-align: center;
+  margin: 0.5em auto;
+}
+
 .book-info {
-  min-width: 40em;
+  min-width: 60em;
 }
 
 .rental-info {
@@ -138,7 +138,7 @@ td {
 .book-page-title {
   font-style: normal;
   display: block;
-  min-width: 40rem;
+  min-width: 60rem;
   width: 65%;
   text-align: center;
   margin: 0.2em auto 0;
@@ -146,7 +146,7 @@ td {
 .book-page-author {
   display: block;
   width: 65%;
-  min-width: 40em;
+  min-width: 60rem;
   text-align: center;
   margin: 0 auto;
   font-family: Cursive;
