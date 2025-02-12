@@ -70,6 +70,8 @@ body {
   cursor: pointer;
   text-decoration: none;
   font-size: 5rem;
+  margin: 5px;
+  height: 4rem;
 }
 
 .chess_icon {
@@ -291,7 +293,8 @@ a {
   text-align: center;
 }
 
-img {
+/* was just img elements */
+.SHCC__logo {
   margin: 5px;
   height: 4rem;
 }
@@ -471,12 +474,6 @@ img {
     margin: auto;
   }
 
-  #main__img {
-    height: 8rem;
-    border-radius: 0;
-    margin-top: 3rem;
-    margin-left: 1rem;
-  }
   .main__title {
       font-size: 2.5rem;
   }
@@ -534,18 +531,28 @@ img {
     color: #000000;
   }
 
-  .main__title h2 {
-    font-size: 0.9rem;
+  .navbar__item {
+      font-size: large;
   }
+
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .main__title {
       font-size: 2rem;
+  }
+  #main__img {
+    height: 8rem;
+  }
+  .navbar__item {
+      font-size: large;
   }
 }
 @media screen and (max-width: 900px) {
   .main__title {
-      font-size: 1rem;
+      font-size: 1.5rem;
+  }
+  #main__img {
+    height: 6rem;
   }
 }
 /* end of tweaks */
