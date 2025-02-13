@@ -155,13 +155,15 @@ body {
 
 .main__title {
   font-size: 3rem;
-  margin: 0 2em;
-  color: white;
+  margin: 0 2em 0 0;
+  width: 70%;
+  color: #fdd401;
+
   text-align: right;
   display: block;
   padding-top: 1em;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 750;
   font-family: "Noto Serif Display", serif;
   float: right;
 }
@@ -171,6 +173,7 @@ body {
   border-radius: 0;
   margin-top: 1rem;
   margin-left: 6rem;
+  margin-right: 0;
 }
 
 /* Footer CSS */
@@ -544,7 +547,7 @@ img {
   }
 
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .main__title {
       font-size: 2rem;
   }
