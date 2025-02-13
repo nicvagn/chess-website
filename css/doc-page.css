@@ -14,9 +14,10 @@
 
 
 .doc__container {
-    margin: auto 0;
-    width: 100%;
-    min-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .document {
@@ -25,11 +26,11 @@
 }
 
 .navbar {
-  min-width: 1200px;
+  min-width: 980px;
 }
 
 .footer__container {
-  min-width: 1200px;
+  min-width: 980px;
 }
 
 /* tweak's for use on a smaller screen */

@@ -327,6 +327,9 @@ img {
 }
 
 /* What we play for section */
+#weekly_meetups {
+    margin-top: 1rem;
+}
 .where-we-play {
   text-align: center;
   align-self: center;
@@ -339,6 +342,7 @@ img {
   color: #242424;
   font-size: x-large;
 }
+
 .where-we-play ul {
     text-align: left;
     text-decoration: none;
