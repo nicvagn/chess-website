@@ -169,7 +169,7 @@ body {
 }
 
 #main__img {
-  height: 13rem;
+  height: 14rem;
   border-radius: 0;
   margin-top: 1rem;
   margin-left: 6rem;
@@ -473,7 +473,7 @@ img {
 /* end calendar n facebook embed */
 
 /* tweak's for use on a smaller screen */
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1800px) {
   .main__title {
       font-size: 2.7rem;
   }
@@ -509,8 +509,8 @@ img {
     text-align: center;
     font-size: 150%;
     color: #242424;
-    font-size: 4vw;
     align-self: center;
+    width: 50%;
   }
 
   .services__bubbles {
@@ -555,9 +555,10 @@ img {
 @media screen and (max-width: 1400px) {
   .main__title {
       font-size: 2rem;
+      width: 55%;
   }
   #main__img {
-    height: 8rem;
+    height: 12rem;
   }
   .navbar__item {
       font-size: large;
@@ -568,7 +569,8 @@ img {
       font-size: 1.5rem;
   }
   #main__img {
-    height: 6rem;
+    height: 8rem;
+    margin-left:0.7rem;
   }
 }
 /* end of tweaks */
