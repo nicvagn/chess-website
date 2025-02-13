@@ -473,6 +473,11 @@ img {
 /* end calendar n facebook embed */
 
 /* tweak's for use on a smaller screen */
+@media screen and (max-width: 1600px) {
+  .main__title {
+      font-size: 2.7rem;
+  }
+}
 @media screen and (max-width: 1400px) {
   #calendarAndPuzzle {
     display: flex;
