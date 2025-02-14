@@ -12,8 +12,6 @@ require_once './modules/dbh.php';
 ?>
 <html lang="en">
 <head>
-    <meta name="generator" content=
-    "HTML Tidy for HTML5 for Linux version 5.8.0">
     <meta charset="utf-8">
     <meta name="viewport" content=
     "min-width=1200px, initial-scale=1.0">
@@ -77,7 +75,6 @@ require_once './modules/dbh.php';
         // if request is a post set vars
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $title = $authors = $img_URL = "";
-            error_log("REQUEST POST!", 0);
             $title = test_input($_POST['Title']);
             $authors = test_input($_POST['Authors']);
             $img_URL = test_input($_POST['Img_URL']);
@@ -99,7 +96,7 @@ require_once './modules/dbh.php';
         echo "<p class='book-page-description'>" . $description . "</p>";
         ?>
     <form id="book-form" action=
-    "https://formsubmit.co/davidallansteer@gmail.com" method="post"
+    "mail-handler.php" method="post"
     name="book-form">
         <input type="hidden" name="_subject"
                value="<?php echo $title . " by " . $authors . " request " ?>">
