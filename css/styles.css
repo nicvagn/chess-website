@@ -172,7 +172,7 @@ body {
 #main__img {
     border-radius: 0;
     height: 14rem;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     margin-left: 5rem;
     margin-right: 0;
 }
@@ -480,7 +480,7 @@ img {
         font-size: 2.7rem;
     }
     #main__img {
-        margin-left: 3em
+        margin-left: 7em
     }
 }
 @media screen and (max-width: 1400px) {
@@ -574,22 +574,23 @@ img {
 }
 @media screen and (max-width: 900px) {
     .main__title {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         width: 45%;
     }
     .navbar__item {
-        font-size: small;
+        font-size: 1rem;
         margin-right: 0.5rem;
     }
     .navbar__logo {
         display: none;
+        margin: 0;
     }
     .navbar__container {
         justify-content: space-evenly;
     }
     #main__img {
         height: 10rem;
-        margin-left: 1rem;
+        margin-left: 5rem;
     }
 }
 /* end of tweaks */
