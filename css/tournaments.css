@@ -161,15 +161,15 @@ th {
 
 .tournaments-btn {
   text-align: center;
-  border-radius: 2em;
+  border-radius: 2rem;
   border: 3px solid black;
   box-shadow:
     rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  padding: 2em;
-  margin: 2em 8em;
-  min-width: 28em;
-
+  padding: 2rem;
+  margin: 2rem 8rem;
+  min-width: 28rem;
+  font-size: 1.6rem;
   background-color: #fdd401;
   flex-grow: 96%;
   font-family: "Bebas Neue", san9A978Es-serif;
