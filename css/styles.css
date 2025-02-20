@@ -45,7 +45,6 @@
 body {
     background-color: white;
 }
-
 #quadrant {
     display: block;
 }
@@ -596,8 +595,6 @@ img {
     }
     .navbar__item {
         font-size: 2rem;
-        margin-right: 0.1rem;
-        margin-left: 0.1rem;
     }
     .navbar__links {
         padding: 0 0.3rem;
