@@ -9,8 +9,10 @@
 */
 
 #shcc_about {
-  margin: 0.5em 0 0 0;
+  margin: 0.5em;
+  text-align: center;
   height: 2em;
+  font-family: "Bebas Neue", san9A978Es-serif;
 }
 
 #facilitator_container {

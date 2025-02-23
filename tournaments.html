@@ -62,36 +62,45 @@
           <input type="hidden" name="_subject" value="{{title}}">
           <div class="field">
             <label class="field-lbl" for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" />
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required/>
             <small></small>
           </div>
           <div class="field">
             <label class="field-lbl" for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Enter your email address" />
+            <input type="text" id="email" name="email" placeholder="Enter your email address" required/>
+            <small></small>
+          </div>
+
+          <div class="field">
+            <label class="field-lbl" for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required/>
             <small></small>
           </div>
           <div class="field">
             <label class="field-lbl" for="cfc-id">Enter CFC id:</label>
-            <input type="text" id="cfc-id" name="cfc-id" placeholder="Canadian Chess Federation ID" />
+            <input type="text" id="cfc-id" name="cfc-id" placeholder="Canadian Chess Federation ID" required/>
             <small></small>
           </div>
 
-          <label for="tournament/section"><b>section:</b></label>
-          <div name="tournament/section" id="tournament/section" class="field">
-            <input type="radio" id="open" value="open" name="section"/>
-            <label for="open">Open</label>
-            <input type="radio" id="u1600" value="u1600" name="section"/>
-            <label for="u1600">Under 1600 CFC</label>
-            <input type="radio" id="u10" value="u10" name="section">
-            <label for="u10">Under 10 years old</label>
+          <div id="tournament-bye-req" class="field">
+            <input type="radio" id="open" value="open" name="bye-req"/>
+            <label for="rnd1">round 1:</label>
+            <input type="radio" id="rnd1" value="round 1" name="bye-req"/>
+            <label for="rnd2">round 2:</label>
+            <input type="radio" id="rnd2" value="round 2" name="bye-req"/>
+            <label for="rnd3">round 3:</label>
+            <input type="radio" id="rnd3" value="round 3" name="bye-req"/>
+            <label for="rnd4">round 4:</label>
+            <input type="radio" id="rnd4" value="round 4" name="bye-req"/>
+            <label for="rnd5">round 5:</label>
+            <input type="radio" id="rnd5" value="round 5" name="bye-req"/>
           </div>
-          <div id="payment-details">
-            <h3>Registration fee: $50</h3>
-            <h4>How to register for SK Horizon Classical Chess Tournament:</h4>
 
-            <h5><b>E-transfer the $50 registration fee to skhorizonchessclub@gmail.com to finalize your registration.
-              </b><BR>
-              You will receive confirmation via email that you have been registered for the tournament.</h5>
+          <iframe  class="tournament-info-doc" src="https://docs.google.com/document/d/e/2PACX-1vSarVAe_XP91YMZnk8vgbuJBEZY1rJeNtyaofAASGqONqa-laP3vFlMLtEoo6rVwb65_qRkAT0s95vN/pub?embedded=true"></iframe>
+          <div class="field">
+            <label class="field-lbl" for="read-rules">I have read and accepted the rules:</label>
+            <input type="checkbox" required/>
+            <small></small>
           </div>
           <input type="submit" value="Enter Tournament"></input>
           <input name="_formsubmit_id" type="text" style="display:none">

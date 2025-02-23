@@ -202,7 +202,8 @@ th {
     height: 23rem;
     border: none;
     margin: auto;
-    width: 60rem;
+    width: 45rem;
+    text-align: center;
 }
 .round-time-table tr {
   border-radius: 2rem;
