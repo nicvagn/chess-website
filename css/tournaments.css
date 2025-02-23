@@ -8,7 +8,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  border-collapse: collapse;
 }
 
 .navbar {
@@ -26,7 +26,7 @@ button {
 h4 {
   text-align: center;
   border-radius: 2em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Noto Serif Georgian Variable', serif;
   color: #242424;
 }
 #tournament-title {
@@ -142,16 +142,20 @@ input[type="submit"]:hover {
 }
 
 /* Table CSS */
-table {
+.tournaments-table {
   border-collapse: collapse;
   border-spacing: 0;
   border: 1px solid #ddd;
   border-collapse: collapse;
   margin: 25px auto;
-  font-size: 1.3em;
-  font-family: sans-serif;
-  min-width: 800px;
+  padding: 1rem;
+  font-size: 2em;
+  font-family: 'Noto Serif Georgian Variable', serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-heading {
+    margin: 1rem;
 }
 
 tr,
@@ -159,15 +163,24 @@ th {
   text-align: center;
 }
 
+.round-times table {
+  background-color: f3f3f3;
+  border: black 5px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  font-size: .5rem;
+}
+
 .tournaments-btn {
   text-align: center;
   border-radius: 2rem;
-  border: 3px solid black;
+  border: 2px solid black;
   box-shadow:
     rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 2rem;
-  margin: 2rem 8rem;
+  margin: 2rem 3rem;
   min-width: 28rem;
   font-size: 1.6rem;
   background-color: #fdd401;
@@ -184,32 +197,37 @@ th {
 .tournaments-table {
   width: 75%;
 }
-.tournaments-column {
-  padding: 1em 0.5em;
+/* small round time table */
+.tournament-info-doc {
+    height: 23rem;
+    border: none;
+    margin: auto;
+    width: 60rem;
 }
-.round-time-table {
-  min-width: 400px;
-}
-.round-time-table thead tr {
+.round-time-table tr {
+  border-radius: 2rem;
+  border: 3px solid black;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   background-color: #1e9c9c;
-  color: #ffffff;
   text-align: center;
 }
 .round-time-table th,
 .round-time-table td {
-  padding: 12px 1em;
+  border: 3px solid black;
+  border-collapse: ;
+  font-size: x-small;
+  padding: 2px 1em;
   text-align: center;
-}
-.round-time-table tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-.round-time-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-.round-time-table tbody tr:last-of-type {
-  border-bottom: 2px solid #1e9c9c;
+  width: fit-content;
 }
 
+.round-time-table td {
+  background-color: #f3f3f3;
+}
+
+/* big tournament table */
 .tournaments-table thead tr {
   background-color: #1e9c9c;
   color: #ffffff;
@@ -218,7 +236,6 @@ th {
 
 .tournaments-table th,
 .tournaments-table td {
-  padding: 0.6em 1em;
   text-align: center;
 }
 
