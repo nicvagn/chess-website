@@ -41,7 +41,9 @@
         <BR>
         <h3>{{time_control}}</h3>
         <BR>
-        <iframe class="tournament-info-doc" src="https://docs.google.com/document/d/e/2PACX-1vRIxiE-BbaonCEeXRxJfmt7sdqi2SG63gYWNeZtOWsaXlv6g1dQhoynqLhKuN7TB1gp08331CmaXa19/pub?embedded=true"></iframe>
+        <iframe class="tournament-info-doc"
+        src="https://docs.google.com/document/d/e/2PACX-1vRIxiE-BbaonCEeXRxJfmt7sdqi2SG63gYWNeZtOWsaXlv6g1dQhoynqLhKuN7TB1gp08331CmaXa19/pub?embedded=true"
+        ></iframe>
         <button
           id="joinTournamentBtn" class="tournaments-btn" onclick="joinTournamentView({{number}})"
           >Enter this tournament</button>
@@ -55,7 +57,7 @@
     <script id="join-tournament-template" type=
             "text/x-tmpl-mustache">
       <div id="join-tournament-insert">
-        <h1>Join Tournament</h1>
+        <h1 id="join-tournament" class="title">Join Tournament</h1>
         <h3>Tournament: {{title}}</h3>
 
         <form action="https://formsubmit.co/skhorizonchessclub@gmail.com" method="POST" id="tournament-signup">
@@ -78,21 +80,23 @@
           </div>
           <div class="field">
             <label class="field-lbl" for="cfc-id">Enter CFC id:</label>
-            <input type="text" id="cfc-id" name="cfc-id" placeholder="Canadian Chess Federation ID" required/>
-            <small></small>
+            <input type="text" id="cfc-id" name="cfc-id" placeholder="Canadian Chess Federation ID - Leave blank if you plan to get before tournament."/>
+            <BR>
+            <small>(You do not need a CFC ID to register, BUT you must have one by the end of the tournament.)</small>
           </div>
 
+          <label class="field-lbl" for="tournament-bye-req">Bye request:</label>
           <div id="tournament-bye-req" class="field">
             <input type="radio" id="open" value="open" name="bye-req"/>
-            <label for="rnd1">round 1:</label>
+            <label for="rnd1">round 1 - Friday 7PM</label>
             <input type="radio" id="rnd1" value="round 1" name="bye-req"/>
-            <label for="rnd2">round 2:</label>
+            <label for="rnd2">round 2 - Saturday 2PM</label>
             <input type="radio" id="rnd2" value="round 2" name="bye-req"/>
-            <label for="rnd3">round 3:</label>
+            <label for="rnd3">round 3 - Saturday 6PM</label>
             <input type="radio" id="rnd3" value="round 3" name="bye-req"/>
-            <label for="rnd4">round 4:</label>
+            <label for="rnd4">round 4 - Sunday 2PM</label>
             <input type="radio" id="rnd4" value="round 4" name="bye-req"/>
-            <label for="rnd5">round 5:</label>
+            <label for="rnd5">round 5 - Sunday 6PM</label>
             <input type="radio" id="rnd5" value="round 5" name="bye-req"/>
           </div>
 
@@ -183,6 +187,7 @@
                     Tournament</button></td>
                 <td>
                   <table class="round-time-table">
+                    <h4>April 11-13</h4>
                     <thead class="round-time-table">
                       <tr>
                         <th scope="col">April 11</th>
@@ -192,7 +197,7 @@
                     </thead>
                     <tbody class="round-time-table">
                       <tr>
-                        <td>round 1: 7pm~10PM</td>
+                        <td>round 1: 7PM~10PM</td>
                         <td>round 2: 2PM~5PM</td>
                         <td>round 4: 2PM~5PM</td>
                       </tr>
@@ -212,6 +217,7 @@
                     5</button></td>
                 <td>
                   <table class="round-time-table">
+                    <h4>May 10</h4>
                     <thead>
                       <tr>
                         <th scope="col">Rounds 1-5</th>
@@ -232,6 +238,7 @@
                     Final</button></td>
                 <td>
                   <table class="round-time-table">
+                    <h4>June 9</h4>
                     <thead>
                       <tr>
                         <th scope="col">Rounds 1-5</th>
@@ -252,6 +259,7 @@
                     Tournament</button></td>
                 <td>
                   <table class="round-time-table">
+                    <h4>June 25-27</h4>
                     <thead class="round-time-table">
                       <tr>
                         <th scope="col">June 25</th>
@@ -261,7 +269,7 @@
                     </thead>
                     <tbody class="round-time-table">
                       <tr>
-                        <td>round 1: 7pm~10PM</td>
+                        <td>round 1: 7PM~10PM</td>
                         <td>round 2: 2PM~5PM</td>
                         <td>round 4: 2PM~5PM</td>
                       </tr>

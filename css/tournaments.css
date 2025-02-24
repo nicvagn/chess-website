@@ -32,6 +32,9 @@ h4 {
 #tournament-title {
     margin-top: 1em;
 }
+.tournament-title {
+  font-family: "Bebas Neue", san9A978Es-serif;
+}
 /* join-tournament-insert CSS */
 #join-tournament-insert {
   display: flex;
@@ -101,11 +104,12 @@ label {
   display: inline-block;
   border-spacing: 0;
   font-size: 1.3em;
-  font-family: sans-serif;
+  font-family: 'Noto Serif Georgian Variable', serif;
 }
 
 .field-lbl {
   min-width: 7em;
+  font-family: 'Noto Serif Georgian Variable', serif;
 }
 
 input[type="text"],
@@ -211,7 +215,6 @@ th {
   box-shadow:
     rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  background-color: #1e9c9c;
   text-align: center;
 }
 .round-time-table th,
@@ -224,6 +227,9 @@ th {
   width: fit-content;
 }
 
+.round-time-table tr th {
+  background-color: #363739
+}
 .round-time-table td {
   background-color: #f3f3f3;
 }
@@ -259,6 +265,10 @@ th {
 }
 
 /* Insert CSS */
+
+#join-tournament {
+    height: 1em;
+}
 .tournament-insert {
   position: sticky;
   bottom: 0;
@@ -276,7 +286,7 @@ th {
 }
 .tournament-insert h3 {
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Noto Serif Georgian Variable', serif;
 }
 
 .tournament-insert button {
