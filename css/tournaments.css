@@ -10,6 +10,54 @@
   padding: 0;
   border-collapse: collapse;
 }
+/* bare specifiers */
+tr,
+th {
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
+
+label {
+  display: inline-block;
+  border-spacing: 0;
+  font-size: 1.3em;
+  font-family: 'Noto Serif Georgian Variable', serif;
+}
+input[type="text"],
+select {
+  align-self: center;
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  text-align: center;
+  padding: 1em;
+  margin: 2em 8em;
+  font-family: "Bebas Neue", san9A978Es-serif;
+  background-color: #fdd401;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 2em;
+  border: 3px solid black;
+  width: 80%;
+}
+
+input[type="submit"]:hover {
+  background: #dd1810;
+  color: white;
+  transition: all 0.3s ease;
+}
+
 
 .navbar {
     min-width: 1000px;
@@ -19,15 +67,18 @@
   left: 0px;
   top: 0px;
 }
-button {
-  cursor: pointer;
-}
 
-h4 {
+
+.page-heading {
   text-align: center;
   border-radius: 2em;
   font-family: 'Noto Serif Georgian Variable', serif;
   color: #242424;
+}
+
+.tournament-date {
+    text-align: left;
+  font-family: 'Noto Serif Georgian Variable', serif;
 }
 #tournament-title {
     margin-top: 1em;
@@ -100,52 +151,41 @@ h4 {
   margin: 1em 3em;
 }
 
-label {
-  display: inline-block;
-  border-spacing: 0;
-  font-size: 1.3em;
-  font-family: 'Noto Serif Georgian Variable', serif;
-}
 
 .field-lbl {
   min-width: 7em;
   font-family: 'Noto Serif Georgian Variable', serif;
 }
 
-input[type="text"],
-select {
-  align-self: center;
-  width: 80%;
-  padding: 12px 20px;
-  margin: 8px 8px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type="submit"] {
-  cursor: pointer;
+/* Big Tournament Table CSS */
+.tournaments-table thead tr {
+  background-color: #1e9c9c;
+  color: #ffffff;
   text-align: center;
-  padding: 1em;
-  margin: 2em 8em;
+}
+
+.tournaments-table th,
+.tournaments-table td {
+  text-align: center;
+}
+
+.tournaments-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tournaments-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.tournaments-table tbody tr:last-of-type {
+  border-bottom: 2px solid #1e9c9c;
+}
+
+.organizer {
+  text-align: center;
+  color: #242424;
   font-family: "Bebas Neue", san9A978Es-serif;
-  background-color: #fdd401;
-  box-shadow:
-    rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  border-radius: 2em;
-  border: 3px solid black;
-  width: 80%;
 }
-
-input[type="submit"]:hover {
-  background: #dd1810;
-  color: white;
-  transition: all 0.3s ease;
-}
-
-/* Table CSS */
 .tournaments-table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -156,24 +196,22 @@ input[type="submit"]:hover {
   font-size: 2em;
   font-family: 'Noto Serif Georgian Variable', serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 75%;
 }
 
 .table-heading {
     margin: 1rem;
 }
 
-tr,
-th {
-  text-align: center;
-}
 
-.round-times table {
+.round-times-table {
   background-color: f3f3f3;
   border: black 5px;
   border-collapse: collapse;
   border-spacing: 0;
   margin: 0;
   font-size: .5rem;
+  text-align: center;
 }
 
 .tournaments-btn {
@@ -198,9 +236,6 @@ th {
   transition: all 0.3s ease;
 }
 
-.tournaments-table {
-  width: 75%;
-}
 /* small round time table */
 .tournament-info-doc {
     height: 23rem;
@@ -234,35 +269,6 @@ th {
   background-color: #f3f3f3;
 }
 
-/* big tournament table */
-.tournaments-table thead tr {
-  background-color: #1e9c9c;
-  color: #ffffff;
-  text-align: center;
-}
-
-.tournaments-table th,
-.tournaments-table td {
-  text-align: center;
-}
-
-.tournaments-table tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-
-.tournaments-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.tournaments-table tbody tr:last-of-type {
-  border-bottom: 2px solid #1e9c9c;
-}
-
-.organizer {
-  text-align: center;
-  color: #242424;
-  font-family: "Bebas Neue", san9A978Es-serif;
-}
 
 /* Insert CSS */
 
