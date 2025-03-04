@@ -238,7 +238,7 @@ input[type="submit"]:hover {
 
 /* small round time table */
 .tournament-info-doc {
-    height: 23rem;
+    height: 31rem;
     border: none;
     margin: auto;
     width: 45rem;
@@ -301,4 +301,11 @@ input[type="submit"]:hover {
   font-family: "Bebas Neue", san9A978Es-serif;
   background-color: #fdd401;
   border: 3px solid black;
+}
+
+@media screen and (max-width: 1400px) {
+
+  .tournament-info-doc {
+      height: 85rem;
+  }
 }
