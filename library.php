@@ -24,9 +24,7 @@ require_once './modules/dbh.php';
     </script>
     <meta property="og:image" content=
     "https://www.skhorizonchess.ca/images/shcc-logo-notxt.png">
-    <meta name="generator" content=
-    "HTML Tidy for HTML5 for Linux version 5.8.0">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="/images/favicon-96x96.png"
     sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
