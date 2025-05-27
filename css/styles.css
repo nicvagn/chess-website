@@ -189,7 +189,7 @@ body {
     background-image: url("../images/back.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 15rem;
+    height: 13rem;
     min-width: 600px;
 }
 
@@ -210,9 +210,9 @@ body {
 
 #main__img {
     border-radius: 0;
-    height: 14rem;
-    margin-top: 1rem;
-    margin-left: 5rem;
+    height: 12rem;
+    margin-top: 0.5rem;
+    margin-left: 3rem;
     margin-right: 0;
 }
 
