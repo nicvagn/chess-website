@@ -1,4 +1,5 @@
 shcc
+test-page*
 cspell*
 node_modules
 modules/dbh.php
