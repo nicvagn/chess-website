@@ -250,7 +250,7 @@ body {
   border-radius: 0;
   height: 12rem;
   margin-top: 0.5rem;
-  margin-left: 1rem;
+  margin-left: 6rem;
   margin-right: 0;
 }
 
@@ -557,10 +557,15 @@ img {
 }
 /* end calendar n facebook embed */
 
+@media screen and (max-width: 2000px) {
+    .main__title {
+        font-size: 4rem;
+    }
+}
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1800px) {
   .main__title {
-    font-size: 2.7rem;
+    font-size: 3.3rem;
   }
   #main__img {
     margin-left: 7em;
