@@ -643,6 +643,7 @@ img {
 @media screen and (max-width: 900px) {
   .main__title {
     width: 45%;
+    font-size: 1.8rem;
   }
   .navbar__item {
     font-size: 1.9rem;
