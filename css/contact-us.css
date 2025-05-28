@@ -19,6 +19,11 @@
   justify-content: space-evenly;
 }
 
+.split-page img {
+    margin: 5px;
+    height: 4rem;
+}
+
 .split-page-column {
   flex: 50%;
   display: block;
