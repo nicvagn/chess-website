@@ -35,7 +35,7 @@ require_once './modules/dbh.php';
     <link rel="manifest" href="/images/site.webmanifest">
     <meta name="viewport" content=
     "min-width=1200px, initial-scale=1.0">
-    <title>SHCC: Library</title>
+    <title>SHC: Library</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/library.css">
     <link rel="stylesheet" href=
@@ -1137,7 +1137,7 @@ require_once './modules/dbh.php';
             <div class="social__media--wrap">
                 <div class="footer__logo promo">
                     <a href="about.html"><img src=
-                    "./images/shcc-logo-notxt.png" alt="SHCC logo"><br>
+                    "./images/shcc-logo-notxt.png" alt="SHC logo"><br>
                     <small>Website made by: Nicolas Vaagen</small></a>
                 </div>
                 <div id="quadrant" class="footer__logo promo">

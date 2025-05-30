@@ -31,7 +31,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href=
   "/images/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-title" content=
-  "SHCC Tournaments">
+  "SHC Tournaments">
   <link rel="manifest" href="/images/site.webmanifest">
   <title>SHC: Tournaments</title>
   <!-- our template for displaying tournaments -->
@@ -119,7 +119,7 @@
   <nav class="navbar">
     <div class="navbar__container">
       <a href="index.html" class="navbar__logo"><img src=
-      "./images/shcc-logo-notxt.png" alt="SHCC Logo"></a>
+      "./images/shcc-logo-notxt.png" alt="SHC Logo"></a>
       <ul class="navbar__menu">
         <li class="navbar__item">
           <a href="index.html" class="navbar__links">HOME</a>
@@ -233,7 +233,8 @@
               Championship</button></td>
               <td>
                 <h4 class="tournament-date">July 25-27</h4>
-                <table  style="display: none;" class="round-time-table">
+                <table style="display: none;" class=
+                "round-time-table">
                   <thead>
                     <tr>
                       <th scope="col">July 25</th>
@@ -265,7 +266,8 @@
               Championship</button></td>
               <td>
                 <h4 class="tournament-date">July 26</h4>
-                <table  style="display: none;" class="round-time-table">
+                <table style="display: none;" class=
+                "round-time-table">
                   <thead>
                     <tr>
                       <th scope="col">July 26</th>
@@ -291,7 +293,8 @@
               Championship</button></td>
               <td>
                 <h4 class="tournament-date">July 27</h4>
-                <table style="display: none;" class="round-time-table">
+                <table style="display: none;" class=
+                "round-time-table">
                   <thead>
                     <tr>
                       <th scope="col">July 27</th>
@@ -317,7 +320,8 @@
               Championship</button></td>
               <td>
                 <h4 class="tournament-date">July 28</h4>
-                <table style="display: none;" class="round-time-table">
+                <table style="display: none;" class=
+                "round-time-table">
                   <thead>
                     <tr>
                       <th scope="col">July 28</th>
@@ -347,6 +351,15 @@
           </tbody>
         </table>
       </div>
+    </div><!-- used to insert tournament data via script -->
+    <div id="tournament-info"></div>
+    <div style="display: none" id="scc-tournament-info">
+      <h1 class="tournament-title">Saskatoon Chess Club
+      Tournament</h1><a class="scc-info" href=
+      "https://saskatoonchessclub.weebly.com/tournaments.html">Join
+      here: SCC Website</a> <button id="showTournamentBtn" class=
+      "tournaments-btn" onclick="showTournamentLst()">Return to
+      tournament list</button>
     </div>
   </div>
   <div class="footer__container">
@@ -387,13 +400,13 @@
         </div>
       </div>
     </section>
+    <script src=
+    "https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="./script/tsBundle.js"></script>
   </div>
-  <script src=
-  "https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
-
-  <script src=
-  "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <script src="./script/tsBundle.js"></script>
 </body>
 </html>
