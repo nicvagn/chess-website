@@ -6,7 +6,7 @@
      You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 -->
 <?php
-require_once './modules/dbh.php';
+require_once './modules/library-dbh.php';
 ?>
 <html lang="en">
 <head>

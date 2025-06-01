@@ -2,9 +2,10 @@ info.php
 test-page*
 cspell*
 node_modules
-modules/dbh.php
+modules/*
 .pnpm-store
 halt
 restart
 start
 status
+vendor/*

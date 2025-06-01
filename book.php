@@ -8,14 +8,14 @@
      <https://www.gnu.org/licenses/>.
 -->
 <?php
-require_once './modules/dbh.php';
+require_once './modules/library-dbh.php';
 ?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content=
     "min-width=1200px, initial-scale=1.0">
-    <title>SHCC Library</title>
+    <title>SHC Library</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/library.css">
     <link rel="icon" type="image/png" href="/images/favicon-96x96.png"

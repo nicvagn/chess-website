@@ -8,7 +8,7 @@
      <https://www.gnu.org/licenses/>.
 -->
 <?php
-require_once './modules/dbh.php';
+require_once './modules/library-dbh.php';
 ?>
 <html lang="en">
 <head>
