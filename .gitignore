@@ -8,3 +8,4 @@ halt
 restart
 start
 status
+modules/*
