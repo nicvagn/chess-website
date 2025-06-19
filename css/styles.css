@@ -191,7 +191,21 @@ body {
   color: #000;
   transition-duration: 10ms;
 }
+.split {
+    width: 100%;
+}
 
+.split__left {
+    float:left;
+    width: 50%;
+    min-height: 5rem
+}
+
+.split__right {
+    float: right;
+    min-height: 5rem;
+    width: 50%;
+}
 #navbar__links_current {
   box-shadow: inset 5em 5em #ffe100;
   color: #000;
@@ -425,16 +439,17 @@ img {
   font-family: "Roboto Slab", serif;
 }
 .where-we-play h3 {
-  font-style: italic;
+  position: relative;
+  font-family: "DM Serif Text", serif;
+  text-align: center;
+  min-width: 15rem;
+  max-width: 45rem;
+  margin: 0.3rem auto;
   color: #242424;
   font-size: x-large;
+  z-index: 2;
 }
 
-.where-we-play ul {
-  text-align: left;
-  text-decoration: none;
-  list-style-type: square;
-}
 
 /* service bubble styling start*/
 .service-bubble-container {
