@@ -2,7 +2,7 @@ info.php
 test-page*
 cspell*
 node_modules
-modules/*
+modules/*dbh*
 .pnpm-store
 halt
 restart
