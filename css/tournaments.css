@@ -23,7 +23,7 @@ label {
   display: inline-block;
   border-spacing: 0;
   font-size: 1.3em;
-  font-family: 'Noto Serif Georgian Variable', serif;
+  font-family: "Noto Serif Georgian Variable", serif;
 }
 input[type="text"],
 select {
@@ -58,9 +58,8 @@ input[type="submit"]:hover {
   transition: all 0.3s ease;
 }
 
-
 .navbar {
-    min-width: 1000px;
+  min-width: 1000px;
 }
 #top {
   position: absolute;
@@ -68,20 +67,19 @@ input[type="submit"]:hover {
   top: 0px;
 }
 
-
 .page-heading {
   text-align: center;
   border-radius: 2em;
-  font-family: 'Noto Serif Georgian Variable', serif;
+  font-family: "Noto Serif Georgian Variable", serif;
   color: #242424;
 }
 
 .tournament-date {
-    text-align: left;
-  font-family: 'Noto Serif Georgian Variable', serif;
+  text-align: left;
+  font-family: "Noto Serif Georgian Variable", serif;
 }
 #tournament-title {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 .tournament-title {
   font-family: "Bebas Neue", san9A978Es-serif;
@@ -151,10 +149,9 @@ input[type="submit"]:hover {
   margin: 1em 3em;
 }
 
-
 .field-lbl {
   min-width: 7em;
-  font-family: 'Noto Serif Georgian Variable', serif;
+  font-family: "Noto Serif Georgian Variable", serif;
 }
 
 /* Big Tournament Table CSS */
@@ -194,15 +191,14 @@ input[type="submit"]:hover {
   margin: 25px auto;
   padding: 1rem;
   font-size: 2em;
-  font-family: 'Noto Serif Georgian Variable', serif;
+  font-family: "Noto Serif Georgian Variable", serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   width: 75%;
 }
 
 .table-heading {
-    margin: 1rem;
+  margin: 1rem;
 }
-
 
 .round-times-table {
   background-color: f3f3f3;
@@ -210,7 +206,7 @@ input[type="submit"]:hover {
   border-collapse: collapse;
   border-spacing: 0;
   margin: 0;
-  font-size: .5rem;
+  font-size: 0.5rem;
   text-align: center;
 }
 
@@ -238,11 +234,11 @@ input[type="submit"]:hover {
 
 /* small round time table */
 .tournament-info-doc {
-    height: 31rem;
-    border: none;
-    margin: auto;
-    width: 45rem;
-    text-align: center;
+  height: 31rem;
+  border: none;
+  margin: auto;
+  width: 45rem;
+  text-align: center;
 }
 .round-time-table tr {
   border-radius: 2rem;
@@ -255,7 +251,7 @@ input[type="submit"]:hover {
 .round-time-table th,
 .round-time-table td {
   border: 3px solid black;
-  border-collapse: ;
+  border-collapse:;
   font-size: x-small;
   padding: 2px 1em;
   text-align: center;
@@ -263,17 +259,16 @@ input[type="submit"]:hover {
 }
 
 .round-time-table tr th {
-  background-color: #363739
+  background-color: #363739;
 }
 .round-time-table td {
   background-color: #f3f3f3;
 }
 
-
 /* Insert CSS */
 
 #join-tournament {
-    height: 1em;
+  height: 1em;
 }
 .tournament-insert {
   position: sticky;
@@ -292,7 +287,7 @@ input[type="submit"]:hover {
 }
 .tournament-insert h3 {
   text-align: center;
-  font-family: 'Noto Serif Georgian Variable', serif;
+  font-family: "Noto Serif Georgian Variable", serif;
 }
 
 .tournament-insert button {
@@ -304,8 +299,7 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 1400px) {
-
   .tournament-info-doc {
-      height: 85rem;
+    height: 85rem;
   }
 }
