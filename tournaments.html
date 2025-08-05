@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--
     Made by Nicolas Vaagen for Horizon Chess Club
 
@@ -9,192 +9,273 @@
     You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
   -->
 <html lang="en">
-<head>
-  <!-- set title and viewport -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=1200px, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Bebas Neue"
-  rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/georgia" rel=
-  "stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/tournaments.css">
-  <link rel="stylesheet" href=
-  "https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-  integrity=
-  "sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-  crossorigin="anonymous">
-  <link rel="icon" type="image/png" href=
-  "/images/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
-  <link rel="shortcut icon" href="/images/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href=
-  "/images/apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-title" content=
-  "SHC Tournaments">
-  <link rel="manifest" href="/images/site.webmanifest">
-  <title>SHC: Tournaments</title>
-  <!-- our template for displaying tournaments -->
+  <head>
+    <!-- set title and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1200px, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas Neue"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/georgia" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/tournaments.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="SHCC Tournaments" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+    <title>Chess Tournaments at Saskatoon Bridge Club</title>
+  </head>
 
-  <script id="show-tournament-template" type=
-  "text/x-tmpl-mustache">
-      <div class="tournament-insert">
-        <h1 class="tournament-title">{{title}}</h1>
-        <BR>
-        <h3>{{time_control}}</h3>
-        <BR>
-        <iframe class="tournament-info-doc"
-        src="https://docs.google.com/document/d/e/2PACX-1vRIxiE-BbaonCEeXRxJfmt7sdqi2SG63gYWNeZtOWsaXlv6g1dQhoynqLhKuN7TB1gp08331CmaXa19/pub?embedded=true"
-        ></iframe>
-        <button
-          id="joinTournamentBtn" class="tournaments-btn" onclick="joinTournamentView({{number}})"
-          >Enter this tournament</button>
-        <button
-          id="showTournamentBtn" class="tournaments-btn" onclick="showTournamentLst()"
-          >Return to tournament list</button>
+  <body>
+    <!-- for scroll control -->
+    <div id="top"></div>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" class="navbar__logo"
+          ><img src="./images/shcc-logo-notxt.png" alt="SHCC Logo"
+        /></a>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">HOME</a>
+          </li>
+          <li class="navbar__item">
+            <a
+              href="tournaments.html"
+              id="navbar__links_current"
+              class="navbar__links"
+              >TOURNAMENTS</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="workshops.html" class="navbar__links">WORKSHOPS</a>
+          </li>
+          <li class="navbar__item">
+            <a href="library.php" class="navbar__links">LIBRARY</a>
+          </li>
+          <li class="navbar__item">
+            <a href="calendar.html" class="navbar__links">CALENDAR</a>
+          </li>
+          <li class="navbar__item">
+            <a href="contact-us.html" class="navbar__links">CONTACT US</a>
+          </li>
+        </ul>
       </div>
-  </script><!-- the template for joining tournaments -->
+    </nav>
+    <div id="page-content">
+      <div id="tournament-list" class="tournaments-row">
+        <h1 class="heading" id="tournament-title">
+          Chess Tournament Schedule 2025-26
+        </h1>
+        <h4 class="page-heading">
+          Tournament details and cost/payment is the purview of the tournament
+          organizers.
+        </h4>
+        <div class="tournaments-column">
+          <table class="tournaments-table">
+            <thead>
+              <tr>
+                <th class="table-heading" scope="col">Tournament</th>
+                <th class="table-heading" scope="col">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="tournaments-btn"
+                    onclick="window.location.href='https://www.facebook.com/photo/?fbid=1244727277351545&set=a.179683967189220'"
+                  >
+                    BC3 Summer Rapid Chess Event (CFC/FIDE)
+                  </button>
+                </td>
+                <td>August 17th<br />2025</td>
+              </tr>
 
-  <script id="join-tournament-template" type=
-  "text/x-tmpl-mustache">
-      <div id="join-tournament-insert">
-        <h1 id="join-tournament" class="title">Join Tournament</h1>
-        <h3>Tournament: {{title}}</h3>
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="tournaments-btn"
+                    onclick="alert('there is no registration info yet.')"
+                  >
+                    Bridge City Classical
+                  </button>
+                </td>
+                <td>Sept 6th and 7th<br />2025</td>
+              </tr>
 
-        <form action="https://formsubmit.co/skhorizonchessclub@gmail.com" method="POST" id="tournament-signup">
-          <input type="hidden" name="_subject" value="{{title}}">
-          <div class="field">
-            <label class="field-lbl" for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required/>
-            <small></small>
-          </div>
-          <div class="field">
-            <label class="field-lbl" for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Enter your email address" required/>
-            <small></small>
-          </div>
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="tournaments-btn"
+                    onclick="window.location.href='https://saskatoonchessclub.weebly.com/tournaments.html'"
+                  >
+                    SCC Rapid Grand Prix Leg 1
+                  </button>
+                </td>
+                <td>October 5th<br />2025</td>
+              </tr>
 
-          <div class="field">
-            <label class="field-lbl" for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required/>
-            <small></small>
-          </div>
-          <div class="field">
-            <label class="field-lbl" for="cfc-id">Enter CFC id:</label>
-            <input type="text" id="cfc-id" name="cfc-id" placeholder="Canadian Chess Federation ID - Leave blank if you plan to get before tournament."/>
-            <BR>
-            <small>(You do not need a CFC ID to register, BUT you must have one by the end of the tournament.)</small>
-          </div>
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="tournaments-btn"
+                    onclick="window.location.href='https://saskatoonchessclub.weebly.com/tournaments.html'"
+                  >
+                    SCC Rapid Grand Prix Leg 2
+                  </button>
+                </td>
+                <td>November 16th<br />2025</td>
+              </tr>
 
-          <label class="field-lbl" for="tournament-bye-req">Bye request:</label>
-          <div id="tournament-bye-req" class="field">
-            <input type="radio" id="open" value="open" name="bye-req"/>
-            <label for="rnd1">round 1 - Friday 7PM</label>
-            <input type="radio" id="rnd1" value="round 1" name="bye-req"/>
-            <label for="rnd2">round 2 - Saturday 10AM</label>
-            <input type="radio" id="rnd2" value="round 2" name="bye-req"/>
-            <label for="rnd3">round 3 - Saturday 2PM</label>
-            <input type="radio" id="rnd3" value="round 3" name="bye-req"/>
-            <label for="rnd4">round 4 - Sunday 10AM</label>
-            <input type="radio" id="rnd4" value="round 4" name="bye-req"/>
-            <label for="rnd5">round 5 - Sunday 2PM</label>
-            <input type="radio" id="rnd5" value="round 5" name="bye-req"/>
-          </div>
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="tournaments-btn"
+                    onclick="alert('there is no registration info yet.')"
+                  >
+                    Fundraiser Event/Tournament
+                  </button>
+                </td>
+                <td>December 12th, 13th, and 14th<br />2025</td>
+              </tr>
 
-          <iframe  class="tournament-info-doc" src="https://docs.google.com/document/d/e/2PACX-1vSarVAe_XP91YMZnk8vgbuJBEZY1rJeNtyaofAASGqONqa-laP3vFlMLtEoo6rVwb65_qRkAT0s95vN/pub?embedded=true"></iframe>
-          <div class="field">
-            <label class="field-lbl" for="read-rules">I have read and accepted the rules:</label>
-            <input type="checkbox" required/>
-            <small></small>
-          </div>
-          <input type="submit" value="Enter Tournament"></input>
-          <input name="_formsubmit_id" type="text" style="display:none">
-        </form>
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="tournaments-btn"
+                    onclick="window.location.href='https://saskatoonchessclub.weebly.com/tournaments.html'"
+                  >
+                    SCC Rapid Grand Prix Leg 3
+                  </button>
+                </td>
+                <td>January 11th<br />2026</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="tournaments-btn"
+                    onclick="window.location.href='https://saskatoonchessclub.weebly.com/tournaments.html'"
+                  >
+                    SCC Rapid Grand Prix Leg 4
+                  </button>
+                </td>
+                <td>March 15th<br />2026</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="tournaments-btn"
+                    onclick="window.location.href='https://saskatoonchessclub.weebly.com/tournaments.html'"
+                  >
+                    SCC Rapid Grand Prix Leg 5
+                  </button>
+                </td>
+                <td>May 3rd<br />2026</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="tournaments-btn"
+                    onclick="window.location.href='https://saskatoonchessclub.weebly.com/tournaments.html'"
+                  >
+                    SCC Rapid Grand Prix Leg Super Final
+                  </button>
+                </td>
+                <td>May 24th<br />2026</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="tournaments-btn"
+                    onclick="window.location.href='https://www.facebook.com/photo/?fbid=1244727277351545&set=a.179683967189220'"
+                  >Bridge City Classical
+                  </button>
+                </td>
+                <td>September 6th and 7th<br />2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-  </script>
-</head>
-<body>
-  <!-- for scroll control -->
-  <div id="top"></div><!-- Navbar Section -->
-  <nav class="navbar">
-    <div class="navbar__container">
-      <a href="index.html" class="navbar__logo"><img src=
-      "./images/shcc-logo-notxt.png" alt="SHC Logo"></a>
-      <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a href="index.html" class="navbar__links">HOME</a>
-        </li>
-        <li class="navbar__item">
-          <a href="tournaments.html" id="navbar__links_current"
-          class="navbar__links">TOURNAMENTS</a>
-        </li>
-        <li class="navbar__item">
-          <a href="workshops.html" class=
-          "navbar__links">WORKSHOPS</a>
-        </li>
-        <li class="navbar__item">
-          <a href="library.php" class="navbar__links">LIBRARY</a>
-        </li>
-        <li class="navbar__item">
-          <a href="calendar.html" class=
-          "navbar__links">CALENDAR</a>
-        </li>
-        <li class="navbar__item">
-          <a href="contact-us.html" class="navbar__links">CONTACT
-          US</a>
-        </li>
-      </ul>
+      <!-- Footer Section -->
+      <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>About Us</h2>
+              <a href="about.html">About the Club</a>
+              <a href="calendar.html">Calendar</a>
+              <a href="contact-us.html">Contact Us</a>
+            </div>
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Resources</h2>
+              <a href="library.php">Library</a>
+            </div>
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Social Media</h2>
+              <a href="https://www.facebook.com/skhorizonchess/">Facebook</a>
+              <a
+                href="https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw"
+              >
+                Youtube channel</a
+              >
+            </div>
+          </div>
+        </div>
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo promo">
+              <a href="about.html"
+                ><img src="./images/shcc-logo-notxt.png" /><br />
+                <small>Website made by: Nicolas Vaagen</small></a
+              >
+            </div>
+            <div id="quadrant" class="footer__logo promo">
+              <a href="https://www.quadrant.net/"
+                ><img src="images/quadrant.svg" /><br />
+                <small>Hosting and Web services</small></a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-  </nav>
-  <div id="page-content">
-    <div id="tournament-list" class="tournaments-row">
-     <h1 style="text-align: center;">Check back soon for more tournaments!</h1>
-    </div>
-  <div class="footer__container">
-    <div class="footer__links">
-      <div class="footer__link--wrapper">
-        <div class="footer__link--items">
-          <h2>About Us</h2><a href="about.html">About the Club</a>
-          <a href="calendar.html">Calendar</a> <a href=
-          "contact-us.html">Contact Us</a>
-        </div>
-      </div>
-      <div class="footer__link--wrapper">
-        <div class="footer__link--items">
-          <h2>Resources</h2><a href="library.php">Library</a>
-        </div>
-      </div>
-      <div class="footer__link--wrapper">
-        <div class="footer__link--items">
-          <h2>Social Media</h2><a href=
-          "https://www.facebook.com/skhorizonchess/">Facebook</a>
-          <a href=
-          "https://www.youtube.com/channel/UCW5Xgnst9kg3CsbSJbXYThw">
-          Youtube channel</a>
-        </div>
-      </div>
-    </div>
-    <section class="social__media">
-      <div class="social__media--wrap">
-        <div class="footer__logo promo">
-          <a href="about.html"><img src=
-          "./images/shcc-logo-notxt.png"><br>
-          <small>Website made by: Nicolas Vaagen</small></a>
-        </div>
-        <div id="quadrant" class="footer__logo promo">
-          <a href="https://www.quadrant.net/"><img src=
-          "images/quadrant.svg"><br>
-          <small>Hosting and Web services</small></a>
-        </div>
-      </div>
-    </section>
-    <script src=
-    "https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
-
-    <script src=
-    "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script src="./script/tsBundle.js"></script>
-  </div>
-</body>
+  </body>
 </html>
