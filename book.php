@@ -33,6 +33,8 @@ require_once './modules/library-dbh.php';
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Bebas Neue"
     rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Navbar Section -->
@@ -95,12 +97,11 @@ require_once './modules/library-dbh.php';
         echo "<h4 class='book-page-description'>Tags: " . $tags . "</h4>";
         echo "<p class='book-page-description'>" . $description . "</p>";
         ?>
-    <form id="book-form" action=
-    "mail-handler.php" method="post"
+
+    <form id="book-form" method="post"
     name="book-form">
         <input type="hidden" name="_subject"
                value="<?php echo $title . " by " . $authors . " request " ?>">
-
         <section class="rental-info">
             <div class="field">
                 <label for="name">Name:</label>
@@ -129,14 +130,33 @@ require_once './modules/library-dbh.php';
                 <h4 class="book-page">We hope you enjoy the library, and give value for value.</h4>
                 <h6 class="book-page"><small>If you loose it, we will come for you.</small></h6>
             </div>
+            <p id="form-status"></p>
         </section>
         <div class="side-by-side">
             <input class="form-btn" type="submit" value="Request book">
             <input class="form-btn" type="button" value="Return"
-            onclick="window.location='/library.php';"> <input name=
-            "_formsubmit_id" type="text" style="display:none">
+            onclick="window.location='/library.php';">
         </div>
     </form>
   </div>
+  <script>
+  emailjs.init("kZnzd2kA-xeoP6GvE");
+
+
+  document.getElementById('book-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const status = document.getElementById('form-status');
+      status.textContent = 'Sending…';
+
+      emailjs.sendForm('service_3x21fhh', 'template_m4hl57h', this)
+          .then(() => {
+              status.textContent = '✓ Message sent! I\'ll be in touch soon.';
+              this.reset();
+          })
+          .catch(() => {
+              status.textContent = '✗ Something went wrong. Please try again.';
+          });
+  });
+  </script>
 </body>
 </html>
