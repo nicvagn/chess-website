@@ -126,7 +126,7 @@ require_once './modules/library-dbh.php';
                 "three-weeks">Three weeks</label>
             </div>
             <div id="payment-details">
-                <h3 class="book-page">Books can be picked up 12-2 on Saturdays at the Bridge Club.</h3>
+                <h3 class="book-page">Book pick up organized via email.</h3>
                 <h4 class="book-page">We hope you enjoy the library, and give value for value.</h4>
                 <h6 class="book-page"><small>If you loose it, we will come for you.</small></h6>
             </div>
@@ -150,7 +150,7 @@ require_once './modules/library-dbh.php';
 
       emailjs.sendForm('service_3x21fhh', 'template_m4hl57h', this)
           .then(() => {
-              status.textContent = '✓ Message sent! I\'ll be in touch soon.';
+              status.textContent = '✓ Message sent!';
               this.reset();
           })
           .catch(() => {
