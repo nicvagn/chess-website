@@ -56,9 +56,6 @@ require_once './modules/library-dbh.php';
                         <a href="index.html" class="navbar__links">HOME</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="tournaments.html" class="navbar__links">TOURNAMENTS</a>
-                    </li>
-                    <li class="navbar__item">
                         <a href="workshops.html" class="navbar__links">WORKSHOPS</a>
                     </li>
                     <li class="navbar__item">
