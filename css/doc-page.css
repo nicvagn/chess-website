@@ -36,7 +36,7 @@
 /* tweak's for use on a smaller screen */
 @media screen and (max-width: 1200px) {
   .document {
-    height: 1340px;
+    height: 1940px;
   }
   .doc__container {
       justify-content: flex-start;
